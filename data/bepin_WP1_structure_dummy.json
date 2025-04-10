@@ -1,0 +1,58 @@
+{
+  "objectives": [
+    {
+      "id": "S01",
+      "name": "Decide whether and how to set-up/adapt surveillance: set up testing policy, case definition, lab standardization.",
+	  "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": ["I01", "I02", "I03", "I04", "I08", "I09"]
+    },
+    {
+      "id": "S02",
+      "name": "Assess the risk of introduction",
+	  "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": ["I01", "I03", "I04", "I05", "I08", "I09"]
+    }
+  ],
+  "infoNeeds": [
+    {
+      "id": "I01",
+      "name": "Description of who is initially being affected (= who is infected and who is dying)",
+      "relatedDataNeeds": ["D01", "D02", "D03", "D04", "D05"],
+	  "relatedDatasets": ["DS1", "DS2", "DS3", "DS4", "DS5", "DS6", "DS7", "DS19", "DS20", "DS21", "DS31", "DS32", "DS33"]
+    },
+    {
+      "id": "I02",
+      "name": "Case definition (time, place, person)",
+      "relatedDataNeeds": ["D01", "D06", "D07", "D08"],
+	  "relatedDatasets": ["DS4", "DS8", "DS9", "DS31", "DS32", "DS33", "DS34"]
+    }
+  ],
+  "dataNeeds": [
+    {
+      "id": "D01",
+      "name": "Patients demographics",
+    },
+    {
+      "id": "D02",
+      "name": "Comorbidities"
+    }
+  ],
+  "datasets": [
+    {
+      "id": "DS01",
+      "name": "EPILABO",
+    },
+    {
+      "id": "DS02",
+      "name": "SARI"
+    },
+    {
+      "id": "DS03",
+      "name": "The COVID-19 Test Results data collection"
+    },
+    {
+      "id": "DS04",
+      "name": "Clinical Hospital Survey"
+    }
+  ]
+}
