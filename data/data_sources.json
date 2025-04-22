@@ -24,6 +24,11 @@
       "updateId": 4,
       "updateDatetime": "2025-03-27 14:57:46",
       "updateDescription": "Adding datasets after consolidation with WP-2 litterature review"
+    },
+    {
+      "updateId": 5,
+      "updateDatetime": "2025-04-22 10:12:12",
+      "updateDescription": "Reworking fields for metadata description of the datasets and adding a few new datasets"
     }
   ],
   "dictionnary": [
@@ -42,7 +47,7 @@
     {
       "fieldName": "type",
       "fieldDescription": "Type of data",
-      "expectedContent": "table, database, data product",
+      "expectedContent": "table, collection, database, data product, platform",
       "bepinSpecific": 0
     },
     {
@@ -53,14 +58,14 @@
     },
     {
       "fieldName": "institution",
-      "fieldDescription": "Organization responsible for maintaining the dataset",
-      "expectedContent": "free text",
+      "fieldDescription": "Organization(s) responsible for maintaining the dataset",
+      "expectedContent": "array of free text",
       "bepinSpecific": 0
     },
     {
       "fieldName": "source",
       "fieldDescription": "Description of the provenance of the data",
-      "expectedContent": "array of free text",
+      "expectedContent": "free text",
       "bepinSpecific": 0
     },
     {
@@ -76,15 +81,15 @@
       "bepinSpecific": 0
     },
     {
-      "fieldName": "contactEmail",
-      "fieldDescription": "Email adress(es) to obtain more information on the dataset",
-      "expectedContent": "aray of emails",
+      "fieldName": "contactInfo",
+      "fieldDescription": "Email adress(es) or contact details to obtain more information on the dataset",
+      "expectedContent": "array of emails",
       "bepinSpecific": 0
     },
     {
-      "fieldName": "granularity",
-      "fieldDescription": "Keyword indicating the level of detail of data avaialble in terms of personnal information",
-      "expectedContent": "nominative, pseudonymized, longitudinal follow-up, case-based, aggregated",
+      "fieldName": "detailLevel",
+      "fieldDescription": "Keyword indicating the granularity of data avaialble in terms of personnal information",
+      "expectedContent": "nominative, pseudonymized, longitudinal follow-up, case-based, aggregated, metadata",
       "bepinSpecific": 0
     },
     {
@@ -106,16 +111,28 @@
       "bepinSpecific": 0
     },
     {
-      "fieldName": "isPandemic",
+      "fieldName": "category",
+      "fieldDescription": "Cateogry of the data (see 10.1136/ bmjgh-2024-016870)",
+      "expectedContent": "traditional, one health, behavioral, programmatic, population factor, pathogen characteristic, other",
+      "bepinSpecific": 1
+    },
+    {
+      "fieldName": "isCovid",
       "fieldDescription": "Flag indicating whether the dataset is specific to the COVID-19 pandemic or not (1=COVID-19 specific)",
       "expectedContent": "0/1",
       "bepinSpecific": 0
     },
     {
-      "fieldName": "isConventional",
-      "fieldDescription": "Flag indicating whether the use of the dataset is conventional in the context of epidemiological surveillance (1=conventional)",
+      "fieldName": "isBelgium",
+      "fieldDescription": "Flag indicating whether the dataset is specific to the Belgium or has an international scope",
       "expectedContent": "0/1",
-      "bepinSpecific": 1
+      "bepinSpecific": 0
+    },
+    {
+      "fieldName": "isActive",
+      "fieldDescription": "Flag indicating whether the data collection is still active or not",
+      "expectedContent": "0/1",
+      "bepinSpecific": 0
     },
     {
       "fieldName": "relatedScenario",
@@ -142,22 +159,26 @@
       "name": "EPILABO",
       "type": "table",
       "shortDescription": "Epilabo is a network of clinical microbiology laboratories coordinated by Sciensano contributing to the epidemiological surveillance of a broad range of pathogens (+40)",
-      "institution": "Sciensano",
+      "institution": [
+        "Sciensano"
+      ],
       "source": "clinical microbiology laboratories",
       "linkURL": [
         "https://www.sciensano.be/en/network-sentinel-laboratories-epilabo"
       ],
       "linkDCAT": "http://sciensanofdp.darwinproject.be:8080/dataset/a49c2870-1a8e-469b-9b54-e84ae08fbede",
-      "contactEmail": [
+      "contactInfo": [
         "epilabo@sciensano.be",
         "sentilab@sciensano.be"
       ],
-      "granularity": "case-based",
+      "detailLevel": "case-based",
       "accessibility": "restricted",
       "updateFrequency": "weekly",
       "targetPopulation": "Individuals undergoing a diagnosis test in Belgium, not exhaustive",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [
         "R1",
         "V1",
@@ -197,21 +218,25 @@
       "name": "SARI",
       "shortDescription": "SARI consists in a network of 10 hospitals to monitor cases of severe acute respiratory infections",
       "type": "database",
-      "institution": "Sciensano",
+      "institution": [
+        "Sciensano"
+      ],
       "source": "hospitals",
       "linkURL": [
         "https://www.sciensano.be/en/projects/severe-acute-respiratory-infection-surveillance-a-sentinel-network-hospitals"
       ],
-      "linkDCAT": "",
-      "contactEmail": [
+      "linkDCAT": "https://sciensano.healthdataportal.eu:443/dataset/adf1b3c1-1f3e-4d8c-8281-3191978c2bdc",
+      "contactInfo": [
         "epirespi@sciensano.be"
       ],
-      "granularity": "case-based",
+      "detailLevel": "case-based",
       "accessibility": "restricted",
       "updateFrequency": "weekly",
-      "targetPopulation": "All Belgian population, not exhaustive",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "targetPopulation": "Individuals hospitalized for severe acute respiratory infections, not exhaustive",
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [
         "R1",
         "R2",
@@ -254,23 +279,22 @@
       "shortDescription": "The COVID-19 test results data collection is a database consisting of seven messages aiming at collecting data on : test prescriptions, test results, rapid test results, outcome of analyses on variants, suspicions of false positives, suspicions of false negatives, suspected postivie not tested.",
       "type": "database",
       "institution": "Sciensano",
-      "source": [
-        "clinical microbiology laboratories",
-        ""
-      ],
+      "source": "clinical microbiology laboratories",
       "linkURL": [
         "https://docs.healthdata.be/documentation/covid-19-test-results/covid-19-test-results-data-collection"
       ],
       "linkDCAT": "",
-      "contactEmail": [
-        ""
+      "contactInfo": [
+        "https://docs.healthdata.be/contact"
       ],
-      "granularity": "case-based",
+      "detailLevel": "case-based",
       "accessibility": "restricted",
-      "updateFrequency": "near real-time",
+      "updateFrequency": "real-time",
       "targetPopulation": "Individuals tested for COVID-19 in Belgium, tests results exhaustive during crisis.",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [
         "R1"
       ],
@@ -306,22 +330,27 @@
       "id": 4,
       "name": "Clinical Hospital Survey",
       "shortDescription": "The Clinical Hospital Survey (CHS) is a surveillance that was setup in the context of the COVID-19 pandemic to monitor severe cases. Hospitals participated on a voluntray basis and participation fluctuates over time.",
-      "type": "table",
-      "institution": "Sciensano",
+      "type": "database",
+      "institution": [
+        "Sciensano"
+      ],
       "source": "hospitals",
       "linkURL": [
         ""
       ],
       "linkDCAT": "",
-      "contactEmail": [
-        "epirespi@sciensano.be"
+      "contactInfo": [
+        "epirespi@sciensano.be",
+        "covacsurv@sciensano.be"
       ],
-      "granularity": "case-based",
+      "detailLevel": "case-based",
       "accessibility": "restricted",
       "updateFrequency": "weekly",
       "targetPopulation": "Patients hospitalized for COVID-19, not exhaustive",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [
         "R1"
       ],
@@ -362,21 +391,25 @@
       "name": "RN Consult",
       "shortDescription": "RN consult is a tool providing an access to a subset of variables of the national register at the individual level based on the NISS number.",
       "type": "database",
-      "institution": "Federal Public Service",
+      "institution": [
+        "Federal Public Service"
+      ],
       "source": "National Register",
       "linkURL": [
         "https://www.ehealth.fgov.be/ehealthplatform/fr/service-rnconsult"
       ],
       "linkDCAT": "",
-      "contactEmail": [
+      "contactInfo": [
         "RRNConsult@ehealth.fgov.be"
       ],
-      "granularity": "nominative",
+      "detailLevel": "nominative",
       "accessibility": "restricted",
       "updateFrequency": "real-time",
-      "targetPopulation": "All Belgian residents and refugees in Belgium",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "targetPopulation": "All Belgian residents and refugees in Belgium, exhaustive",
+      "category": "other",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -390,21 +423,27 @@
     {
       "id": 6,
       "name": "IMA",
-      "shortDescription": "Agence InterMutualiste (AIM) gathers patient data from the seven Belgian mutual insurance companies on a platform and prepares it for analysis. In addition to demographic and socio-economic data on all residents affiliated to the compulsory health insurance scheme in Belgium, the AIM databases contain billing data for reimbursed healthcare. Each time a patient is entitled to reimbursement, data such as the nomenclature code, the date, the place and the cost of the service provided by the care provider is collected.",
-      "type": "database",
-      "institution": "IMA-AIM",
+      "shortDescription": "Agence InterMutualiste (AIM) gathers patient data from the seven Belgian mutual insurance companies on a platform and prepares it for analysis. In addition to demographic and socio-economic data on all residents affiliated to the compulsory health insurance scheme in Belgium, the AIM databases contain billing data for reimbursed healthcare. Each time a patient is entitled to reimbursement, data such as the nomenclature code, the date, the place and the cost of the service provided by the care provider is collected. Data may be available with up to 2y delay.",
+      "type": "data product",
+      "institution": [
+        "IMA-AIM"
+      ],
       "source": "Reimbursed care",
       "linkURL": [
         "https://www.aim-ima.be/-Donnees-de-sante-"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "pseudonymized",
+      "contactInfo": [
+        "https://www.aim-ima.be/Contact"
+      ],
+      "detailLevel": "pseudonymized",
       "accessibility": "restricted",
-      "updateFrequency": "",
+      "updateFrequency": "monthly",
       "targetPopulation": "Individuals affiliated to one of the seven Belgian mutual insurance and who have benefited from reimbursed care",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "population factor",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -420,21 +459,25 @@
       "name": "DEMOBEL",
       "shortDescription": "When the new population figures were published in June 2019, Statbel, the Belgian statistical office, published for the first time figures from Demobel, its new demographic database. This database is updated annually and contains more than 30 years of Belgium's demographic history. Demobel contains an overview of the structure of the population (numbers, gender, age, nationalities) and of the movement of the population (births, deaths, migration, changes of nationality).Demobel can also be enriched with Census data about the education level, the labour market and housing.",
       "type": "data product",
-      "institution": "Statbel",
-      "source": "National Register",
+      "institution": [
+        "Statbel"
+      ],
+      "source": "National Register, Census",
       "linkURL": [
         "https://statbel.fgov.be/en/news/demobel-new-demographic-database"
       ],
       "linkDCAT": "",
-      "contactEmail": [
+      "contactInfo": [
         "statbel@economie.fgov.be"
       ],
-      "granularity": "pseudonymized",
+      "detailLevel": "pseudonymized",
       "accessibility": "requestable",
       "updateFrequency": "daily",
       "targetPopulation": "Belgian population",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "population factor",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -450,18 +493,20 @@
       "shortDescription": "The General Practitioners Infection Barometer, a surveillance of consultations with GPs for infectious diseases, started in October 2024. This surveillance strengthens the monitoring of infectious diseases and allows us to be better prepared for potential new epidemics.",
       "type": "database",
       "institution": "Sciensano",
-      "source": "Electronic Medical Records from GP practices",
+      "source": "Electronic Health Records from GP practices",
       "linkURL": [
         "https://www.sciensano.be/en/projects/gp-infection-barometer"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "case based",
+      "contactInfo": [],
+      "detailLevel": "case-based",
       "accessibility": "restricted",
       "updateFrequency": "",
-      "targetPopulation": "Patients consulting GPs belonging to the network",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "targetPopulation": "Patients consulting GPs belonging to the network, not exhaustive",
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -475,19 +520,23 @@
       "name": "COVID-19 Barometer",
       "shortDescription": "General practitioners in Belgium using electronic patient records are invited to participate in the COVID-19 Barometer 2.0 surveillance. Instructions on how to register are available in Dutch and French for each software package.",
       "type": "database",
-      "institution": "Sciensano",
-      "source": "Electronic Medical Record from GP practices",
+      "institution": [
+        "Sciensano"
+      ],
+      "source": "Electronic Health Record from GP practices",
       "linkURL": [
         "https://www.sciensano.be/en/covid-19-barometer-general-practices"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "case based",
+      "contactInfo": [],
+      "detailLevel": "case based",
       "accessibility": "restricted",
       "updateFrequency": "",
-      "targetPopulation": "Patients consulting GPs belonging to the network",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "targetPopulation": "Patients consulting GPs belonging to the network, not exhaustive",
+      "category": "traditional",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -501,19 +550,25 @@
       "name": "Contact Tracing",
       "shortDescription": "Contact tracing is a method used worldwide to limit the spread of diseases and has already been used for measles, for example. In Belgium, contact investigation is a collaboration between the Walloon AVIQ, the Services of the United College (COCOM) in Brussels, the Flemish Agency for Care and Health and the Ministry of the German-speaking Community. For the management of the COVID-19 pandemic, a series of data collections were implemented, including the Genesis data (call center system).",
       "type": "database",
-      "institution": "Sciensano-Healthdata.be",
+      "institution": [
+        "Sciensano, healthdata.be"
+      ],
       "source": "Tickets collected by call centers",
       "linkURL": [
         "https://fair.healthdata.be/dataset/99dee0e3-d302-4e03-a150-e3d31c820b0a"
       ],
       "linkDCAT": "https://fair.healthdata.be/dataset/99dee0e3-d302-4e03-a150-e3d31c820b0a/dcat-ap-2.0/json",
-      "contactEmail": [],
-      "granularity": "pseudonymized",
+      "contactInfo": [
+        "healthdata@sciensano.be"
+      ],
+      "detailLevel": "pseudonymized",
       "accessibility": "restricted",
       "updateFrequency": "real-time",
       "targetPopulation": "Individuals contacted in the context of contact tracing",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -526,22 +581,27 @@
       "id": 11,
       "name": "ERVISS",
       "shortDescription": "Data underlying the interactive dashboard provides a weekly integrated epidemiological summary for influenza, respiratory syncytial virus (RSV) and severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) for the European Union/European Economic Area (EU/EEA) and the WHO European Region.",
-      "type": "table",
-      "institution": "ECDC",
+      "type": "collection",
+      "institution": [
+        "ECDC"
+      ],
       "source": "EpiPulse",
       "linkURL": [
-        "https://www.ecdc.europa.eu/en/publications-data/european-respiratory-virus-surveillance-summary-erviss"
+        "https://www.ecdc.europa.eu/en/publications-data/european-respiratory-virus-surveillance-summary-erviss",
+        "https://github.com/EU-ECDC/Respiratory_viruses_weekly_data/tree/main/data"
       ],
       "linkDCAT": "",
-      "contactEmail": [
+      "contactInfo": [
         "ERVISS@ecdc.europa.eu"
       ],
-      "granularity": "aggregated",
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
       "updateFrequency": "weekly",
       "targetPopulation": "Cases of respiratory infectious diseases reported by EU countries",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 0,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -553,19 +613,25 @@
       "name": "GISAID",
       "shortDescription": "The GISAID Data Science Initiative promotes the rapid sharing of data from priority pathogens including influenza, hCoV-19, respiratory syncytial virus (RSV), hMpxV as well as arboviruses including chikungunya, dengue and zika. This includes genetic sequence and related clinical and epidemiological data associated with human viruses, and geographical as well as species-specific data associated with avian and other animal viruses, to help researchers understand how viruses evolve and spread during epidemics and pandemics.",
       "type": "database",
-      "institution": "GISAID",
+      "institution": [
+        "GISAID"
+      ],
       "source": "country level genomic surveillance systems",
       "linkURL": [
         "https://gisaid.org/"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
-      "accessibility": "opendata",
+      "contactInfo": [
+        "https://gisaid.org/help/get-help-with-an-issue/data-access-and-downloading/data-access-to-specific-pathogen-database/"
+      ],
+      "detailLevel": "aggregated",
+      "accessibility": "requestable",
       "updateFrequency": "",
-      "targetPopulation": "",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "targetPopulation": "General population",
+      "category": "pathogen characteristic",
+      "isCovid": 0,
+      "isBelgium": 0,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -578,19 +644,25 @@
       "name": "SalivaHIS",
       "shortDescription": "During the period March 2021-April 2022, a randomly selected group of the adult population in Belgium received a health questionnaire and saliva test kit to collect a saliva sample from themselves. Sciensano then examined samples to determine the prevalence of antibodies against the coronavirus in the general population.",
       "type": "database",
-      "institution": "Sciensano",
+      "institution": [
+        "Sciensano"
+      ],
       "source": "Population survey",
       "linkURL": [
         "https://www.sciensano.be/en/projects/study-prevalence-antibodies-against-coronavirus-sars-cov-2-belgian-population"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "longitudinal follow-up",
+      "contactInfo": [
+        "salivahis@sciensano.be"
+      ],
+      "detailLevel": "longitudinal follow-up",
       "accessibility": "restricted",
       "updateFrequency": "irregular",
       "targetPopulation": "Belgian general population",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "population factor",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -602,19 +674,25 @@
       "name": "SARS-CoV-2 HCW",
       "shortDescription": "The goal of this study is to determine how many Belgian hospital healthcare workers (HCW) got in contact with the SARS-CoV-2 virus and developed antibodies against it over a period of one year. These data may help to evaluate the SARS-CoV-2 burden on healthcare workers and determine potential risk and protective factors to contract a SARS-CoV-2 infection among this population. ",
       "type": "database",
-      "institution": "Sciensano",
+      "institution": [
+        "Sciensano"
+      ],
       "source": "Survey targeting healthcare workers",
       "linkURL": [
-        "https://www.sciensano.be/en/projects/study-prevalence-antibodies-against-coronavirus-sars-cov-2-belgian-population"
+        "https://www.sciensano.be/en/projects/sars-cov-2-prevalence-seroprevalence-and-seroconversion-among-healthcare-workers-belgium-during"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "longitudinal follow-up",
+      "contactInfo": [
+        "info@sciensano.be"
+      ],
+      "detailLevel": "longitudinal follow-up",
       "accessibility": "restricted",
       "updateFrequency": "irregular",
       "targetPopulation": "Belgian healthcare workers",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "population factor",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -626,20 +704,26 @@
       "name": "VACCINNET+",
       "shortDescription": "COVID-19 vaccine register",
       "type": "dataset",
-      "institution": "Sciensano-Healthdata",
-      "source": "Vaccinnet",
+      "institution": [
+        "Sciensano-Healthdata"
+      ],
+      "source": "Healthcare workers or institutions performing COVID-19 vaccinations",
       "linkURL": [
         "https://www.sciensano.be/en/projects/linking-registers-covid-19-vaccine-surveillance",
         "https://catalog.hda.belgium.be/dataset/urn:li:dataset:(urn:li:dataPlatform:Sciensano,LINK-VACC%20-%20COVID19%20Vaccine%20register,PROD)/Schema?is_lineage_mode=false&schemaFilter="
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "nominative",
+      "contactInfo": [
+        "vaccinnet@vlaanderen.be"
+      ],
+      "detailLevel": "nominative",
       "accessibility": "restricted",
       "updateFrequency": "daily",
       "targetPopulation": "Individuals receiving COVID-19 vaccine doses in Belgium",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "programmatic",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -653,19 +737,25 @@
       "name": "VACCINNET",
       "shortDescription": "Vaccinnet is the ordering and registration system for vaccines of the Flemish health authority",
       "type": "database",
-      "institution": "Department Zorg",
-      "source": "Vaccinators for the Flemish health authorities",
+      "institution": [
+        "Department Zorg"
+      ],
+      "source": "Flemish healthcare workers or institutions performing vaccinations",
       "linkURL": [
         "https://www.vaccinnet.be/Vaccinnet/welkom.do"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "pseudonymized",
+      "contactInfo": [
+        "vaccinnet@vlaanderen.be"
+      ],
+      "detailLevel": "pseudonymized",
       "accessibility": "restricted",
       "updateFrequency": "daily",
       "targetPopulation": "Individuals vaccinated by Flemish health authorities",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "programmatic",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -679,19 +769,28 @@
       "name": "VACCICARD",
       "shortDescription": "Vaccicard is the registration system for vaccines of the Walloon and Brussels health authorities",
       "type": "database",
-      "institution": "AViQ, Vivalis",
+      "institution": [
+        "AViQ",
+        "Vivalis",
+        "ONE"
+      ],
       "source": "Vaccinators for the Walloon and Brussels health authorities",
       "linkURL": [
-        "https://brusselshealthnetwork.be/enregistrement-des-vaccinations/"
+        "https://brusselshealthnetwork.be/enregistrement-des-vaccinations/",
+        "https://www.aviq.be/fr/carnet-de-vaccination-numerique-vaccicard"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "nominative",
+      "contactInfo": [
+        "https://www.aviq.be/fr/formulaire-contact"
+      ],
+      "detailLevel": "nominative",
       "accessibility": "restricted",
       "updateFrequency": "daily",
-      "targetPopulation": "Adults vaccinated by Walloon and Brussels health authorities",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "targetPopulation": "Individuals vaccinated by Walloon and Brussels health authorities",
+      "category": "programmatic",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -705,17 +804,23 @@
       "name": "Surge Capacity Survey",
       "shortDescription": "The surge capacity survey was put in place during the to monitor the number of hospitalizations and intensive care unit admissions during the COVID-19 crisis.",
       "type": "dataset",
-      "institution": "Federal Public Services",
+      "institution": [
+        "FPS"
+      ],
       "source": "Hospitals",
       "linkURL": [],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "https://www.health.belgium.be/fr/service-center-sante"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "restricted",
       "updateFrequency": "daily",
       "targetPopulation": "Hospitalized patients for or with COVID-19 in Belgian hosptials, exhaustive during crisis.",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -731,19 +836,25 @@
       "name": "ILI-NH",
       "shortDescription": "The World Health Organization has recommended to integrate COVID-19 surveillance in a sentinel surveillance for influenza like-illness (ILI). ILI (such as flu and other respiratory infections) and COVID-19 represent a significant burden for the nursing home (NH) population. Hence, a surveillance in this subpopulation is necessary to monitor ILI for alarm signs of sudden rise in cases, hospital admissions and deaths.",
       "type": "dataset",
-      "institution": "Sciensano",
+      "institution": [
+        "Sciensano"
+      ],
       "source": "Nursing homes",
       "linkURL": [
         "https://www.sciensano.be/en/projects/influenza-illness-including-covid-19-sentinel-surveillance-belgian-nursing-homes"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "info@sciensano.be"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "restricted",
       "updateFrequency": "weekly",
-      "targetPopulation": "Nursing home residents in Belgium",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "targetPopulation": "Nursing home residents in Belgium, non exhaustive",
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -757,19 +868,25 @@
       "name": "Be-MOMO NH",
       "shortDescription": "Be-MOMO in nursing homes (NH) concerns the monitoring of all-cause mortality among residents of nursing homes in Belgium, at both national and regional level. Carried out on a weekly basis, it enables unusual mortality among residents of NH and the rest of the population to be detected and quantified in near-real time, i.e. excess mortality that may result from epidemics or extreme weather or environmental conditions.",
       "type": "dataset",
-      "institution": "Sciensano",
+      "institution": [
+        "Sciensano"
+      ],
       "source": "Statbel",
       "linkURL": [
         "https://www.sciensano.be/en/projects/belgian-mortality-monitoring-nursing-homes"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "info@sciensano.be"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "restricted",
       "updateFrequency": "weekly",
       "targetPopulation": "Nursing home residents in Belgium",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -783,19 +900,25 @@
       "name": "Be-MOMO",
       "shortDescription": "Be-MOMO is the surveillance of all-cause mortality in Belgium, at the national and regional levels. Carried out on a weekly basis, it can detect and quantify in near real time unusual mortality that may result from disease outbreaks such as influenza, or from extreme weather or environmental conditions such as cold or heat waves, ozone or fine particle peaks.",
       "type": "dataset",
-      "institution": "Sciensano",
-      "source": "Statbel",
+      "institution": [
+        "Sciensano"
+      ],
+      "source": "National Register",
       "linkURL": [
         "https://www.sciensano.be/en/projects/belgian-mortality-monitoring"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "info@sciensano.be"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "restricted",
       "updateFrequency": "weekly",
       "targetPopulation": "Belgian general population",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -819,13 +942,15 @@
         "https://support.google.com/covid19-mobility?hl=en#topic=9822927"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [],
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
-      "updateFrequency": "daily",
-      "targetPopulation": "General population using Google location history functionality",
-      "isPandemic": 1,
-      "isConventional": 0,
+      "updateFrequency": "weekly",
+      "targetPopulation": "Google users having enabled location history functionality",
+      "category": "behavioral",
+      "isCovid": 1,
+      "isBelgium": 0,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -839,17 +964,22 @@
       "name": "Telephony mobility",
       "shortDescription": "A dataset collating the travels in and out of zip codes in Belgium based on telephony data",
       "type": "table",
-      "institution": "Proximus",
+      "institution": [
+        "Proximus",
+        "Telenet"
+      ],
       "source": "Telephony operators",
       "linkURL": [],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
-      "accessibility": "restricted",
+      "contactInfo": [],
+      "detailLevel": "aggregated",
+      "accessibility": "requestable",
       "updateFrequency": "daily",
-      "targetPopulation": "Belgian population",
-      "isPandemic": 0,
-      "isConventional": 0,
+      "targetPopulation": "General population",
+      "category": "behavioral",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -863,7 +993,9 @@
       "name": "CoMix",
       "shortDescription": "CoMix is a groundbreaking study that follows households across Europe in real-time over the course of the COVID-19 pandemic. The survey asks people about their awareness, attitudes and behaviours in response to COVID-19 and measures how these change over time.",
       "type": "dataset",
-      "institution": "EpiPose",
+      "institution": [
+        "EpiPose"
+      ],
       "source": "Longitudinal survey",
       "linkURL": [
         "https://www.uhasselt.be/en/aparte-sites-partner-en/epipose/the-comix-study",
@@ -871,13 +1003,17 @@
         "https://zenodo.org/records/10549953"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "longitudinal follow-up",
+      "contactInfo": [
+        "socialcontactdata@gmail.com"
+      ],
+      "detailLevel": "longitudinal follow-up",
       "accessibility": "opendata",
       "updateFrequency": "irregular",
       "targetPopulation": "General population based on a sample of individuals completing the survey in the participating countries",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "behavioral",
+      "isCovid": 1,
+      "isBelgium": 0,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -889,21 +1025,27 @@
     {
       "id": 25,
       "name": "COVID19HIS",
-      "shortDescription": "The COVID-19 health surveys are a series of cross-sectional surveys that aim at monitoring the impact of the COVID-19 pandemic on the health and well-being of the general population in Belgium. The first survey was launched about 3 weeks after the start  of the crisis and the last one in December 2021. Various topics have been examined including the impact of the crisis on mental and social health, the changes in health related behaviours, attitudes towards vaccination, domestic violence, employment, etc\u00e2\u20ac\u00a6 Since January 2022, these cross-sectional surveys have evolved into a cohort study. The findings of this survey have been extensively disseminated to the media and policy-makers.",
+      "shortDescription": "The COVID-19 health surveys are a series of cross-sectional surveys that aim at monitoring the impact of the COVID-19 pandemic on the health and well-being of the general population in Belgium. The first survey was launched about 3 weeks after the start  of the crisis and the last one in December 2021. Various topics have been examined including the impact of the crisis on mental and social health, the changes in health related behaviours, attitudes towards vaccination, domestic violence, employment. Since January 2022, these cross-sectional surveys have evolved into a cohort study. The findings of this survey have been extensively disseminated to the media and policy-makers.",
       "type": "database",
-      "institution": "Sciensano",
+      "institution": [
+        "Sciensano"
+      ],
       "source": "Survey",
       "linkURL": [
         "https://www.sciensano.be/en/projects/covid-19-health-surveys"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "case-based",
+      "contactInfo": [
+        "info@sciensano.be"
+      ],
+      "detailLevel": "longitudinal follow-up",
       "accessibility": "restricted",
       "updateFrequency": "irregular",
       "targetPopulation": "Belgian population based on the sample of individuals participating in the survey",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "behavioral",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -916,19 +1058,26 @@
       "name": "BELHEALTH",
       "shortDescription": "BELHEALTH is a longitudinal study in the general adult population in Belgium. It aims to monitor the evolution of health and wellbeing in the post-COVID period and to identify vulnerability factors for health and quality of life of individuals. Although the Covid-19 pandemic is becoming less of a threat, we face new challenges with profound social and economic consequences for the population. It is therefore essential to ensure continuous monitoring of the health and well-being of citizens in order to guide prevention policies, strengthen social resilience, and invest in adequate structural support.",
       "type": "database",
-      "institution": "Sciensano",
+      "institution": [
+        "Sciensano"
+      ],
       "source": "Longitudinal survey",
       "linkURL": [
-        "https://www.sciensano.be/en/projects/belgian-health-and-well-being-cohort"
+        "https://www.sciensano.be/en/projects/belgian-health-and-well-being-cohort",
+        "https://healthinformation.sciensano.be/shiny/belhealth/"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "longitudinal follow-up",
+      "contactInfo": [
+        "info@sciensano.be"
+      ],
+      "detailLevel": "longitudinal follow-up",
       "accessibility": "restricted",
       "updateFrequency": "irregular",
       "targetPopulation": "Belgian population based on the sample of individuals participating in the survey",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "behavioral",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -941,19 +1090,25 @@
       "name": "CoBRHA",
       "shortDescription": "CoBRHA (Common Base Registry for HealthCare Actor) is the database shared by the various public institutions responsible for recognising healthcare actors in Belgium. This database is an authentic, consolidated source.",
       "type": "database",
-      "institution": "eHealth",
+      "institution": [
+        "eHealth"
+      ],
       "source": "INAMI",
       "linkURL": [
         "https://www.ehealth.fgov.be/ehealthplatform/fr/service-cobrha-common-base-registry-for-healthcare-actor"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "nominative",
+      "contactInfo": [
+        "https://www.ehealth.fgov.be/ehealthplatform/fr/contact"
+      ],
+      "detailLevel": "nominative",
       "accessibility": "restricted",
       "updateFrequency": "monthly",
       "targetPopulation": "Healthcare workers having a diploma to practice in Belgium",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "other",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -966,7 +1121,9 @@
       "name": "CoVWWSurv",
       "shortDescription": "The surveillance measures the evolution of coronavirus (SARS-CoV-2), respiratory syncytial virus (RSV) and influenza (flu) in the population by collecting wastewater samples at the entrance of wastewater treatment plants spread all over the country. The wastewater surveillance covers a significant part of the population and allows a fast and early detection of any significant evolution of the viruses circulation.The detection of poliomyelitis (polio) is also carried out in the wastewater of the 3 regions.",
       "type": "database",
-      "institution": "Sciensano",
+      "institution": [
+        "Sciensano"
+      ],
       "source": [
         "laboratory test results",
         "treatment plants data"
@@ -976,15 +1133,17 @@
         "https://wastewater.sciensano.be/dashboard/covid19/en/"
       ],
       "linkDCAT": "https://www.geo.be/metadataServices/rest/catalogs/1/resources/9eec5acf-a2df-11ed-9952-186571a04de2/xml",
-      "contactEmail": [
+      "contactInfo": [
         "wastewater.info@sciensano.be"
       ],
-      "granularity": "aggregated",
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
       "updateFrequency": "weekly",
       "targetPopulation": "Belgian population living in area covered by treatment plants participating",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "population factor",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -999,19 +1158,25 @@
       "name": "COVID-19 opendata",
       "shortDescription": "The data collected by Sciensano and its health partners can provide insight into the dynamics of the epidemic, help to anticipate different scenarios and to elaborate possible measures to curb the spread of the virus. From 31 March 2020, Sciensano makes a number of \u00e2\u20ac\u02dcOpen Data\u00e2\u20ac\u2122 data sets available to interested parties on a weekly basis.",
       "type": "database",
-      "institution": "Sciensano",
+      "institution": [
+        "Sciensano"
+      ],
       "source": "COVID-19 surveillance systems coordinated by Sciensano",
       "linkURL": [
         "https://epistat.sciensano.be/covid/"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "data_requests_EID@sciensano.be"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
       "updateFrequency": "daily",
       "targetPopulation": "Belgian population",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1026,21 +1191,28 @@
       "name": "Infectieradar",
       "shortDescription": "People who have registered as participants in Infectieradar report once a week to Infectieradar whether they have had a fever or other symptoms in the past week.",
       "type": "database",
-      "institution": "UHasselt",
+      "institution": [
+        "UHasselt",
+        "University of Antwerp",
+        "SIMID",
+        "Sciensano"
+      ],
       "source": "Survey general population",
       "linkURL": [
         "https://survey.infectieradar.be/welcome"
       ],
       "linkDCAT": "",
-      "contactEmail": [
+      "contactInfo": [
         "infectieradar@uhasselt.be"
       ],
-      "granularity": "longitudinal follow-up",
+      "detailLevel": "longitudinal follow-up",
       "accessibility": "requestable",
       "updateFrequency": "weekly",
       "targetPopulation": "Belgian population based on the sample of individuals participating in the survey",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1054,7 +1226,9 @@
       "name": "Minimal hospital data",
       "shortDescription": "The minimal hospital data is a registration with which all non-psychiatric hospitals in Belgium must make their (anonymised) administrative, medical and nursing data available to the Federal Public Service (FPS) Public Health.",
       "type": "database",
-      "institution": "FPS",
+      "institution": [
+        "FPS"
+      ],
       "source": "hospitals",
       "linkURL": [
         "https://www.health.belgium.be/fr/sante/organisation-des-soins-de-sante/hopitaux/systemes-denregistrement/rhm",
@@ -1062,16 +1236,18 @@
         "https://www.healthinformationportal.eu/health-information-sources/minimum-hospital-data-set"
       ],
       "linkDCAT": "https://fair.healthdata.be/dataset/12d69eca-4449-47d2-943d-e4448a467292/dcat-ap-2.0/xml",
-      "contactEmail": [
+      "contactInfo": [
         "info.rhmzg@health.fgov.be",
         "adhoc_admDM@health.fgov.be"
       ],
-      "granularity": "case-based",
+      "detailLevel": "case-based",
       "accessibility": "restricted",
       "updateFrequency": "weekly",
       "targetPopulation": "Patients hospitalized in Belgian hospitals",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1082,24 +1258,28 @@
     },
     {
       "id": 32,
-      "name": "NRC",
+      "name": "NRC surveillance",
       "shortDescription": "Since 2011, the Epidemiology Service of Infectious Diseases of Sciensano, responsible for infectious disease surveillance, has been coordinating a network of reference laboratories for human microbiology called National Reference Centres (NRC). Each NRC consists of one or more laboratories and is designated as such for one pathogen or a group of pathogens according to clearly defined criteria in a procedure that is repeated at most every 5 years.",
       "type": "database",
-      "institution": "Sciensano",
+      "institution": [
+        "Sciensano"
+      ],
       "source": "National Reference Laboratories",
       "linkURL": [
         "https://www.sciensano.be/en/national-reference-centers-human-microbiology#nrc_nrl-block_1-0"
       ],
-      "linkDCAT": "https://catalogue-sciensano.healthdataportal.eu/metadata.py?meta=https://sciensano.healthdataportal.eu:443/dataset/065eff44-64bc-4bc2-9140-592376befe73",
-      "contactEmail": [
-        "\u00e2\u20ac\u2039nrchm@sciensano.be"
+      "linkDCAT": "http://sciensanofdp.darwinproject.be:8080/dataset/91186b86-9a97-417e-bd63-0f53ee11338d",
+      "contactInfo": [
+        "nrchm@sciensano.be"
       ],
-      "granularity": "case-based",
+      "detailLevel": "case-based",
       "accessibility": "restricted",
       "updateFrequency": "yearly",
       "targetPopulation": "Individuals undergoing laboratory test results covered by NRC laboratories",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1112,29 +1292,27 @@
       "name": "Mandatory notifications",
       "shortDescription": "Doctors and laboratories in Belgium are obliged to report certain infectious diseases to the competent government agencies. There are minor differences in the list of notifiable diseases between different regions.",
       "type": "database",
-      "institution": "Sciensano",
-      "source": [
-        "Department Zorg",
-        "AViQ",
-        "Vivalis",
-        "DG"
+      "institution": [
+        "Sciensano"
       ],
+      "source": "Data collected by competent health authorities: Department Zorg, AViQ, Vivalis, DG",
       "linkURL": [
         "https://www.sciensano.be/en/projects/notifiable-infectious-diseases",
         "https://www.aviq.be/fr/actualites/trace-wal-la-nouvelle-interface-pour-declarer-les-maladies-infectieuses-en-wallonie",
-        "https://www.vivalis.brussels/fr/prevenir-et-agir/surveillance-sanitaire/maladies-a-declaration-obligatoire-en-region-bruxelloise#:~:text=Les%20professionnels%20de%20la%20sant%C3%A9,semaine%20entre%209h%20et%2017h.",
-        ""
+        "https://www.vivalis.brussels/fr/prevenir-et-agir/surveillance-sanitaire/maladies-a-declaration-obligatoire-en-region-bruxelloise#:~:text=Les%20professionnels%20de%20la%20sant%C3%A9,semaine%20entre%209h%20et%2017h."
       ],
       "linkDCAT": "",
-      "contactEmail": [
-        ""
+      "contactInfo": [
+        "data_requests_EID@sciensano"
       ],
-      "granularity": "aggregated",
+      "detailLevel": "aggregated",
       "accessibility": "restricted",
       "updateFrequency": "weekly",
       "targetPopulation": "Individuals diagnosed or suspected for a disease subject to mandatory notifiable disease in one of the 4 federated entities",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1148,23 +1326,25 @@
       "name": "SGPs",
       "shortDescription": "The network comprises about 100 general practices all over Belgium who weekly report data about different health problems (infectious and non-infectious diseases). Therefore the impact and the characteristics of different health problems in Belgium can be monitored. By providing epidemiological information as well as information on care provided in general practice, the sentinel general practitioners (GPs) support the policymakers in defining priorities and evaluating health policy.",
       "type": "database",
-      "institution": "Sciensano",
-      "source": [
-        "GP"
+      "institution": [
+        "Sciensano"
       ],
+      "source": "Medical records collected by participating GPs",
       "linkURL": [
         "https://www.sciensano.be/en/projects/network-general-practitioners"
       ],
       "linkDCAT": "",
-      "contactEmail": [
-        ""
+      "contactInfo": [
+        "info@sciensano.be"
       ],
-      "granularity": "aggregated",
+      "detailLevel": "aggregated",
       "accessibility": "restricted",
       "updateFrequency": "weekly",
       "targetPopulation": "The network targets the general population, the estimated coverage of the network is 1%.",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1176,23 +1356,27 @@
     {
       "id": 35,
       "name": "e-vax",
-      "shortDescription": "Vaccicard is the registration system for vaccines of the Walloon and Brussels health authorities",
+      "shortDescription": "e-vax is the registration system for paediatrics vaccines in the Belgian French community for which ONE is responsible.",
       "type": "database",
-      "institution": "ONE",
+      "institution": [
+        "ONE"
+      ],
       "source": "Vaccinators of children in the French Community",
       "linkURL": [
         "https://www.e-vax.be/welkom.do"
       ],
       "linkDCAT": "",
-      "contactEmail": [
+      "contactInfo": [
         "support@e-vax.be"
       ],
-      "granularity": "case-based",
+      "detailLevel": "case-based",
       "accessibility": "restricted",
       "updateFrequency": "daily",
       "targetPopulation": "Children vaccinated in the French Community.",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "programmatic",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1206,7 +1390,11 @@
       "name": "Flemish social contact survey",
       "shortDescription": "The second social contact survey in Flanders endorses the findings of its 2006 predecessor and adds important information on the social mixing patterns of people older than 60 years of age. Based on this analysis, the mixing patterns of people older than 60 years exhibit considerable heterogeneity, and overall, the comparison of the two surveys shows that social contact rates can be assumed stable in Flanders over a time span of 5 years.",
       "type": "dataset",
-      "institution": "UHasselt",
+      "institution": [
+        "UHasselt",
+        "University of Antwerp",
+        "SIMID"
+      ],
       "source": "Longitudinal survey",
       "linkURL": [
         "https://bmcinfectdis.biomedcentral.com/articles/10.1186/s12879-021-05949-4#Sec2",
@@ -1215,13 +1403,17 @@
         "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0048695"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "longitudinal follow-up",
+      "contactInfo": [
+        "https://www.simid.be/contact-2/"
+      ],
+      "detailLevel": "longitudinal follow-up",
       "accessibility": "opendata",
       "updateFrequency": "irregular",
       "targetPopulation": "General population (Flanders) based on a sample of individuals completing the survey",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "behavioral",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1234,7 +1426,7 @@
       "id": 37,
       "name": "ourworldindata",
       "shortDescription": "Poverty, disease, hunger, climate change, war, existential risks, and inequality: the world faces many great and terrifying problems. It is these large problems that our work at Our World in Data focuses on.",
-      "type": "database",
+      "type": "collection",
       "institution": "Global Change Data Lab",
       "source": "https://ourworldindata.org/faqs#where-do-you-get-your-data-from",
       "linkURL": [
@@ -1242,15 +1434,17 @@
         "https://ourworldindata.org/coronavirus"
       ],
       "linkDCAT": "",
-      "contactEmail": [
+      "contactInfo": [
         "info@ourworldindata.org"
       ],
-      "granularity": "aggregated",
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
-      "updateFrequency": "continuous",
+      "updateFrequency": "daily",
       "targetPopulation": "General population",
-      "isPandemic": 0,
-      "isConventional": 0,
+      "category": "other",
+      "isCovid": 0,
+      "isBelgium": 0,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1262,21 +1456,25 @@
       "name": "Structure of the population",
       "shortDescription": "When the new population figures were published in June 2019, Statbel, the Belgian statistical office, published for the first time figures from Demobel, its new demographic database. This database is updated annually and contains more than 30 years of Belgium's demographic history. Demobel contains an overview of the structure of the population (numbers, gender, age, nationalities) and of the movement of the population (births, deaths, migration, changes of nationality).Demobel can also be enriched with Census data about the education level, the labour market and housing.",
       "type": "dataset",
-      "institution": "Statbel",
+      "institution": [
+        "Statbel"
+      ],
       "source": "National Register",
       "linkURL": [
         "https://statbel.fgov.be/en/themes/population/structure-population"
       ],
       "linkDCAT": "",
-      "contactEmail": [
+      "contactInfo": [
         "statbel@economie.fgov.be"
       ],
-      "granularity": "aggregated",
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
       "updateFrequency": "yearly",
       "targetPopulation": "Belgian population",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "other",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1288,20 +1486,26 @@
       "id": 39,
       "name": "WorldPop",
       "shortDescription": "WorldPop develops peer-reviewed research and methods for the construction of open and high-resolution geospatial data on population distributions, demographic and dynamics.",
-      "type": "database",
-      "institution": "University of Southampton",
+      "type": "collection",
+      "institution": [
+        "University of Southampton"
+      ],
       "source": "WorldPop integrate many different types of geospatial data in building demographic datasets, ranging from satellite, survey, census, cellphone and many other sources.",
       "linkURL": [
         "https://www.worldpop.org/"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "https://www.worldpop.org/contactus/"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
-      "updateFrequency": "continuous",
+      "updateFrequency": "daily",
       "targetPopulation": "General population",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "other",
+      "isCovid": 0,
+      "isBelgium": 0,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1313,19 +1517,23 @@
       "name": "Seroprevalence SARS-CoV-2 residual samples",
       "shortDescription": "Assessment of the evolving SARS-CoV-2 seroprevalence and seroincidence related to the first national lockdown in Belgium, based on a nationwide seroprevalence study, stratified by age, sex and region using 3,000\u00e2\u20ac\u201c4,000 residual samples during seven periods between 30 March and 17 October 2020.",
       "type": "dataset",
-      "institution": "University of Antwerp",
+      "institution": [
+        "University of Antwerp"
+      ],
       "source": "Residual sera from ambulatory patients",
       "linkURL": [
         "https://repository.uantwerpen.be/docman/irua/fafd8f/187284.pdf"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "case-based",
+      "contactInfo": [],
+      "detailLevel": "case-based",
       "accessibility": "restricted",
       "updateFrequency": "static",
       "targetPopulation": "General population",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "Population factor",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1336,8 +1544,10 @@
       "id": 41,
       "name": "Synthetic population data for Belgium",
       "shortDescription": "This repository contains population files with 11 million individuals for Belgium we used to explore the impact of contact tracing and household bubbles on Belgian deconfinement strategies after the COVID-19 related lockdown in 2020 (Willem et al 2021) and universal testing strategies for COVID-19 mitigation.",
-      "type": "database",
-      "institution": "University of Antwerp",
+      "type": "table",
+      "institution": [
+        "University of Antwerp"
+      ],
       "source": "Census-based synthetic populations for Belgium consisting of individuals that are part of contact pools, representing a household, school-class, workplace, or community.",
       "linkURL": [
         "https://zenodo.org/records/4485995",
@@ -1345,13 +1555,15 @@
         "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008688"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "individual",
+      "contactInfo": [],
+      "detailLevel": "individual",
       "accessibility": "opendata",
       "updateFrequency": "static",
       "targetPopulation": "General population",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "other",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1365,19 +1577,25 @@
       "name": "Human Mortality Database",
       "shortDescription": "The Human Mortality Database (HMD) is the world's leading scientific data resource on mortality in developed countries. The HMD provides detailed high-quality harmonized mortality and population estimates to researchers, students, journalists, policy analysts, and others interested in human longevity. The HMD follows open data principles.",
       "type": "database",
-      "institution": "HMD",
+      "institution": [
+        "HMD"
+      ],
       "source": "Death counts from vital statistics, plus census counts, birth counts, and population estimates from various sources.",
       "linkURL": [
         "https://www.mortality.org/"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "hmd@mortality.org"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "requestable",
       "updateFrequency": "yearly",
       "targetPopulation": "General population",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "other",
+      "isCovid": 0,
+      "isBelgium": 0,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1388,20 +1606,26 @@
       "id": 43,
       "name": "Eurostat database",
       "shortDescription": "Eurostat is the statistical office of the European Union. Its mission is to provide high-quality statistics and data on Europe",
-      "type": "database",
-      "institution": "Eurostat",
+      "type": "collection",
+      "institution": [
+        "Eurostat"
+      ],
       "source": "National institutions, surveys",
       "linkURL": [
         "https://ec.europa.eu/eurostat/web/main/data/database"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "individual level, aggregated",
-      "accessibility": "requestable, opendata",
-      "updateFrequency": "continuous",
+      "contactInfo": [
+        "https://ec.europa.eu/eurostat/web/main/contact-us/user-support"
+      ],
+      "detailLevel": "aggregated",
+      "accessibility": "opendata",
+      "updateFrequency": "daily",
       "targetPopulation": "General population (Europe)",
-      "isPandemic": 0,
-      "isConventional": 0,
+      "category": "other",
+      "isCovid": 0,
+      "isBelgium": 0,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1419,13 +1643,15 @@
         "https://www.uantwerpen.be/en/projects/great-corona-study/"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "longitudinal survey",
+      "contactInfo": [],
+      "detailLevel": "longitudinal survey",
       "accessibility": "requestable",
-      "updateFrequency": "restricted",
+      "updateFrequency": "irregular",
       "targetPopulation": "General population (Belgium)",
-      "isPandemic": 1,
-      "isConventional": 0,
+      "category": "other",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1440,20 +1666,26 @@
       "id": 45,
       "name": "UNdata",
       "shortDescription": "UNdata is a web-based data service for the global user community. It brings international statistical databases within easy reach of users through a single-entry point.",
-      "type": "database",
-      "institution": "United Nations",
+      "type": "collection",
+      "institution": [
+        "United Nations"
+      ],
       "source": "United Nations Statistics and Population Divisions as well as other United Nations agencies",
       "linkURL": [
         "https://data.un.org/"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "https://data.un.org/Feedback.aspx"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
-      "updateFrequency": "continuous",
+      "updateFrequency": "daily",
       "targetPopulation": "General population (World)",
-      "isPandemic": 0,
-      "isConventional": 0,
+      "category": "other",
+      "isCovid": 0,
+      "isBelgium": 0,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1465,20 +1697,26 @@
       "name": "OxCGRT",
       "shortDescription": "The Oxford Covid-19 Government Response Tracker (OxCGRT) is a project that collected information on policy measures to tackle COVID-19 over the years 2020, 2021, and 2022.",
       "type": "database",
-      "institution": "University of Oxford",
+      "institution": [
+        "University of Oxford"
+      ],
       "source": "Governement responses to COVID-19 pandemic",
       "linkURL": [
         "https://www.bsg.ox.ac.uk/research/covid-19-government-response-tracker",
         "https://github.com/OxCGRT/covid-policy-dataset"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "enquiries@bsg.ox.ac.uk"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
       "updateFrequency": "daily",
       "targetPopulation": "General population (World)",
-      "isPandemic": 1,
-      "isConventional": 0,
+      "category": "programmatic",
+      "isCovid": 1,
+      "isBelgium": 0,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1490,21 +1728,27 @@
       "id": 47,
       "name": "COVID-19 Data Repository CSSE",
       "shortDescription": "Data repository for the 2019 Novel Coronavirus Visual Dashboard operated by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE).",
-      "type": "database",
-      "institution": "John Hopkins University",
+      "type": "collection",
+      "institution": [
+        "John Hopkins University"
+      ],
       "source": "Described in https://github.com/CSSEGISandData/COVID-19?tab=readme-ov-file",
       "linkURL": [
         "https://github.com/CSSEGISandData/COVID-19",
         "https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30120-1/fulltext"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "https://github.com/CSSEGISandData/COVID-19/issues"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
       "updateFrequency": "daily",
       "targetPopulation": "General population (World)",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 1,
+      "isBelgium": 0,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1516,20 +1760,24 @@
       "name": "Google Health COVID-19 Open Data Repository",
       "shortDescription": "The Google Health COVID-19 Open Data Repository is one of the most comprehensive collections of up-to-date COVID-19-related information. Comprising data from more than 20,000 locations worldwide, it contains a rich variety of data types to help public health professionals, researchers, policymakers and others in understanding and managing the virus.",
       "type": "database",
-      "institution": "Google",
+      "institution": [
+        "Google"
+      ],
       "source": "Described in https://github.com/GoogleCloudPlatform/covid-19-open-data",
       "linkURL": [
         "https://github.com/GoogleCloudPlatform/covid-19-open-data",
         "https://health.google.com/covid-19/open-data/"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [],
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
       "updateFrequency": "daily",
       "targetPopulation": "General population (World)",
-      "isPandemic": 1,
-      "isConventional": 0,
+      "category": "other",
+      "isCovid": 1,
+      "isBelgium": 0,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1541,24 +1789,26 @@
       "name": "Intego",
       "shortDescription": "Intego is een Vlaams huisartsenregistratienetwerk. Dankzij Intego kunnen ziektetrends in de huisartsenpraktijk in kaart gebracht worden. Intego benadrukt het maatschappelijke belang van de huisarts en het huisartsendossier. Met wekelijkse datacollecties is Intego een belangrijk instrument voor het opvolgen van de volksgezondheid.",
       "type": "database",
-      "institution": "KULeuven",
-      "source": [
-        "GP"
+      "institution": [
+        "KULeuven"
       ],
+      "source": "GPs contributing to the network",
       "linkURL": [
         "https://www.intego.be/",
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC11106891/"
       ],
       "linkDCAT": "",
-      "contactEmail": [
+      "contactInfo": [
         "huisartsenbarometers@kuleuven.be"
       ],
-      "granularity": "case-based",
+      "detailLevel": "case-based",
       "accessibility": "restricted",
-      "updateFrequency": "continuous",
+      "updateFrequency": "daily",
       "targetPopulation": "General population (Flanders)",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "Traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1570,23 +1820,24 @@
     {
       "id": 50,
       "name": "KMI-IRM opendata",
-      "shortDescription": "Donn\u00c3\u00a9es d'observation bas\u00c3\u00a9es sur plusieurs r\u00c3\u00a9seaux d'observation en Belgique.",
-      "type": "database",
+      "shortDescription": "L\u00e2\u20ac\u2122Institut royal m\u00c3\u00a9t\u00c3\u00a9orologique (IRM) est un institut scientifique f\u00c3\u00a9d\u00c3\u00a9ral qui propose des services m\u00c3\u00a9t\u00c3\u00a9orologiques et effectue de la recherche dans les domaines de la m\u00c3\u00a9t\u00c3\u00a9orologie et du climat.",
+      "type": "collection",
       "institution": "KMI-IRM",
-      "source": [
-        "GP"
-      ],
+      "source": "Donn\u00c3\u00a9es bas\u00c3\u00a9es sur plusieurs r\u00c3\u00a9seaux d'observation en Belgique.",
       "linkURL": [
         "https://www.meteo.be/fr/services/donnees"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "https://www.meteo.be/fr/a-propos-irm/contact/contacter-l-irm/formulaire"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
-      "updateFrequency": "continuous",
-      "targetPopulation": "NA",
-      "isPandemic": 0,
-      "isConventional": 0,
+      "updateFrequency": "daily",
+      "category": "Other",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": []
@@ -1596,21 +1847,25 @@
       "name": "EuroMOMO",
       "shortDescription": "EuroMOMO is a European mortality monitoring activity, aiming to detect and measure excess deaths related to seasonal influenza, pandemics and other public health threats.",
       "type": "dataset",
-      "institution": "Sciensano",
+      "institution": [
+        "Statens Serum Institut"
+      ],
       "source": "National mortality data registered in the 26 countries or subnational regions.",
       "linkURL": [
         "https://www.euromomo.eu/"
       ],
       "linkDCAT": "",
-      "contactEmail": [
+      "contactInfo": [
         "euromomo@ssi.dk"
       ],
-      "granularity": "aggregated",
+      "detailLevel": "aggregated",
       "accessibility": "requestable",
       "updateFrequency": "weekly",
       "targetPopulation": "General population (Europe)",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "Traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1622,22 +1877,26 @@
       "name": "COVIMPACT",
       "shortDescription": "The purpose of the COVIMPACT project is to set up a cohort of people who have been tested positive with COVID-19 in order to study the evolution of their physical, mental and social health over the long term, and assess the factors associated with a favourable or unfavourable evolution.",
       "type": "database",
-      "institution": "Sciensano",
+      "institution": [
+        "Sciensano"
+      ],
       "source": "Survey",
       "linkURL": [
         "https://www.sciensano.be/en/projects/long-covid-and-its-physical-mental-and-social-implications",
         "https://archpublichealth.biomedcentral.com/articles/10.1186/s13690-022-00906-2"
       ],
       "linkDCAT": "",
-      "contactEmail": [
+      "contactInfo": [
         "COVIMPACT@sciensano.be"
       ],
-      "granularity": "longitudal survey",
+      "detailLevel": "longitudal survey",
       "accessibility": "requestable",
       "updateFrequency": "monthly",
       "targetPopulation": "People who had a COVID-19 infection confirmed by a laboratory test (Belgium)",
-      "isPandemic": 1,
-      "isConventional": 1,
+      "category": "Population factor",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1648,20 +1907,24 @@
       "id": 53,
       "name": "CovsirPhy",
       "shortDescription": "CovsirPhy is a Python library for infectious disease (COVID-19: Coronavirus disease 2019, Monkeypox 2022) data analysis with phase-dependent SIR-derived ODE models. We can download datasets and analyze them easily. Scenario analysis with CovsirPhy enables us to make data-informed decisions.",
-      "type": "data platform",
+      "type": "platform",
       "institution": "Community of volunteers",
       "source": "Described in: https://lisphilar.github.io/covid19-sir/01_data_preparation.html#1.-Downloading-datasets-from-recommended-data",
       "linkURL": [
         "https://lisphilar.github.io/covid19-sir/index.html"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "https://github.com/lisphilar/covid19-sir/issues"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
-      "updateFrequency": "continuous",
+      "updateFrequency": "daily",
       "targetPopulation": "General population (worldwide)",
-      "isPandemic": 0,
-      "isConventional": 0,
+      "category": "other",
+      "isCovid": 1,
+      "isBelgium": 0,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1673,20 +1936,26 @@
       "id": 54,
       "name": "COVID-19 Data Hub",
       "shortDescription": "The goal of COVID-19 Data Hub is to provide the research community with a unified dataset by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.",
-      "type": "dataset",
-      "institution": "IVADO",
+      "type": "database",
+      "institution": [
+        "IVADO"
+      ],
       "source": "The dataset includes an extensive list of epidemiological variables, several policy measures by Oxford\u00e2\u20ac\u2122s government response tracker, and a set of external keys to match the data with Google and Apple mobility reports, with the Hydromet dataset, and with spatial databases such as Eurostat for Europe or GADM worldwide.",
       "linkURL": [
         "https://covid19datahub.io/"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "https://github.com/covid19datahub/COVID19/issues"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
-      "updateFrequency": "continuous",
+      "updateFrequency": "daily",
       "targetPopulation": "General population (World)",
-      "isPandemic": 1,
-      "isConventional": 0,
+      "category": "traditional",
+      "isCovid": 1,
+      "isBelgium": 0,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1697,21 +1966,27 @@
       "id": 55,
       "name": "RespiCAST",
       "shortDescription": "RespiCast is a platform dedicated to hosting and sharing forecasts for respiratory disease surveillance indicators.",
-      "type": "data platform",
-      "institution": "ECDC",
+      "type": "platform",
+      "institution": [
+        "ECDC"
+      ],
       "source": "ERVISS",
       "linkURL": [
         "https://respicast.ecdc.europa.eu/",
         "https://covid19forecasthub.eu/"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [
+        "european.modelling.hub@ecdc.europa.eu"
+      ],
+      "detailLevel": "aggregated",
       "accessibility": "opendata",
-      "updateFrequency": "continuous",
+      "updateFrequency": "daily",
       "targetPopulation": "General population (Europe)",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 0,
+      "isActive": 1,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
@@ -1722,26 +1997,145 @@
     {
       "id": 56,
       "name": "POLYMOD",
-      "shortDescription": "RespiCast is a platform dedicated to hosting and sharing forecasts for respiratory disease surveillance indicators.",
+      "shortDescription": "Projecting social contact matrices in 152 countries using contact surveys and demographic data",
       "type": "database",
-      "institution": "National University of Singapore, London School of Hygiene & Tropical Medicine",
+      "institution": [
+        "National University of Singapore",
+        "London School of Hygiene & Tropical Medicine"
+      ],
       "source": "Contact patterns within eight countries in the EU, Demographic Household Surveys, World Bank and UN Statistics Division.",
       "linkURL": [
-        "https://doi.org/10.1371/journal.pcbi.1005697"
+        "https://doi.org/10.1371/journal.pcbi.1005697",
+        "https://cordis.europa.eu/project/id/502084/reporting"
       ],
       "linkDCAT": "",
-      "contactEmail": [],
-      "granularity": "aggregated",
+      "contactInfo": [],
+      "detailLevel": "aggregated",
       "accessibility": "requestable",
-      "updateFrequency": "continuous",
+      "updateFrequency": "daily",
       "targetPopulation": "General population (Worldwide)",
-      "isPandemic": 0,
-      "isConventional": 1,
+      "category": "behavioral",
+      "isCovid": 0,
+      "isBelgium": 0,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": [
         "I05"
       ]
+    },
+    {
+      "id": 57,
+      "name": "Medex",
+      "shortDescription": "Medex notably collects data on absenteism among civil servants.",
+      "type": "database",
+      "institution": [
+        "FPS"
+      ],
+      "source": "Occupational medicine",
+      "linkURL": [
+        "https://www.health.belgium.be/fr/medex"
+      ],
+      "linkDCAT": "",
+      "contactInfo": [
+        "medex@health.fgov.be",
+        "https://www.health.belgium.be/fr/service-center-sante"
+      ],
+      "detailLevel": "",
+      "accessibility": "restricted",
+      "updateFrequency": "",
+      "targetPopulation": "Belgian civil servants",
+      "category": "behavioral",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
+      "relatedScenario": [],
+      "relatedObjective": [],
+      "relatedInfoNeed": []
+    },
+    {
+      "id": 58,
+      "name": "Saniport",
+      "shortDescription": "Saniport's mission is to evaluate potential health threats from international traffic by controlling designated points of entry.",
+      "type": "database",
+      "institution": [
+        "FPS"
+      ],
+      "source": "Data from controls of designated points of entry",
+      "linkURL": [
+        "https://www.health.belgium.be/fr/sante/organisation-des-soins-de-sante/aide-medicale-urgente/gestion-des-risques/saniport"
+      ],
+      "linkDCAT": "",
+      "contactInfo": [
+        "https://www.health.belgium.be/fr/service-center-sante"
+      ],
+      "detailLevel": "",
+      "accessibility": "restricted",
+      "updateFrequency": "",
+      "targetPopulation": "Travellers entering Belgium",
+      "category": "behavioral",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
+      "relatedScenario": [],
+      "relatedObjective": [],
+      "relatedInfoNeed": []
+    },
+    {
+      "id": 59,
+      "name": "Google trends",
+      "shortDescription": "Google Trends provides access to a largely unfiltered sample of actual search requests made to Google.",
+      "type": "platform",
+      "institution": [
+        "Google"
+      ],
+      "source": "Google users' queries",
+      "linkURL": [
+        "https://trends.google.com/trends/",
+        "https://support.google.com/trends?hl=en&sjid=16863241643486498157-EU#topic=6248052"
+      ],
+      "linkDCAT": "",
+      "contactInfo": [],
+      "detailLevel": "aggregated",
+      "accessibility": "opendata",
+      "updateFrequency": "real-time",
+      "targetPopulation": "General population (Worldwide)",
+      "category": "behavioral",
+      "isCovid": 0,
+      "isBelgium": 0,
+      "isActive": 1,
+      "relatedScenario": [],
+      "relatedObjective": [],
+      "relatedInfoNeed": []
+    },
+    {
+      "id": 60,
+      "name": "HDA Data Catalogue",
+      "shortDescription": "HDA's data catalog is a way to centralize information on datasets from partner institutions, adhering to the FAIR (Findable, Accessible, Interoperable, and Reusable) principles.",
+      "type": "platform",
+      "institution": [
+        "Belgian Health Data Agency"
+      ],
+      "source": "Data holders of health related data in Belgium",
+      "linkURL": [
+        "https://www.hda.belgium.be/en/data_catalog",
+        "https://catalog.hda.belgium.be/"
+      ],
+      "linkDCAT": "",
+      "contactInfo": [
+        "https://www.hda.belgium.be/en/contact-us"
+      ],
+      "detailLevel": "metadata",
+      "accessibility": "opendata",
+      "updateFrequency": "irregular",
+      "targetPopulation": "",
+      "category": "other",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
+      "relatedScenario": [],
+      "relatedObjective": [],
+      "relatedInfoNeed": []
     }
   ]
 }
