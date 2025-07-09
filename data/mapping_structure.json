@@ -2,57 +2,3650 @@
   "objectives": [
     {
       "id": "S01",
-      "name": "Decide whether and how to set-up/adapt surveillance: set up testing policy, case definition, lab standardization.",
-	  "topic": "Surveillance and monitoring",
-      "relatedInfoNeeds": ["I01", "I02", "I03", "I04", "I08", "I09"]
+      "name": "Decide whether and how to set-up/adapt surveillance systems (ex: set up testing policy, case definition, lab standardization)",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I01, I02, I03, I04, I08, I09",
+      "phase": "ALL"
     },
     {
       "id": "S02",
-      "name": "Assess the risk of introduction",
-	  "topic": "Surveillance and monitoring",
-      "relatedInfoNeeds": ["I01", "I03", "I04", "I05", "I08", "I09"]
+      "name": "Assess the risk of introduction of a respiratory pathogen of pandemic/epiemic potential in Belgium",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I01, I03, I04, I05, I08, I09",
+      "phase": "INITIATION"
+    },
+    {
+      "id": "S03",
+      "name": "Assess the risk of spread once the pathogen of pandemic/epiemic potential is introduced in Belgium",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I01, I03, I04, I05, I06, I08, I09",
+      "phase": "INITIATION"
+    },
+    {
+      "id": "S04",
+      "name": "Decide when to declare a state of emergency",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I01, I03, I04, I07, I08, I09",
+      "phase": "INITIATION"
+    },
+    {
+      "id": "S05",
+      "name": "Assess and prevent possible risk of reverse zoonosis",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I08, I09",
+      "phase": "ACCELERATION"
+    },
+    {
+      "id": "S06",
+      "name": "Strengthen laboratory capacity",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I07, I32, I34,I40, I42, I50",
+      "phase": "ACCELERATION"
+    },
+    {
+      "id": "S07",
+      "name": "Decide on best diagnostic tools and testing strategy to use",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I03, I04, I10",
+      "phase": "ACCELERATION"
+    },
+    {
+      "id": "S08",
+      "name": "inform timely policy development for surveillance and preparedness strategies",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I04, I07, I11",
+      "phase": "ACCELERATION + DECELERATION"
+    },
+    {
+      "id": "S09",
+      "name": "Assess the risk of spread of any possible resurgence of the pathogen",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I04, I08",
+      "phase": "DECELERATION + PREPARATION"
+    },
+    {
+      "id": "S10",
+      "name": "Optimize surveillance and governance in preparation for the next pandemic",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I12, I35, I49, I62",
+      "phase": "PREPARATION"
+    },
+    {
+      "id": "S11",
+      "name": "Strengthen epidemiological, clinical and diagnostic research capacity",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I07, I38, I43, I51",
+      "phase": "ACCELERATION"
+    },
+    {
+      "id": "S12",
+      "name": "",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I07, I30, I36, I56, I57",
+      "phase": "ACCELERATION"
+    },
+    {
+      "id": "S13",
+      "name": "Ensure timely, clear, and effective communication of health data",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I07, I33, I39, I41",
+      "phase": "ACCELERATION"
+    },
+    {
+      "id": "S14",
+      "name": "Participate in communication of research and data to the media/public",
+      "topic": "Surveillance and monitoring",
+      "relatedInfoNeeds": "I04, I07, I11",
+      "phase": "PREPARATION"
+    },
+    {
+      "id": "C01",
+      "name": "Assess medical countermeasure availability and stockpile ",
+      "topic": "Clinical and medical aspects",
+      "relatedInfoNeeds": "I07, I31, I58",
+      "phase": "INITIATION"
+    },
+    {
+      "id": "C02",
+      "name": "Evaluate and prioritize healthcare capacity (prioritize patients, triage rules, number of beds)\n",
+      "topic": "Clinical and medical aspects",
+      "relatedInfoNeeds": "I01, I07, I13, I14, I15, I16, I17, I18, I19",
+      "phase": "INITIATION + ACCELERATION"
+    },
+    {
+      "id": "C03",
+      "name": "Evaluate and optimize systems to prevent spread in healthcare settings (quarantine systems..)",
+      "topic": "Clinical and medical aspects",
+      "relatedInfoNeeds": "I17, I18, I19",
+      "phase": "INITIATION"
+    },
+    {
+      "id": "C04",
+      "name": "Decide if medical countermeasures should be continued/scaled-back/intensified",
+      "topic": "Clinical and medical aspects",
+      "relatedInfoNeeds": "I07, I19",
+      "phase": "ACCELERATION + DECELERATION"
+    },
+    {
+      "id": "C05",
+      "name": "Optimise resource allocation to alleviate the burden of the epidemic on the healthcare system",
+      "topic": "Clinical and medical aspects",
+      "relatedInfoNeeds": "I07, I15, I16, I17, I18",
+      "phase": "ACCELERATION + DECELERATION"
+    },
+    {
+      "id": "C06",
+      "name": "Create guidelines on needs and means for treatment (including treatment of long-term effects)",
+      "topic": "Clinical and medical aspects",
+      "relatedInfoNeeds": "I20, I46, I63, I64",
+      "phase": "DECELERATION + PREPARATION"
+    },
+    {
+      "id": "C07",
+      "name": "Improve availability of drugs including new, more effective ones",
+      "topic": "Clinical and medical aspects",
+      "relatedInfoNeeds": "I19, I37, I54, I60",
+      "phase": "DECELERATION + PREPARATION"
+    },
+    {
+      "id": "C08",
+      "name": "Create guidelines for Sustainable Healthcare integration\u00a0\u00a0\u00a0",
+      "topic": "Clinical and medical aspects",
+      "relatedInfoNeeds": "I47, I48, I53, I55",
+      "phase": "PREPARATION"
+    },
+    {
+      "id": "C09",
+      "name": "Timely planning and adjustment of healthcare policy during the pandemic",
+      "topic": "Clinical and medical aspects",
+      "relatedInfoNeeds": "I04, I05, I11",
+      "phase": "PREPARATION"
+    },
+    {
+      "id": "C10",
+      "name": "Ensure that healthcare professionals clearly understand and can implement policy decisions",
+      "topic": "Clinical and medical aspects",
+      "relatedInfoNeeds": "I04, I07, I11",
+      "phase": "PREPARATION"
+    },
+    {
+      "id": "C11",
+      "name": "Would the following information be essential to participate in communication of policy decisions to the media/public?",
+      "topic": "Clinical and medical aspects",
+      "relatedInfoNeeds": "",
+      "phase": ""
+    },
+    {
+      "id": "P01",
+      "name": "Stockpile on pharmaceutical prevention tools",
+      "topic": "Prevention and control",
+      "relatedInfoNeeds": "I07, I21, I29, I59",
+      "phase": "INITIATION"
+    },
+    {
+      "id": "P02",
+      "name": "Establish prevention guidelines & practices\u00a0\u00a0\u00a0 ",
+      "topic": "Prevention and control",
+      "relatedInfoNeeds": "I03, I04, I08, I09, I13",
+      "phase": "INITIATION"
+    },
+    {
+      "id": "P03",
+      "name": "Prepare an intervention strategy (pharmaceutical or non-pharmaceutical) ",
+      "topic": "Prevention and control",
+      "relatedInfoNeeds": "I01, I03, I04, I07, I08, I09, I13, I16, I19, I21",
+      "phase": "INITIATION"
+    },
+    {
+      "id": "P04",
+      "name": "Decide if and how to adapt travel policy",
+      "topic": "Prevention and control",
+      "relatedInfoNeeds": "I04, I05, I44, I52",
+      "phase": "INITIATION"
+    },
+    {
+      "id": "P05",
+      "name": "Stockpile on personal protective equipment",
+      "topic": "Prevention and control",
+      "relatedInfoNeeds": "I07, I08, I22, I28",
+      "phase": "INITIATION"
+    },
+    {
+      "id": "P06",
+      "name": "Deploy and adapt intervention strategies in specific target group",
+      "topic": "Prevention and control",
+      "relatedInfoNeeds": "I07, I08, I21, I23",
+      "phase": "ACCELERATION + DECELERATION + PREPARATION"
+    },
+    {
+      "id": "P07",
+      "name": "Decide if additional response measures are needed",
+      "topic": "Prevention and control",
+      "relatedInfoNeeds": "I07, I19, I23, I24",
+      "phase": "ACCELERATION"
+    },
+    {
+      "id": "P08",
+      "name": "Decide if population mobility should be restricted and to what extent",
+      "topic": "Prevention and control",
+      "relatedInfoNeeds": "I07, I23",
+      "phase": "ACCELERATION"
+    },
+    {
+      "id": "P09",
+      "name": "Decide whether and how to implement social support",
+      "topic": "Prevention and control",
+      "relatedInfoNeeds": "I24, I25, I26",
+      "phase": "ACCELERATION"
+    },
+    {
+      "id": "P10",
+      "name": "Decide where additional funding should be sent to",
+      "topic": "Prevention and control",
+      "relatedInfoNeeds": "I19, I27",
+      "phase": "ACCELERATION"
+    },
+    {
+      "id": "P11",
+      "name": "Decide if response can be scaled back",
+      "topic": "Prevention and control",
+      "relatedInfoNeeds": "I07, I19",
+      "phase": "DECELERATION"
+    },
+    {
+      "id": "P12",
+      "name": "Decide if it is the right time to shift from containment to mitigation",
+      "topic": "Prevention and control",
+      "relatedInfoNeeds": "I07",
+      "phase": "DECELERATION"
+    },
+    {
+      "id": "P14",
+      "name": "Support effective public health education and communication during a pandemic?",
+      "topic": "Prevention and control",
+      "relatedInfoNeeds": "",
+      "phase": ""
     }
   ],
-  "infoNeeds": [
+  "infoneeds": [
     {
       "id": "I01",
-      "name": "Description of who is initially being affected (= who is infected and who is dying)",
-      "relatedDataNeeds": ["D01", "D02", "D03", "D04", "D05"],
-	  "relatedDatasets": ["DS1", "DS2", "DS3", "DS4", "DS5", "DS6", "DS7", "DS19", "DS20", "DS21", "DS31", "DS32", "DS33"]
+      "name": "Demographic, geographic, and occupational profile of early cases",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D01, D02, D03,D04"
     },
     {
       "id": "I02",
-      "name": "Case definition (time, place, person)",
-      "relatedDataNeeds": ["D01", "D06", "D07", "D08"],
-	  "relatedDatasets": ["DS4", "DS8", "DS9", "DS31", "DS32", "DS33", "DS34"]
+      "name": " Case definition (time, place, person)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D05, D01, D06, D07"
+    },
+    {
+      "id": "I03",
+      "name": " Key epidemiological time intervals (Serial/generation interval, incubation period, infectious period)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D08, D09,D10, D11, D12"
+    },
+    {
+      "id": "I04",
+      "name": " Virological characteristics and evolution of the pathogen (infectivity, pathogenicity, seasonality)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D13, D14, D15, D16, D11"
+    },
+    {
+      "id": "I05",
+      "name": " Epidemiological situation abroad and measures taken abroad",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D17, D18, D19, D20, D21"
+    },
+    {
+      "id": "I06",
+      "name": " Population level susceptibility ",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D22, D23, D24, D25, D02"
+    },
+    {
+      "id": "I07",
+      "name": " Epidemic trends in terms of cases, hospitalizations, and deaths",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D03, D26, D27, D04"
+    },
+    {
+      "id": "I08",
+      "name": " Modes of transmission",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D28, D29, D30, D31, D32"
+    },
+    {
+      "id": "I09",
+      "name": " Potential animal reservoirs",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D33, D34, D35, D36, D13"
+    },
+    {
+      "id": "I10",
+      "name": " Available diagnostics tests with their specifications (se/spe)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D37, D38, D39, D40, D41"
+    },
+    {
+      "id": "I11",
+      "name": " Results from impact evaluation",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D42, D43, D44, D45, D46"
+    },
+    {
+      "id": "I12",
+      "name": " Retrospective view for evaluation, lessons learned ",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D47, D48, D49, D50, D51"
+    },
+    {
+      "id": "I13",
+      "name": " Individual heterogeneity in infectiousness, susceptibility and clinical severity",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D04, D13, D02, D52, D53"
+    },
+    {
+      "id": "I14",
+      "name": "Availability of staff, beds, diagnostics, and therapeutic support in clinical facilities\n",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D54, D55, D56, D57"
+    },
+    {
+      "id": "I15",
+      "name": "Identify patients at highest risk of severe outcomes",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D58, D59, D02"
+    },
+    {
+      "id": "I16",
+      "name": "Forecasted epidemic curve over the next weeks/months based on current trends\n",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D60, D61, D24"
+    },
+    {
+      "id": "I17",
+      "name": "Available ICU and hospital bed capacity by region",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D62, D63, D64"
+    },
+    {
+      "id": "I18",
+      "name": "Assessment of facility readiness to increase patient capacity",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D65, D66, D67, D68"
+    },
+    {
+      "id": "I19",
+      "name": " Cost-effectiveness of medical countermeasures and response activities",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D69, D04"
+    },
+    {
+      "id": "I20",
+      "name": " List and duration of symptoms",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D04, D05, D70, D71"
+    },
+    {
+      "id": "I21",
+      "name": "Target population groups and estimated size for each intervention",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D58, D72, D73"
+    },
+    {
+      "id": "I22",
+      "name": "Current availability and stock levels of PPE",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D74, D75, D76"
+    },
+    {
+      "id": "I23",
+      "name": "Estimated transmission rate (e.g., Rt) and doubling time\n",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D28, D77, D32, D78, D09"
+    },
+    {
+      "id": "I24",
+      "name": " People\u2019s perception and acceptability of the intervention(s)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D79, D80, D24, D81"
+    },
+    {
+      "id": "I25",
+      "name": " Information on pockets of population affected by the epidemic",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D01, D25"
+    },
+    {
+      "id": "I26",
+      "name": " Mental health of affected population",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D82, D83, D84"
+    },
+    {
+      "id": "I27",
+      "name": " Availability of new diagnostic, prevention or response tools",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D85, D86, D87, D88, D89"
+    },
+    {
+      "id": "I28",
+      "name": " Accessibility of available PPE stocks",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D173, D174, D175, D176, D177"
+    },
+    {
+      "id": "I29",
+      "name": " Accessibility of available prevention tools",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D178, D179, D180, D181, D182"
+    },
+    {
+      "id": "I30",
+      "name": " Accessibility of biobanking for sample storage and analysis",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D183, D184, D185, D186"
+    },
+    {
+      "id": "I31",
+      "name": " Accessibility to available stocks (of the medical countermeasure)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D90, D91, D92, D93"
+    },
+    {
+      "id": "I32",
+      "name": " Availability and accessibility of reagents, testing kits and PPE",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D94, D95, D96, D97"
+    },
+    {
+      "id": "I33",
+      "name": " Availability and efficiency of communication infrastructure",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D98, D99, D100, D101"
+    },
+    {
+      "id": "I34",
+      "name": " Availability of adequate laboratory space with proper biosafety levels and equipment",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D102, D103, D104, D68"
+    },
+    {
+      "id": "I35",
+      "name": " Availability of data sharing agreements",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D105, D106, D107"
+    },
+    {
+      "id": "I36",
+      "name": " Availability of funding and funding mechanisms",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D108, D109, D110"
+    },
+    {
+      "id": "I37",
+      "name": " Availability of manufacturing facilities and active pharmaceutical ingredients (APIs)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D111, D112, D113, D114"
+    },
+    {
+      "id": "I38",
+      "name": " Availability of SOPs",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D115, D116"
+    },
+    {
+      "id": "I39",
+      "name": " Availability of SOPs for data entry, reporting and analysis",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D117, D115"
+    },
+    {
+      "id": "I40",
+      "name": " Availability of standardized testing protocols and guidelines",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D115, D118, D116"
+    },
+    {
+      "id": "I41",
+      "name": " Availability of tools for real-time outbreak mapping and visualization",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D119, D120, D121"
+    },
+    {
+      "id": "I42",
+      "name": " Availability of trained laboratory personnel",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D122, D68"
+    },
+    {
+      "id": "I43",
+      "name": " Availability of trained staff",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D123, D124, D125, D68"
+    },
+    {
+      "id": "I44",
+      "name": " Capacity for screening and contact tracing",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D126, D60, D127, D128"
+    },
+    {
+      "id": "I45",
+      "name": " Circulating misinformation (common myths, conspiracy theories and knowledge gaps)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D81, D129, D79"
+    },
+    {
+      "id": "I46",
+      "name": " Circulating variant",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D78, D13, D01"
+    },
+    {
+      "id": "I47",
+      "name": " Cost-effectiveness of current healthcare interventions",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D130, D42, D43, D24"
+    },
+    {
+      "id": "I48",
+      "name": " Current healthcare infrastructure",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D131, D132, D133"
+    },
+    {
+      "id": "I49",
+      "name": " Defined leadership roles at national and regional levels",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D134, D135, D136"
+    },
+    {
+      "id": "I50",
+      "name": " Efficiency of real-time data collection, analysis and reporting",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D137, D138, D139"
+    },
+    {
+      "id": "I51",
+      "name": " Efficiency of supply chain",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D140, D141, D142"
+    },
+    {
+      "id": "I52",
+      "name": " Healthcare system capacity",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D55, D56, D143, D144"
+    },
+    {
+      "id": "I53",
+      "name": " Healthcare utilization and demand",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D145, D146, D60"
+    },
+    {
+      "id": "I54",
+      "name": " Information on drugs in development, clinical trial progress and expected approval timelines",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D85, D86, D88"
+    },
+    {
+      "id": "I55",
+      "name": " Interoperability between public and private providers",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D147, D148, D149"
+    },
+    {
+      "id": "I56",
+      "name": " List of established national and international research collaborations",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D150, D151, D152"
+    },
+    {
+      "id": "I57",
+      "name": " Mapping of trained researchers in epidemiology, virology, immunology and public health",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D153"
+    },
+    {
+      "id": "I58",
+      "name": " Number of stocks (of the medical countermeasure) available",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D154, D155, D156"
+    },
+    {
+      "id": "I59",
+      "name": " Number of stocks available for each prevention tool",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D157, D158, D159"
+    },
+    {
+      "id": "I60",
+      "name": " Possibility of expedited approvals for essential medicines",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D160, D161, D162"
+    },
+    {
+      "id": "I61",
+      "name": " Preferred information channels",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D163, D164"
+    },
+    {
+      "id": "I62",
+      "name": " Real-time tracking of unusual disease patterns",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D165, D166"
+    },
+    {
+      "id": "I63",
+      "name": " Results from clinical trials",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D167, D87, D168"
+    },
+    {
+      "id": "I64",
+      "name": " Treatments tried by colleagues and response obtained",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D169, D170, D171"
+    },
+    {
+      "id": "I65",
+      "name": " Which institutions the public trust most",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": "D79, D172"
+    },
+    {
+      "id": "I66",
+      "name": "Current surveillance capacity and infrastructure",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I67",
+      "name": "Estimated costs and financial resources available",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I68",
+      "name": "Available and needed workforce and IT capacity",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I69",
+      "name": "Legal and regulatory frameworks",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I70",
+      "name": "Data quality and timeliness of existing systems",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I71",
+      "name": "Population coverage and equity",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I72",
+      "name": "Public and institutional trust in tools used for disease detection and monitoring\n",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I73",
+      "name": "System interoperability and digital readiness",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I74",
+      "name": "Volume and patterns of travel/trade with affected regions",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I75",
+      "name": "Informal or undocumented entry pathways",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I76",
+      "name": "Foreign population composition and mobility patterns",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I77",
+      "name": "Importation of animals, goods, or biological materials",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I78",
+      "name": "Border control and health screening capacity",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I79",
+      "name": "Early detection and reporting systems at points of entry",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I80",
+      "name": "Regional geopolitical or humanitarian crises",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I81",
+      "name": "Population density and urban mobility patterns",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I82",
+      "name": "Social contact patterns and household structure",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I83",
+      "name": "Mobility and commuting flows within Belgium",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I84",
+      "name": "Super-spreader environments",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I85",
+      "name": "Healthcare system vulnerability",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I86",
+      "name": "Vaccination coverage or immunity profile",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I87",
+      "name": "Testing and contact tracing capacity at introduction",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I88",
+      "name": "Sociocultural factors affecting behavior",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I89",
+      "name": "Environmental and seasonal factors",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I90",
+      "name": "Co-circulating pathogens and syndemic risks",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I91",
+      "name": "Healthcare system strain and capacity thresholds",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I92",
+      "name": "Geographic spread and regional clustering",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I93",
+      "name": "Public health system capacity to respond without escalation",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I94",
+      "name": "Cross-sector disruptions",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I95",
+      "name": "Legal and operational implications of declaring a state of emergency",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I96",
+      "name": "Public perception and behavioral indicators",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I97",
+      "name": "Impact on critical infrastructure",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I98",
+      "name": "Political consensus or divergence",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I99",
+      "name": "Comparison with international benchmarks or WHO criteria",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I100",
+      "name": "Susceptibility of domestic and wild animal species to the pathogen",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I101",
+      "name": "Human\u2013animal interaction contexts and intensity",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I102",
+      "name": "Surveillance systems for animal health and zoonotic events",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I103",
+      "name": "Testing protocols and diagnostic tools for animals",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I104",
+      "name": "Biosecurity practices in high-risk settings",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I105",
+      "name": "Reports of confirmed or suspected reverse zoonosis events",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I106",
+      "name": "Environmental contamination risk",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I107",
+      "name": "Legal and ethical framework for animal testing, reporting, and culling",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": 108,
+      "name": "Existing laboratory diagnostic capacity by region",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I109",
+      "name": "Laboratory workforce availability and training needs",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I110",
+      "name": "Supply chain reliability for lab reagents and equipment",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I111",
+      "name": "Turnaround time for test results",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I112",
+      "name": "Laboratory accreditation and quality assurance procedures",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I113",
+      "name": "Laboratory data integration with surveillance platforms",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I114",
+      "name": "Infrastructure for molecular and genomic testing",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I115",
+      "name": "Stockpile levels of diagnostic kits and consumables",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I116",
+      "name": "National research strategy or priority areas",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I117",
+      "name": "Inventory of active research institutions and expertise",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i118",
+      "name": "Availability\n  of funding and reseach funding mechanisms",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I119",
+      "name": "Capacity for clinical trial coordination and implementation",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I120",
+      "name": "Ethical and regulatory review process and timelines",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I121",
+      "name": "Access to biobanks and clinical data for secondary analysis",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I122",
+      "name": "Infrastructure for field data collection and digital data capture",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I123",
+      "name": "Networks for international collaboration and knowledge exchange",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I124",
+      "name": "Number and distribution of ICU and non-ICU beds",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I125",
+      "name": "Staffing capacity including surge workforce plans",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I126",
+      "name": "Availability of essential medical equipment and supplies",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I127",
+      "name": "Hospital infrastructure and flexibility for surge expansion",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I128",
+      "name": "Oxygen supply systems and ventilator availability",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I129",
+      "name": "Healthcare worker absenteeism and burnout indicators",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I130",
+      "name": "Referral networks and inter-hospital coordination mechanisms",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I131",
+      "name": "Monitoring system for real-time hospital occupancy",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i132",
+      "name": "Availability of data visualization and dashboarding tools",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i133",
+      "name": "Standard formats for data sharing and exchange",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I134",
+      "name": "Digital literacy of data users and stakeholders",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I135",
+      "name": "Data flow mapping across levels (local to national)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I136",
+      "name": "Infrastructure for secure real-time data exchange",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I137",
+      "name": "Interoperability with international platforms",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I138",
+      "name": "Capacity for multilingual communication",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I139",
+      "name": "Guidelines or protocols for data interpretation and messaging",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I140",
+      "name": "Diagnostic accuracy and performance characteristics (sensitivity, specificity)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I141",
+      "name": "Time to result and operational feasibility",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I142",
+      "name": "Cost-effectiveness of diagnostic options",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I143",
+      "name": "Capacity of laboratories to support test volume",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I144",
+      "name": "Availability and supply chain stability of diagnostic kits",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I145",
+      "name": "Regulatory approval and guidance on test use",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I146",
+      "name": "Population testing priorities and access equity",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I147",
+      "name": "Integration of test results with surveillance systems",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I148",
+      "name": "Performance of current surveillance systems and data quality issues",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I149",
+      "name": "Timeliness and accuracy of case definitions and reporting protocols",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I150",
+      "name": "Scenarios or models forecasting disease trends under different strategies",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I151",
+      "name": "Assessment of diagnostic capacity and testing availability",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I152",
+      "name": "Evaluation of data interoperability and integration bottlenecks",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I153",
+      "name": "Stakeholder feedback from previous surveillance and preparedness activities",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I154",
+      "name": "Legal and regulatory considerations for adaptive surveillance policies",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I155",
+      "name": "Documentation of lessons learned from prior outbreaks or simulations",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I156",
+      "name": "Levels of uncertainty and confidence in findings",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I157",
+      "name": "Comparisons with past outbreaks or other countries",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I158",
+      "name": "Information needs and concerns of different audience segments",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I159",
+      "name": "Guidance on framing and simplifying complex data",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I160",
+      "name": "Communication protocols and responsibilities across agencies",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I161",
+      "name": "Readiness of digital and social media platforms for dissemination",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I162",
+      "name": "Feedback mechanisms to assess public understanding and trust",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I163",
+      "name": "Current level of population immunity (vaccination and natural infection)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I164",
+      "name": "Changes in contact or mobility patterns since previous waves",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I165",
+      "name": "Co-circulation of other respiratory pathogens",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I166",
+      "name": "Presence of new pathogen variants with increased transmissibility",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I167",
+      "name": "Performance of early warning surveillance indicators",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I168",
+      "name": "Healthcare system strain or delayed reporting signals",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I169",
+      "name": "Environmental or seasonal conditions that may favor transmission",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I170",
+      "name": "Standardized protocols for cross-sectoral data integration",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I171",
+      "name": "Operational readiness assessments of surveillance systems",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I172",
+      "name": "Capacity mapping and gaps in governance structures",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I173",
+      "name": "Legal and ethical frameworks for data use during emergencies",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I174",
+      "name": "Simulation exercises and after-action review data",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I175",
+      "name": "Sustainable financing models for surveillance systems",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I176",
+      "name": "Community engagement strategies for preparedness governance",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I177",
+      "name": "Capacity to manufacture or procure new stock",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I178",
+      "name": "Information on supply chain and storage logistics",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I179",
+      "name": "Stock expiry dates and wastage risks",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I180",
+      "name": "Prioritization plans for stock distribution (e.g. target groups)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I181",
+      "name": "Allocation mechanisms between federal and regional levels",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I183",
+      "name": "Availability of trained healthcare personnel and absenteeism rates",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I184",
+      "name": "Existing triage protocols and ethical frameworks",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I185",
+      "name": "Capacity of emergency transport and referral systems",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I186",
+      "name": "Availability of surge capacity plans and modular treatment units",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I187",
+      "name": "Critical care equipment availability (e.g. ventilators, oxygen)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I188",
+      "name": "Health worker fatigue and burnout indicators",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I189",
+      "name": "Real-time hospital occupancy monitoring systems",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I190",
+      "name": "Staff knowledge and compliance with IPC protocols",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I191",
+      "name": "Availability of IPC equipment (e.g., PPE, isolation rooms)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I192",
+      "name": "Reported nosocomial infections and transmission events",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I193",
+      "name": "Monitoring and audit systems in place for IPC",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I194",
+      "name": "Existence of IPC standard operating procedures (SOPs)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I195",
+      "name": "IPC training and refresher mechanisms",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I196",
+      "name": "Waste management and decontamination procedures",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I197",
+      "name": "Effectiveness of medical countermeasures (e.g. vaccine, treatment) against current pathogen strain",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I198",
+      "name": "Vaccine uptake or treatment coverage",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I199",
+      "name": "Current cost-benefit analysis (including economic and health outcomes)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I200",
+      "name": "Public trust and acceptance levels of medical countermeasures",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I201",
+      "name": "Number of hospitalizations by region",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I202",
+      "name": "Current ICU occupancy rate",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I203",
+      "name": "Clinical severity and progression of the disease",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I204",
+      "name": "Availability and effectiveness of therapeutic options",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I205",
+      "name": "Access barriers to treatment (e.g. socioeconomic, geographic)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I206",
+      "name": "Evidence on long-term sequelae and patient follow-up needs",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I207",
+      "name": "Capacity of healthcare facilities to deliver treatment",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I208",
+      "name": "National stock levels of essential drugs",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I209",
+      "name": "Availability of supply chains for drug procurement",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I210",
+      "name": "Regulatory status and approvals of new drugs",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I211",
+      "name": "Clinical trial data on new drug efficacy and safety",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I212",
+      "name": "Bottlenecks or delays in drug production and distribution",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I213",
+      "name": "Resource use and cost-effectiveness of healthcare practices",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I214",
+      "name": "Workforce capacity and resilience across the system",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I215",
+      "name": "Environmental impact of healthcare interventions",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I216",
+      "name": "Equity in access to healthcare services during a pandemic",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I217",
+      "name": "Health system adaptability and recovery from disruptions",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I218",
+      "name": "Emerging evidence on pathogen evolution and transmission",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I219",
+      "name": "Projected trends in healthcare demand",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I220",
+      "name": "Comparative policy approaches and their outcomes",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I221",
+      "name": "Gaps in current preparedness or contingency plans",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I222",
+      "name": "Stakeholder input and public sentiment on planned measures",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I223",
+      "name": "Clarity and consistency of policy language",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I224",
+      "name": "Availability of practical implementation tools (e.g., checklists, SOPs)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I225",
+      "name": "Mechanisms for rapid dissemination of updated guidance",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I226",
+      "name": "Feedback channels between decision-makers and frontline staff",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I227",
+      "name": "Understanding of clinical workflows and operational constraints",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I228",
+      "name": "Clarity and transparency of the rationale behind decisions",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I229",
+      "name": "Understanding of public concerns and misperceptions",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I230",
+      "name": "Alignment of messaging across institutions and actors",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I231",
+      "name": "Availability of communication expertise and media tools",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I232",
+      "name": "Timing and frequency of communication efforts",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I233",
+      "name": "Current inventory levels of pharmaceutical and non-pharmaceutical prevention tool",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I234",
+      "name": "Accessibility of available pharmaceutical and non-pharmaceutical prevention tool",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I235",
+      "name": "Supply chain reliability and delivery timelines",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I236",
+      "name": "Storage requirements and shelf-life of prevention tools",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I238",
+      "name": "Costs and funding mechanisms for procurement",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I239",
+      "name": "Lessons learned from previous stockpiling or shortages",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I240",
+      "name": "Evidence of effectiveness for different prevention strategies",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I241",
+      "name": "Acceptability and feasibility of proposed practices across settings",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I242",
+      "name": "Alignment with international recommendations and standards",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I243",
+      "name": "Behavioral and sociocultural factors influencing adherence",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I244",
+      "name": "Capacity of local systems to implement prevention measures",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I245",
+      "name": "Expected impact of the intervention under different scenarios",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I246",
+      "name": "Population groups to prioritize for the intervention",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I247",
+      "name": "Available infrastructure and logistics to support implementation",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I248",
+      "name": "Legal and ethical considerations related to the intervention",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I249",
+      "name": "Communication strategies to accompany intervention rollout",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I250",
+      "name": "Forecasted PPE demand based on projected caseloads and usage rates",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I252",
+      "name": "Breakdown of PPE needs by type and user group (e.g., masks, gloves, gowns)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I253",
+      "name": "Distribution and allocation strategies",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I254",
+      "name": "PPE supply chain resilience and supplier reliability",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I255",
+      "name": "Storage conditions and shelf-life of different PPE types",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I256",
+      "name": "PPE usage guidelines and recommended turnover rates",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I257",
+      "name": "Waste management and environmental considerations related to PPE use",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I258",
+      "name": "Level of immunity in different target groups",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I259",
+      "name": "Sociodemographic characteristics of the target groups (e.g., age, occupation, residence)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I260",
+      "name": "Risk factors associated with severe outcomes in the target groups",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I261",
+      "name": "Effectiveness of the intervention by population group",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I262",
+      "name": "Acceptability of the intervention among the population",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I263",
+      "name": "Implementation feasibility in different contexts (e.g., urban vs rural)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I264",
+      "name": "Previous experiences with similar interventions",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I265",
+      "name": "Effectiveness of currently implemented response measures",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I266",
+      "name": "Real-time epidemiological indicators (incidence, R number, positivity rate)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I267",
+      "name": "Healthcare system stress indicators (hospital/ICU occupancy, staff availability)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I268",
+      "name": "Geographic and demographic distribution of new cases",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I269",
+      "name": "Emergence of new variants or resistance patterns",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I270",
+      "name": "Public compliance with current response measures",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I271",
+      "name": "Socioeconomic and mental health impact assessments",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I272",
+      "name": "Level and patterns of population mobility by region and demographic group",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I273",
+      "name": "Correlation between mobility and transmission dynamics",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I274",
+      "name": "Public transportation usage and related risks",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I275",
+      "name": "Cross-border and inter-regional travel flows",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I276",
+      "name": "Effectiveness of past mobility restriction measures",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I277",
+      "name": "Compliance levels with existing mobility restrictions",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I278",
+      "name": "Availability of alternative means of access to essential services",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I279",
+      "name": "Level of economic vulnerability in the population",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I280",
+      "name": "Impact of pandemic-related measures on mental health and well-being",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I281",
+      "name": "Availability and accessibility of essential services (e.g., food, housing, utilities)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I282",
+      "name": "Demographic and geographic distribution of vulnerable populations",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I283",
+      "name": "Effectiveness of previously implemented social support programs",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I284",
+      "name": "Community engagement levels and feedback on needs",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "I285",
+      "name": "Capacity of social services to deliver targeted support",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i288",
+      "name": "Current gaps in essential service provision by region",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i289",
+      "name": "Disparities in health outcomes across regions or population groups",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i290",
+      "name": "Urgent unmet needs reported by local authorities or health providers",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i291",
+      "name": "Capacity of regions to effectively utilize additional resources",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i292",
+      "name": "Cost-effectiveness of proposed interventions or programs",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i293",
+      "name": "Equity considerations in funding allocation",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i294",
+      "name": "Existing level of financial support already allocated to each region",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i295",
+      "name": "Monitoring and accountability mechanisms for use of allocated funds",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i296",
+      "name": "Decline in new case numbers and transmission rates",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i297",
+      "name": "Sustained reduction in hospital and ICU admissions",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i298",
+      "name": "Improved healthcare system capacity and readiness",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i299",
+      "name": "High vaccination coverage and population immunity",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i300",
+      "name": "Minimal presence or impact of new variants",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i301",
+      "name": "Public adherence to baseline preventive measures",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i302",
+      "name": "Assessment of potential risks of premature scaling back",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i303",
+      "name": "Evidence of sustained community transmission",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i304",
+      "name": "Inability to trace a significant proportion of new cases to known sources",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i305",
+      "name": "Overwhelming of contact tracing and quarantine capacity",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i306",
+      "name": "Shift in transmission patterns (e.g. widespread or across multiple regions)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i307",
+      "name": "Reduced effectiveness of containment strategies",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i308",
+      "name": "Healthcare system capacity to handle increasing caseloads",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i309",
+      "name": "Assessment of social and economic impact of continued containment measures",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i310",
+      "name": "Capacity for screening and contact tracing",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i311",
+      "name": "International travel advisories and restrictions (from origin and destination countries)",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i312",
+      "name": "Compliance and enforcement capacity at borders and transit points",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i313",
+      "name": "Testing, vaccination, or certification status of incoming travelers",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i314",
+      "name": "Capacity for screening, quarantine, or follow-up of travelers",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i315",
+      "name": "Economic and social impact of travel restrictions",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i316",
+      "name": "Evidence of travel-related importation of cases",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i317",
+      "name": "Variation in risk profiles by travel route or mode of transport",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i318",
+      "name": "",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i319",
+      "name": "",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
+    },
+    {
+      "id": "i320",
+      "name": "",
+      "weight": 1,
+      "availability": "",
+      "relatedDataNeeds": ""
     }
   ],
-  "dataNeeds": [
+  "dataneeds": [
     {
       "id": "D01",
-      "name": "Patients demographics",
+      "name": "Patient demographics (age, gender, location, socio-economic status)",
+      "relatedDatasets": ""
     },
     {
       "id": "D02",
-      "name": "Comorbidities"
+      "name": "Comorbidities and their distribution",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D03",
+      "name": "Time series of case and death counts",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D04",
+      "name": "Patient clinical outcomes/Patient level clinical data from a variety of sources (primary care, secondary care, self-reported)",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D05",
+      "name": "Date of symptom onset ",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D06",
+      "name": "Standardized diagnostic criteria",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D07",
+      "name": "Symptoms",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D08",
+      "name": "Date of symptom onset and resolution for primary and secondary cases",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D09",
+      "name": "Transmission chain data linking primary and secondary cases (eg: contact tracing logs)",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D10",
+      "name": "Exposure date/time (exact or estimated eg from contact traing)",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D11",
+      "name": "Viral load data from serial testing",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D12",
+      "name": "Symptom progression",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D13",
+      "name": "Genome sequences",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D14",
+      "name": "Mutation rates",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D15",
+      "name": "Transmission rates",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D16",
+      "name": "Infectivity and pathogenicity assays",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D17",
+      "name": "International case counts",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D18",
+      "name": "Control measures adopted aborad",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D19",
+      "name": "Vaccination coverage in neighbouring countries",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D20",
+      "name": "Outcomes in neighbouring countries",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D21",
+      "name": "Movement data through different routes",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D22",
+      "name": "Population immunity data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D23",
+      "name": "Seroprevalence studies",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D24",
+      "name": "Rate of uptake of the interventions/Coverage",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D25",
+      "name": "Stratified intervention coverage (geographic, age, gender, SE)",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D26",
+      "name": "Hospitalization and death records",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D27",
+      "name": "Excess mortality estimates",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D28",
+      "name": "Contact tracing data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D29",
+      "name": "Environmental samples",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D30",
+      "name": "Social behavior patterns",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D31",
+      "name": "Aerosol/droplet studies",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D32",
+      "name": "Mobility patterns",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D33",
+      "name": "Animal surveillance data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D34",
+      "name": "Zoonotic transmission studies",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D35",
+      "name": "Animal infection studies",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D36",
+      "name": "Ecological data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D37",
+      "name": "Sensitivity",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D38",
+      "name": "Specificity",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D39",
+      "name": "Availability",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D40",
+      "name": "Distribution logistics",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D41",
+      "name": "Practicability",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D42",
+      "name": "Intervention effectiveness data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D43",
+      "name": "Cost-benefit analyses",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D44",
+      "name": "Health outcome improvements",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D45",
+      "name": "Program evaluation reports",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D46",
+      "name": "Social impact assessments",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D47",
+      "name": "Historical intervention data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D48",
+      "name": "Timelines of key decisions",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D49",
+      "name": "Post-crisis reviews",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D50",
+      "name": "Post-mortem analyses",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D51",
+      "name": "Documentation of strategies",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D52",
+      "name": "Severity by age",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D53",
+      "name": "Exposure risk",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D54",
+      "name": "Number of healthcare workers",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D55",
+      "name": "Number of ventilators",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D56",
+      "name": "Number of ICU beds",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D57",
+      "name": "Availability of oxygen supplies",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D58",
+      "name": "Risk stratification criteria",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D59",
+      "name": "Severity scoring systems",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D60",
+      "name": "Time series of cases",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D61",
+      "name": "R0/REff projections",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D62",
+      "name": "Real-time bed occupancy rates",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D63",
+      "name": "Hospital infrastructure data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D64",
+      "name": "Hospital utilization data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D65",
+      "name": "Inventory of facilities",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D66",
+      "name": "Inventory of temporary structures",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D67",
+      "name": "Resource availability",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D68",
+      "name": "Staffing data/Staff availability and shifts",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D69",
+      "name": "Cost data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D70",
+      "name": "Date of end of symptoms",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D71",
+      "name": "Symptom tracking (diary)",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D72",
+      "name": "Population demographics data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D73",
+      "name": "Supply levels",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D74",
+      "name": "PPE inventory data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D75",
+      "name": "PPE Supply chain information",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D76",
+      "name": "PPE Usage logs",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D77",
+      "name": "Incidence rates",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D78",
+      "name": "Genomic surveillance data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D79",
+      "name": "Survey data on public beliefs/trust/opinion",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D80",
+      "name": "Focus groups",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D81",
+      "name": "Social media sentiment analysis",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D82",
+      "name": "Results from mental health surveys",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D83",
+      "name": "Mental health service utilization rates",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D84",
+      "name": "Self-reported stress and anxiety levels",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D85",
+      "name": "Data of research and development",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D86",
+      "name": "Development Timelines",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D87",
+      "name": "Outcomes from clinical trials",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D88",
+      "name": "New regulatory approvals",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D89",
+      "name": "Production and distribution capacity of new tools",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D90",
+      "name": "Inventory of countermeasures (vaccines, antivirals)",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D91",
+      "name": "Distribution of countermeasure",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D92",
+      "name": "Geographic and demographic access data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D93",
+      "name": "Priority group definitions",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D94",
+      "name": "Supplier inventories and delivery schedules",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D95",
+      "name": "Testing and usage rates",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D96",
+      "name": "Import/export regulations",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D97",
+      "name": "Logistics infrastructure info",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D98",
+      "name": "Network coverage (internet, phone)",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D99",
+      "name": "Communication platform usage statistics",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D100",
+      "name": "Emergency communication system readiness",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D101",
+      "name": "Uptime and reliability metrics",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D102",
+      "name": "Laboratory facility registry",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D103",
+      "name": "Biosafety level certifications",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D104",
+      "name": "Equipment inventories and maintenance records",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D105",
+      "name": "List of existing agreements (national/international)",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D106",
+      "name": "Legal and regulatory frameworks",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D107",
+      "name": "Data sharing platforms and security protocols",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D108",
+      "name": "Government and donor funding allocations",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D109",
+      "name": "Emergency fund access procedures",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D110",
+      "name": "Grant and subsidy program details",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D111",
+      "name": "Lists and locations of facilities",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D112",
+      "name": "Production capacity data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D113",
+      "name": "API supply chain mapping",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D114",
+      "name": "Licensing and quality control info",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D115",
+      "name": "List of Repository of standard operating procedures",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D116",
+      "name": "Adoption rates of SOPs among institutions",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D117",
+      "name": "Data governance documentation",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D118",
+      "name": "Regulatory and health authority documentation",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D119",
+      "name": "Software tools and platforms in use",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D120",
+      "name": "Mapping of Integration with surveillance systems",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D121",
+      "name": "User access statistics",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D122",
+      "name": "Certification and training records",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D123",
+      "name": "Registry of trained public health, clinical, logistical personnel",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D124",
+      "name": "Skills and certification data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D125",
+      "name": "Vacancy and deployment records",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D126",
+      "name": "Number of contact tracing teams",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D127",
+      "name": "Turnaround times for diagnostic",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D128",
+      "name": "Software/systems in use",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D129",
+      "name": "News media content tracking",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D130",
+      "name": "Cost data for each intervention",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D131",
+      "name": "Hospital/clinic locations and capacity",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D132",
+      "name": "Staffing levels and resource availability",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D133",
+      "name": "Health information systems",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D134",
+      "name": "Organizational charts",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D135",
+      "name": "Role descriptions and decision matrices",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D136",
+      "name": "Emergency response frameworks",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D137",
+      "name": "Data pipeline performance metrics",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D138",
+      "name": "Reporting delay statistics",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D139",
+      "name": "IT infrastructure status",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D140",
+      "name": "Delivery time and cost data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D141",
+      "name": "Stockout frequencies",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D142",
+      "name": "Supplier performance evaluations",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D143",
+      "name": "Staff-to-patient ratios",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D144",
+      "name": "Surge capacity planning",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D145",
+      "name": "Patient flow data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D146",
+      "name": "Appointment/wait time metrics",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D147",
+      "name": "Data integration capabilities",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D148",
+      "name": "Interoperability test results",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D149",
+      "name": "Use of common platforms/standards",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D150",
+      "name": "Memoranda of understanding",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D151",
+      "name": "Project directories",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D152",
+      "name": "Collaboration outcomes",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D153",
+      "name": "Researcher databases (CVs, publication records, affiliation)",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D154",
+      "name": "medical stocks Inventory databases",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D155",
+      "name": "Batch numbers and expiration dates",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D156",
+      "name": "Distribution and allocation records for medical countermeasures",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D157",
+      "name": "Itemized stock reports",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D158",
+      "name": "Distribution logs",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D159",
+      "name": "Local storage levels",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D160",
+      "name": "Regulatory policy documents",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D161",
+      "name": "Past expedited approval case data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D162",
+      "name": "Risk-benefit analyses",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D163",
+      "name": "Media usage surveys",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D164",
+      "name": "Engagement analytics",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D165",
+      "name": "Syndromic surveillance data",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D166",
+      "name": "Early warning system outputs",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D167",
+      "name": "Peer-reviewed publications",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D168",
+      "name": "Adverse event reports",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D169",
+      "name": "Physician-reported registries",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D170",
+      "name": "Hospital treatment logs",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D171",
+      "name": "Shared case studies",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D172",
+      "name": "Social trust indices",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D173",
+      "name": "Location of PPE stockpiles",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D174",
+      "name": "Inventory of PPE",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D175",
+      "name": "Distribution plans of PPE",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D176",
+      "name": "Transportation capacity",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D177",
+      "name": "Facility storage capacity and conditions",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D178",
+      "name": "List of prevention tools",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D179",
+      "name": "Distribution maps",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D180",
+      "name": "Population access data (geographic and financial)",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D181",
+      "name": "Stock levels",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D182",
+      "name": "Ordering timelines",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D183",
+      "name": "Biobank locations and capacities",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D184",
+      "name": "Criteria for biobanking",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D185",
+      "name": "Transport and storage chain info for samples",
+      "relatedDatasets": ""
+    },
+    {
+      "id": "D186",
+      "name": "Legal and ethical access constraints",
+      "relatedDatasets": ""
     }
   ],
   "datasets": [
     {
-      "id": "DS01",
-      "name": "EPILABO",
+      "id": 1,
+      "name": "EPILABO"
     },
     {
-      "id": "DS02",
+      "id": 2,
       "name": "SARI"
     },
     {
-      "id": "DS03",
+      "id": 3,
       "name": "The COVID-19 Test Results data collection"
     },
     {
-      "id": "DS04",
+      "id": 4,
       "name": "Clinical Hospital Survey"
+    },
+    {
+      "id": 5,
+      "name": "RN Consult"
+    },
+    {
+      "id": 6,
+      "name": "IMA"
+    },
+    {
+      "id": 7,
+      "name": "DEMOBEL"
+    },
+    {
+      "id": 8,
+      "name": "INFBARO"
+    },
+    {
+      "id": 9,
+      "name": "COVID-19 Barometer"
+    },
+    {
+      "id": 10,
+      "name": "Contact Tracing"
+    },
+    {
+      "id": 11,
+      "name": "ERVISS"
+    },
+    {
+      "id": 12,
+      "name": "GISAID"
+    },
+    {
+      "id": 13,
+      "name": "SalivaHIS"
+    },
+    {
+      "id": 14,
+      "name": "SARS-CoV-2 HCW"
+    },
+    {
+      "id": 15,
+      "name": "VACCINNET+"
+    },
+    {
+      "id": 16,
+      "name": "VACCINNET"
+    },
+    {
+      "id": 17,
+      "name": "VACCICARD"
+    },
+    {
+      "id": 18,
+      "name": "Surge Capacity Survey"
+    },
+    {
+      "id": 19,
+      "name": "ILI-NH"
+    },
+    {
+      "id": 20,
+      "name": "Be-MOMO NH"
+    },
+    {
+      "id": 21,
+      "name": "Be-MOMO"
+    },
+    {
+      "id": 22,
+      "name": "Google mobility"
+    },
+    {
+      "id": 23,
+      "name": "Telephony mobility"
+    },
+    {
+      "id": 24,
+      "name": "CoMix"
+    },
+    {
+      "id": 25,
+      "name": "COVID19HIS"
+    },
+    {
+      "id": 26,
+      "name": "BELHEALTH"
+    },
+    {
+      "id": 27,
+      "name": "CoBRHA"
+    },
+    {
+      "id": 28,
+      "name": "CoVWWSurv"
+    },
+    {
+      "id": 29,
+      "name": "COVID-19 opendata"
+    },
+    {
+      "id": 30,
+      "name": "Infectieradar"
+    },
+    {
+      "id": 31,
+      "name": "Minimal hospital data"
+    },
+    {
+      "id": 32,
+      "name": "NRC surveillance"
+    },
+    {
+      "id": 33,
+      "name": "Mandatory notifications"
+    },
+    {
+      "id": 34,
+      "name": "SGPs"
+    },
+    {
+      "id": 35,
+      "name": "e-vax"
+    },
+    {
+      "id": 36,
+      "name": "Flemish social contact survey"
+    },
+    {
+      "id": 37,
+      "name": "ourworldindata"
+    },
+    {
+      "id": 38,
+      "name": "Structure of the population"
+    },
+    {
+      "id": 39,
+      "name": "WorldPop"
+    },
+    {
+      "id": 40,
+      "name": "Seroprevalence SARS-CoV-2 residual samples"
+    },
+    {
+      "id": 41,
+      "name": "Synthetic population data for Belgium"
+    },
+    {
+      "id": 42,
+      "name": "Human Mortality Database"
+    },
+    {
+      "id": 43,
+      "name": "Eurostat database"
+    },
+    {
+      "id": 44,
+      "name": "The Great Corona Study"
+    },
+    {
+      "id": 45,
+      "name": "UNdata"
+    },
+    {
+      "id": 46,
+      "name": "OxCGRT"
+    },
+    {
+      "id": 47,
+      "name": "COVID-19 Data Repository CSSE"
+    },
+    {
+      "id": 48,
+      "name": "Google Health COVID-19 Open Data Repository"
+    },
+    {
+      "id": 49,
+      "name": "Intego"
+    },
+    {
+      "id": 50,
+      "name": "KMI-IRM opendata"
+    },
+    {
+      "id": 51,
+      "name": "EuroMOMO"
+    },
+    {
+      "id": 52,
+      "name": "COVIMPACT"
+    },
+    {
+      "id": 53,
+      "name": "CovsirPhy"
+    },
+    {
+      "id": 54,
+      "name": "COVID-19 Data Hub"
+    },
+    {
+      "id": 55,
+      "name": "RespiCAST"
+    },
+    {
+      "id": 56,
+      "name": "POLYMOD"
+    },
+    {
+      "id": 57,
+      "name": "Medex"
+    },
+    {
+      "id": 58,
+      "name": "Saniport"
+    },
+    {
+      "id": 59,
+      "name": "Google trends"
+    },
+    {
+      "id": 60,
+      "name": "HDA Data Catalogue"
     }
   ]
 }
