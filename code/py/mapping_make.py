@@ -22,7 +22,7 @@ import json
 
 
 ### Define paths and filenames
-path_to_folder = "//sciensano.be/fs/1150_EPIVG_EpiInfect/9_TAS/BE-PIN/task13_dataSources/"
+path_to_folder = "//define/path/here/"
 path_to_code = path_to_folder + "py"
 xlsx_file = path_to_folder + "T1.1.Table_16062025_finalPRESurvey.xlsx"
 datasources_file = path_to_folder + "metadata/data_sources.json"

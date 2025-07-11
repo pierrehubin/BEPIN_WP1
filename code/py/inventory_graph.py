@@ -33,7 +33,7 @@ import networkx as nx
 import matplotlib as mplot
 
 ### Define paths
-path_to_folder = ""
+path_to_folder = "//define/path/here/"
 path_to_code = path_to_folder + "py"
 inventory_file = path_to_folder + "metadata/data_sources.json"
 graph_file = path_to_folder + "graph/graph_data_sources.gexf"

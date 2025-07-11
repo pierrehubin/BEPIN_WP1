@@ -22,7 +22,7 @@ import json
 import csv
 
 ### Define paths
-path_to_folder = ""
+path_to_folder = "//define/path/here/"
 path_to_code = path_to_folder + "py"
 inventory_file = path_to_folder + "metadata/data_sources.json"
 listing_file = path_to_folder + "metadata/data_sources_listing.csv"

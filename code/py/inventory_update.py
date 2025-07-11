@@ -29,7 +29,7 @@ import json
 import csv
 
 ### Define paths and filenames
-path_to_folder = ""
+path_to_folder = "//define/path/here/"
 path_to_code = path_to_folder + "py"
 mod_file = path_to_folder + "metadata/data_sources_mod.json"
 raw_file = path_to_folder + "metadata/data_sources_raw.json"
