@@ -10,7 +10,8 @@ Short Description: Make the JSON mapping file
 Author: Pierre Hubin
 
 Versioning:
-v1 Creation July 11 2025 Pierre Hubin
+v1  Creation July 11 2025 Pierre Hubin
+v2  Fix formatting output August 08 2025 Pierre Hubin
 
 """
 
@@ -24,9 +25,9 @@ import json
 ### Define paths and filenames
 path_to_folder = "//define/path/here/"
 path_to_code = path_to_folder + "py"
-xlsx_file = path_to_folder + "T1.1.Table_16062025_finalPRESurvey.xlsx"
+xlsx_file = path_to_folder + "T1.1.Table_16062025_finalPRESurvey_2.xlsx"
 datasources_file = path_to_folder + "metadata/data_sources.json"
-out_file = path_to_folder + "metadata/bepin_WP1_structure.json"
+out_file = path_to_folder + "metadata/mapping_structure.json"
 
 
 ### import custom functions
@@ -106,6 +107,8 @@ for item in objectives_dict:
     # Convert string containing links to array of strings (one link by string)
     if 'relatedInfoNeeds' in item and isinstance(item['relatedInfoNeeds'], str):
         item['relatedInfoNeeds'] = [link.strip() for link in item['relatedInfoNeeds'].split(',')]
+    # Reformat info needs list of ids
+    item['relatedInfoNeeds'] = hf.standardize_ids(item['relatedInfoNeeds'])
 desired_order = ["id", "name", "topic", "relatedInfoNeeds", "phase"]
 objectives_dict = [
     {key: item[key] for key in desired_order if key in item}
@@ -133,10 +136,17 @@ relation_lookup = {item["id"]: item["LINKED DATA NEEDS"] for item in infoneeds_d
 # Update each dictionary in main_list with the corresponding relation
 for item in infoneeds_dict:
     item["relatedDataNeeds"] = relation_lookup.get(item["id"], "")
+    # Reformat info needs list of ids
+    item['id'] = hf.standardize_ids(item['id'])
 # Convert string containing links to array of strings (one link by string)
 for item in infoneeds_dict:
     if 'relatedDataNeeds' in item and isinstance(item['relatedDataNeeds'], str):
         item['relatedDataNeeds'] = [link.strip() for link in item['relatedDataNeeds'].split(',')]
+desired_order = ["id", "name", "weight", "availability", "relatedDataNeeds"]
+infoneeds_dict = [
+    {key: item[key] for key in desired_order if key in item}
+    for item in infoneeds_dict
+]
 
 ## data needs
 dataneeds_dict = dataneeds.to_dict(orient='records')
@@ -145,7 +155,9 @@ for item in dataneeds_dict:
         item['id'] = item.pop('CODE')
     if 'DATA NEEDS' in item:
         item['name'] = item.pop('DATA NEEDS')
-    item['relatedDatasets'] = []
+    # Reformat info needs list of ids    
+    item['id'] = hf.standardize_ids(item['id'])
+    item['relatedDatasets'] = []  # mapping to datasets to be added manually
 
 
 ### Combine all list of dictionnaries and export in json
@@ -159,7 +171,3 @@ with open(out_file, 'w') as f:
     json.dump(output, f, indent=2)
 f.close()
 
-
-### TODO
-# standardize ids info needs, data needs (capital I, 0 as placeholder for digits)
-# --> also in list of links !

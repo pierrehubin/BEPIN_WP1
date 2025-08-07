@@ -10,7 +10,8 @@ Short Description: Definition of helper functions for other scripts of BE-PIN-WP
 Author: Pierre Hubin
 
 Versioning:
-v1 Creation Jan 08 2025 Pierre Hubin
+v1  Adaptation for BE-PIN July 11 2025 Pierre Hubin
+v2  Add standardize_ids function August 07 2025 Pierre Hubin  
 
 """
 
@@ -61,3 +62,17 @@ def rename_keys_in_list_of_dicts(list_of_dicts, key_mappings):
             if old_key in d:
                 d[new_key] = d.pop(old_key)
     return list_of_dicts
+
+# Function to standardize how ids are formatted
+def standardize_ids(ids):
+    def format_id(item):
+        prefix = item[0].upper()      # Capitalize the prefix
+        num = int(item[1:])           # Extract numeric part
+        return f"{prefix}{num:03d}"   # Format with leading zeros
+
+    if isinstance(ids, str):
+        return format_id(ids)
+    elif isinstance(ids, list):
+        return [format_id(item) for item in ids]
+    else:
+        raise TypeError("Input must be a string or a list of strings")
