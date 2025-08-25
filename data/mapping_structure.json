@@ -633,7 +633,10 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D001",
+        "D002",
+        "D003",
+        "D004"
       ]
     },
     {
@@ -642,7 +645,10 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D005",
+        "D001",
+        "D006",
+        "D007"
       ]
     },
     {
@@ -651,7 +657,11 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D008",
+        "D009",
+        "D010",
+        "D011",
+        "D012"
       ]
     },
     {
@@ -660,7 +670,11 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D013",
+        "D014",
+        "D015",
+        "D016",
+        "D011"
       ]
     },
     {
@@ -669,7 +683,11 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D017",
+        "D018",
+        "D019",
+        "D020",
+        "D021"
       ]
     },
     {
@@ -678,7 +696,10 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D003",
+        "D026",
+        "D027",
+        "D004"
       ]
     },
     {
@@ -687,7 +708,11 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D028",
+        "D029",
+        "D030",
+        "D031",
+        "D032"
       ]
     },
     {
@@ -696,7 +721,11 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D033",
+        "D034",
+        "D035",
+        "D036",
+        "D013"
       ]
     },
     {
@@ -705,7 +734,11 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D037",
+        "D038",
+        "D039",
+        "D040",
+        "D041"
       ]
     },
     {
@@ -714,7 +747,11 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D042",
+        "D043",
+        "D044",
+        "D045",
+        "D046"
       ]
     },
     {
@@ -723,7 +760,11 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D004",
+        "D013",
+        "D002",
+        "D052",
+        "D053"
       ]
     },
     {
@@ -732,7 +773,10 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D054",
+        "D055",
+        "D056",
+        "D057"
       ]
     },
     {
@@ -741,7 +785,9 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D058",
+        "D059",
+        "D002"
       ]
     },
     {
@@ -750,7 +796,9 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D062",
+        "D063",
+        "D064"
       ]
     },
     {
@@ -759,7 +807,8 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D069",
+        "D004"
       ]
     },
     {
@@ -768,7 +817,10 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D004",
+        "D005",
+        "D070",
+        "D071"
       ]
     },
     {
@@ -777,7 +829,9 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D058",
+        "D072",
+        "D073"
       ]
     },
     {
@@ -786,7 +840,9 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D074",
+        "D075",
+        "D076"
       ]
     },
     {
@@ -795,7 +851,11 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D028",
+        "D077",
+        "D032",
+        "D078",
+        "D009"
       ]
     },
     {
@@ -804,7 +864,10 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D079",
+        "D080",
+        "D024",
+        "D081"
       ]
     },
     {
@@ -813,7 +876,10 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D094",
+        "D095",
+        "D096",
+        "D097"
       ]
     },
     {
@@ -822,7 +888,10 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D098",
+        "D099",
+        "D100",
+        "D101"
       ]
     },
     {
@@ -831,7 +900,10 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D102",
+        "D103",
+        "D104",
+        "D068"
       ]
     },
     {
@@ -840,7 +912,8 @@
       "weight": 1,
       "availability": "",
       "relatedDataNeeds": [
-        ""
+        "D115",
+        "D116"
       ]
     },
     {

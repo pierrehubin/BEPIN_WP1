@@ -12,6 +12,7 @@ Author: Pierre Hubin
 Versioning:
 v1  Creation July 11 2025 Pierre Hubin
 v2  Fix formatting output August 08 2025 Pierre Hubin
+v3  Fix mapping info and data needs August 20 2025 Pierre Hubin
 
 """
 
@@ -27,7 +28,7 @@ path_to_folder = "//define/path/here/"
 path_to_code = path_to_folder + "py"
 xlsx_file = path_to_folder + "T1.1.Table_16062025_finalPRESurvey_2.xlsx"
 datasources_file = path_to_folder + "metadata/data_sources.json"
-out_file = path_to_folder + "metadata/mapping_structure.json"
+out_file = path_to_folder + "metadata/bepin_WP1_structure.json"
 
 
 ### import custom functions
@@ -129,19 +130,20 @@ for item in infoneeds_dict:
         item['availability'] = ""
 for item in infoneeds_dataneeds_dict:
     if 'INFORMATION NEEDS' in item:
-         item['id'] = item.pop('INFORMATION NEEDS')
+         item['id'] = hf.standardize_ids(item.pop('INFORMATION NEEDS'))
 # Combine the two list of dictionnaries based on id 
 # Create a lookup dictionary from the relations list
 relation_lookup = {item["id"]: item["LINKED DATA NEEDS"] for item in infoneeds_dataneeds_dict}
 # Update each dictionary in main_list with the corresponding relation
 for item in infoneeds_dict:
-    item["relatedDataNeeds"] = relation_lookup.get(item["id"], "")
     # Reformat info needs list of ids
     item['id'] = hf.standardize_ids(item['id'])
+    item["relatedDataNeeds"] = relation_lookup.get(item["id"], "")
 # Convert string containing links to array of strings (one link by string)
 for item in infoneeds_dict:
     if 'relatedDataNeeds' in item and isinstance(item['relatedDataNeeds'], str):
         item['relatedDataNeeds'] = [link.strip() for link in item['relatedDataNeeds'].split(',')]
+        item['relatedDataNeeds'] = hf.standardize_ids(item['relatedDataNeeds'])
 desired_order = ["id", "name", "weight", "availability", "relatedDataNeeds"]
 infoneeds_dict = [
     {key: item[key] for key in desired_order if key in item}

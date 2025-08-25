@@ -29,6 +29,11 @@
       "updateId": 5,
       "updateDatetime": "2025-04-22 10:12:12",
       "updateDescription": "Reworking fields for metadata description of the datasets and adding a few new datasets"
+    },
+    {
+      "updateId": 6,
+      "updateDatetime": "2025-08-25 11:12:36",
+      "updateDescription": "Adding 4 new datasets (IMA atlas, ENA genomic data, Atlas ECDC, BIMD)"
     }
   ],
   "dictionnary": [
@@ -2130,6 +2135,121 @@
       "updateFrequency": "irregular",
       "targetPopulation": "",
       "category": "other",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
+      "relatedScenario": [],
+      "relatedObjective": [],
+      "relatedInfoNeed": []
+    },
+    {
+      "id": 61,
+      "name": "IMA Atlas",
+      "shortDescription": "L\u00e2\u20ac\u2122Atlas AIM vous permet de consulter des indicateurs sur des caract\u00c3\u00a9ristiques socio-d\u00c3\u00a9mographiques et sur la consommation de soins de sant\u00c3\u00a9. Ces indicateurs sont pertinents pour la politique de soins de sant\u00c3\u00a9 et sont cr\u00c3\u00a9\u00c3\u00a9s sur la base des banques de donn\u00c3\u00a9es permanentes de l\u00e2\u20ac\u2122Agence InterMutualiste.",
+      "type": "platform",
+      "institution": [
+        "IMA-AIM"
+      ],
+      "source": "IMA-AIM database",
+      "linkURL": [
+        "https://ima-aim.be/Atlas-AIM?lang=fr",
+        "https://ima-aim.be/-Nos-banques-de-donnees-"
+      ],
+      "linkDCAT": "",
+      "contactInfo": [
+        "https://ima-aim.be/Contact"
+      ],
+      "detailLevel": "aggregated",
+      "accessibility": "opendata",
+      "updateFrequency": "yearly",
+      "targetPopulation": "Belgian general population",
+      "category": "population factor",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
+      "relatedScenario": [],
+      "relatedObjective": [],
+      "relatedInfoNeed": []
+    },
+    {
+      "id": 62,
+      "name": "European Genomic Data",
+      "shortDescription": "The European Nucleotide Archive (ENA) provides a comprehensive record of the world\u00e2\u20ac\u2122s nucleotide sequencing information, covering raw sequencing data, sequence assembly information and functional annotation.",
+      "type": "database",
+      "institution": [
+        "ENA"
+      ],
+      "source": "country level genomic surveillance systems",
+      "linkURL": [
+        "https://www.ebi.ac.uk/ena/browser/home"
+      ],
+      "linkDCAT": "",
+      "contactInfo": [
+        "https://www.ebi.ac.uk/about/contact/"
+      ],
+      "detailLevel": "aggregated",
+      "accessibility": "opendata",
+      "updateFrequency": "real-time",
+      "targetPopulation": "General population",
+      "category": "pathogen characteristic",
+      "isCovid": 0,
+      "isBelgium": 0,
+      "isActive": 1,
+      "relatedScenario": [],
+      "relatedObjective": [],
+      "relatedInfoNeed": []
+    },
+    {
+      "id": 63,
+      "name": "ECDC ATLAS",
+      "shortDescription": "The Surveillance Atlas of Infectious Diseases is a tool that interacts with the latest available data about a number of infectious diseases. The interface allows users to interact and manipulate the data to produce a variety of tables and maps.\u00e2\u20ac\u2039\u00e2\u20ac\u2039 The information contained in the dataset provided through ATLAS is made available by ECDC collating data from the Member States collected through The European Surveillance System (TESSy). Last data available: 2023.",
+      "type": "platform",
+      "institution": [
+        "ECDC"
+      ],
+      "source": "EpiPulse",
+      "linkURL": [
+        "https://www.ecdc.europa.eu/en/surveillance-atlas-infectious-diseases"
+      ],
+      "linkDCAT": "",
+      "contactInfo": [
+        "surveillance@ecdc.europa.eu"
+      ],
+      "detailLevel": "aggregated",
+      "accessibility": "opendata",
+      "updateFrequency": "yearly",
+      "targetPopulation": "General population EU countries",
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 0,
+      "isActive": 0,
+      "relatedScenario": [],
+      "relatedObjective": [],
+      "relatedInfoNeed": []
+    },
+    {
+      "id": 64,
+      "name": "Belgian Index of Multiple Deprivation",
+      "shortDescription": "The Belgian Index of Multiple Deprivation provides a multidimensional view on social deprivation in Belgium, integrating 6 domains \u00e2\u20ac\u201c education, employment, income, housing, crime, and health. It provides a robust basis for assessing social inequalities in health and other outcomes.",
+      "type": "platform",
+      "institution": [
+        "Sciensano"
+      ],
+      "source": "Statbel CENSUS",
+      "linkURL": [
+        "https://bimd.sciensano.be/tool",
+        "https://www.sciensano.be/en/projects/belgian-index-multiple-deprivation",
+        "https://github.com/bimd-project/BIMD"
+      ],
+      "linkDCAT": "",
+      "contactInfo": [
+        "info@sciensano.be"
+      ],
+      "detailLevel": "aggregated",
+      "accessibility": "opendata",
+      "updateFrequency": "irregular",
+      "targetPopulation": "General Belgian population",
+      "category": "population factor",
       "isCovid": 0,
       "isBelgium": 1,
       "isActive": 1,

@@ -11,7 +11,8 @@ Author: Pierre Hubin
 
 Versioning:
 v1  Adaptation for BE-PIN July 11 2025 Pierre Hubin
-v2  Add standardize_ids function August 07 2025 Pierre Hubin  
+v2  Add standardize_ids function August 07 2025 Pierre Hubin 
+v3  Fix standardize_ids function August 20 2025 Pierre Hubin 
 
 """
 
@@ -66,10 +67,13 @@ def rename_keys_in_list_of_dicts(list_of_dicts, key_mappings):
 # Function to standardize how ids are formatted
 def standardize_ids(ids):
     def format_id(item):
-        prefix = item[0].upper()      # Capitalize the prefix
-        num = int(item[1:])           # Extract numeric part
-        return f"{prefix}{num:03d}"   # Format with leading zeros
-
+        if len(item)>0:
+            prefix = item[0].upper()      # Capitalize the prefix
+            num = int(item[1:])           # Extract numeric part
+            return f"{prefix}{num:03d}"   # Format with leading zeros
+        else:
+            return item
+    
     if isinstance(ids, str):
         return format_id(ids)
     elif isinstance(ids, list):
