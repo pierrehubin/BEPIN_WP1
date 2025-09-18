@@ -10,9 +10,16 @@ Short Description: Make the JSON mapping file
 Author: Pierre Hubin
 
 Versioning:
-v1  Creation July 11 2025 Pierre Hubin
-v2  Fix formatting output August 08 2025 Pierre Hubin
-v3  Fix mapping info and data needs August 20 2025 Pierre Hubin
+v1  Creation
+    July 11 2025 Pierre Hubin
+v2  Fix formatting output
+    August 08 2025 Pierre Hubin
+v3  Fix mapping info and data needs 
+    August 20 2025 Pierre Hubin
+v4  Add mapping data needs to datasets 
+    move availability field to data needs instead of info need 
+    fix script for v3 of excel input
+    September 17 2025 Pierre Hubin
 
 """
 
@@ -26,8 +33,9 @@ import json
 ### Define paths and filenames
 path_to_folder = "//define/path/here/"
 path_to_code = path_to_folder + "py"
-xlsx_file = path_to_folder + "T1.1.Table_16062025_finalPRESurvey_2.xlsx"
+xlsx_file = path_to_folder + "T1.1.Table_16062025_finalPRESurvey_v3.xlsx"
 datasources_file = path_to_folder + "metadata/data_sources.json"
+premapping_file = path_to_folder + "premapping_data.csv" 
 out_file = path_to_folder + "metadata/bepin_WP1_structure.json"
 
 
@@ -43,6 +51,9 @@ dataneeds = pd.read_excel(xlsx_file,'List Data').fillna("")
 objectives_infoneeds = pd.read_excel(xlsx_file,'Links Decisions-Informations').fillna("")
 infoneeds_dataneeds = pd.read_excel(xlsx_file,'Links Informations-Data').fillna("")
 phases = pd.read_excel(xlsx_file,'Overall links').fillna("") 
+
+### Import
+dataneeds_datasets = pd.read_csv(premapping_file,sep=";")
 
 
 ### Import data from data sources json
@@ -124,16 +135,15 @@ for item in infoneeds_dict:
         item['id'] = item.pop('CODE')
     if 'INFORMATION NEEDS' in item:
         item['name'] = item.pop('INFORMATION NEEDS')
-    # Add weight and availabiltiy (with default values)
+    # Add weight (with default values)
     for item in infoneeds_dict:
         item['weight'] = 1
-        item['availability'] = ""
 for item in infoneeds_dataneeds_dict:
-    if 'INFORMATION NEEDS' in item:
-         item['id'] = hf.standardize_ids(item.pop('INFORMATION NEEDS'))
+    if 'Information Code' in item:
+         item['id'] = hf.standardize_ids(item.pop('Information Code'))
 # Combine the two list of dictionnaries based on id 
 # Create a lookup dictionary from the relations list
-relation_lookup = {item["id"]: item["LINKED DATA NEEDS"] for item in infoneeds_dataneeds_dict}
+relation_lookup = {item["id"]: item["Data Codes"] for item in infoneeds_dataneeds_dict}
 # Update each dictionary in main_list with the corresponding relation
 for item in infoneeds_dict:
     # Reformat info needs list of ids
@@ -141,10 +151,11 @@ for item in infoneeds_dict:
     item["relatedDataNeeds"] = relation_lookup.get(item["id"], "")
 # Convert string containing links to array of strings (one link by string)
 for item in infoneeds_dict:
+    print(item)
     if 'relatedDataNeeds' in item and isinstance(item['relatedDataNeeds'], str):
         item['relatedDataNeeds'] = [link.strip() for link in item['relatedDataNeeds'].split(',')]
         item['relatedDataNeeds'] = hf.standardize_ids(item['relatedDataNeeds'])
-desired_order = ["id", "name", "weight", "availability", "relatedDataNeeds"]
+desired_order = ["id", "name", "weight", "relatedDataNeeds"]
 infoneeds_dict = [
     {key: item[key] for key in desired_order if key in item}
     for item in infoneeds_dict
@@ -152,14 +163,38 @@ infoneeds_dict = [
 
 ## data needs
 dataneeds_dict = dataneeds.to_dict(orient='records')
+dataneeds_datasets_dict = dataneeds_datasets.to_dict(orient='records')
 for item in dataneeds_dict:
-    if 'CODE' in item:
-        item['id'] = item.pop('CODE')
-    if 'DATA NEEDS' in item:
-        item['name'] = item.pop('DATA NEEDS')
-    # Reformat info needs list of ids    
+    if 'Data Code' in item:
+        item['id'] = item.pop('Data Code')
+    if 'Data Label' in item:
+        item['name'] = item.pop('Data Label')
+    # Reformat data needs list of ids    
     item['id'] = hf.standardize_ids(item['id'])
-    item['relatedDatasets'] = []  # mapping to datasets to be added manually
+    item['relatedDatasets'] = [] 
+    # Add availabiltiy (with default values)
+    item['availability'] = ""
+for item in dataneeds_datasets_dict:
+    if 'Data_Code' in item:
+         item['id'] = hf.standardize_ids(item.pop('Data_Code'))
+# Combine the two list of dictionnaries based on id 
+# Create a lookup dictionary from the relations list
+relation_lookup = {item["id"]: item["Datasets"] for item in dataneeds_datasets_dict}
+# Update each dictionary in main_list with the corresponding relation
+for item in dataneeds_dict:
+    # Reformat info needs list of ids
+    item['id'] = hf.standardize_ids(item['id'])
+    item["relatedDatasets"] = relation_lookup.get(item["id"], "")
+# Convert string containing links to array of strings (one link by string)
+for item in dataneeds_dict:
+    if 'relatedDatasets' in item and isinstance(item['relatedDatasets'], str):
+        item['relatedDatasets'] = [link.strip() for link in item['relatedDatasets'].split(',')]
+        # Add step to reformat datasets ids in relatedDatasets field
+desired_order = ["id", "name", "availability", "relatedDatasets"]
+dataneeds_dict = [
+    {key: item[key] for key in desired_order if key in item}
+    for item in dataneeds_dict
+]
 
 
 ### Combine all list of dictionnaries and export in json
