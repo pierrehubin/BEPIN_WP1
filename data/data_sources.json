@@ -34,6 +34,11 @@
       "updateId": 6,
       "updateDatetime": "2025-08-25 11:12:36",
       "updateDescription": "Adding 4 new datasets (IMA atlas, ENA genomic data, Atlas ECDC, BIMD)"
+    },
+    {
+      "updateId": 7,
+      "updateDatetime": "2026-02-02 15:12:20",
+      "updateDescription": "Adding LM&SP data (2)"
     }
   ],
   "dictionnary": [
@@ -2230,7 +2235,7 @@
     {
       "id": 64,
       "name": "Belgian Index of Multiple Deprivation",
-      "shortDescription": "The Belgian Index of Multiple Deprivation provides a multidimensional view on social deprivation in Belgium, integrating 6 domains \u00e2\u20ac\u201c education, employment, income, housing, crime, and health. It provides a robust basis for assessing social inequalities in health and other outcomes.",
+      "shortDescription": "The Belgian Index of Multiple Deprivation provides a multidimensional view on social deprivation in Belgium, integrating 6 domains: education, employment, income, housing, crime, and health. It provides a robust basis for assessing social inequalities in health and other outcomes.",
       "type": "platform",
       "institution": [
         "Sciensano"
@@ -2248,6 +2253,64 @@
       "detailLevel": "aggregated",
       "accessibility": "opendata",
       "updateFrequency": "irregular",
+      "targetPopulation": "General Belgian population",
+      "category": "population factor",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
+      "relatedScenario": [],
+      "relatedObjective": [],
+      "relatedInfoNeed": []
+    },
+    {
+      "id": 65,
+      "name": "Datawarehouse labour market and social protection (open)",
+      "shortDescription": "Le Datawarehouse march\u00c3\u00a9 du travail et protection sociale (DWH MT&PS) vise l'agr\u00c3\u00a9gation de donn\u00c3\u00a9es socio-\u00c3\u00a9conomiques provenant des institutions belges de s\u00c3\u00a9curit\u00c3\u00a9 sociale et d'autres organismes publics. Le but du Datawarehouse march\u00c3\u00a9 du travail et protection sociale est de pouvoir r\u00c3\u00a9pondre de mani\u00c3\u00a8re plus correcte, plus rapide et moins on\u00c3\u00a9reuse aux demandes de donn\u00c3\u00a9es \u00c3\u00a9manant d\u00e2\u20ac\u2122instituts de recherche et des autorit\u00c3\u00a9s.",
+      "type": "platform",
+      "institution": [
+        "BCSS"
+      ],
+      "source": "BCSS",
+      "linkURL": [
+        "https://dwh.ksz-bcss.fgov.be/fr/dwh_page/content/websites/datawarehouse/about/mission.html",
+        "https://dwh.ksz-bcss.fgov.be/fr/dwh_page/content/websites/datawarehouse/data/statistiques-online.html"
+      ],
+      "linkDCAT": "",
+      "contactInfo": [
+        "chris.brijs@ksz-bcss.fgov.be"
+      ],
+      "detailLevel": "aggregated",
+      "accessibility": "opendata",
+      "updateFrequency": "continuous",
+      "targetPopulation": "General Belgian population",
+      "category": "population factor",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 1,
+      "relatedScenario": [],
+      "relatedObjective": [],
+      "relatedInfoNeed": []
+    },
+    {
+      "id": 66,
+      "name": "Datawarehouse labour market and social protection (access)",
+      "shortDescription": "Le Datawarehouse march\u00c3\u00a9 du travail et protection sociale (DWH MT&PS) vise l'agr\u00c3\u00a9gation de donn\u00c3\u00a9es socio-\u00c3\u00a9conomiques provenant des institutions belges de s\u00c3\u00a9curit\u00c3\u00a9 sociale et d'autres organismes publics. Le but du Datawarehouse march\u00c3\u00a9 du travail et protection sociale est de pouvoir r\u00c3\u00a9pondre de mani\u00c3\u00a8re plus correcte, plus rapide et moins on\u00c3\u00a9reuse aux demandes de donn\u00c3\u00a9es \u00c3\u00a9manant d\u00e2\u20ac\u2122instituts de recherche et des autorit\u00c3\u00a9s.",
+      "type": "database",
+      "institution": [
+        "BCSS"
+      ],
+      "source": "BCSS",
+      "linkURL": [
+        "https://dwh.ksz-bcss.fgov.be/fr/dwh_page/content/websites/datawarehouse/about/mission.html",
+        "https://dwh.ksz-bcss.fgov.be/fr/institutions/variables/byinstitution"
+      ],
+      "linkDCAT": "",
+      "contactInfo": [
+        "chris.brijs@ksz-bcss.fgov.be"
+      ],
+      "detailLevel": "pseudonymized",
+      "accessibility": "database",
+      "updateFrequency": "continuous",
       "targetPopulation": "General Belgian population",
       "category": "population factor",
       "isCovid": 0,
