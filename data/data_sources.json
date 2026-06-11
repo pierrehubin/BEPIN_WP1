@@ -39,6 +39,16 @@
       "updateId": 7,
       "updateDatetime": "2026-02-02 15:12:20",
       "updateDescription": "Adding LM&SP data (2)"
+    },
+    {
+      "updateId": 8,
+      "updateDatetime": "2026-06-09 14:44:08",
+      "updateDescription": "Adding motivation barometer"
+    },
+    {
+      "updateId": 9,
+      "updateDatetime": "2026-06-10 10:51:18",
+      "updateDescription": "Adding spatial data, fix special characters"
     }
   ],
   "dictionnary": [
@@ -1166,7 +1176,7 @@
     {
       "id": 29,
       "name": "COVID-19 opendata",
-      "shortDescription": "The data collected by Sciensano and its health partners can provide insight into the dynamics of the epidemic, help to anticipate different scenarios and to elaborate possible measures to curb the spread of the virus. From 31 March 2020, Sciensano makes a number of \u00e2\u20ac\u02dcOpen Data\u00e2\u20ac\u2122 data sets available to interested parties on a weekly basis.",
+      "shortDescription": "The data collected by Sciensano and its health partners can provide insight into the dynamics of the epidemic, help to anticipate different scenarios and to elaborate possible measures to curb the spread of the virus. From 31 March 2020, Sciensano makes a number of ‘Open Data’ data sets available to interested parties on a weekly basis.",
       "type": "database",
       "institution": [
         "Sciensano"
@@ -1525,7 +1535,7 @@
     {
       "id": 40,
       "name": "Seroprevalence SARS-CoV-2 residual samples",
-      "shortDescription": "Assessment of the evolving SARS-CoV-2 seroprevalence and seroincidence related to the first national lockdown in Belgium, based on a nationwide seroprevalence study, stratified by age, sex and region using 3,000\u00e2\u20ac\u201c4,000 residual samples during seven periods between 30 March and 17 October 2020.",
+      "shortDescription": "Assessment of the evolving SARS-CoV-2 seroprevalence and seroincidence related to the first national lockdown in Belgium, based on a nationwide seroprevalence study, stratified by age, sex and region using 3,000–4,000 residual samples during seven periods between 30 March and 17 October 2020.",
       "type": "dataset",
       "institution": [
         "University of Antwerp"
@@ -1830,10 +1840,10 @@
     {
       "id": 50,
       "name": "KMI-IRM opendata",
-      "shortDescription": "L\u00e2\u20ac\u2122Institut royal m\u00c3\u00a9t\u00c3\u00a9orologique (IRM) est un institut scientifique f\u00c3\u00a9d\u00c3\u00a9ral qui propose des services m\u00c3\u00a9t\u00c3\u00a9orologiques et effectue de la recherche dans les domaines de la m\u00c3\u00a9t\u00c3\u00a9orologie et du climat.",
+      "shortDescription": "L’Institut royal meteorologique (IRM) est un institut scientifique federal qui propose des services meteorologiques et effectue de la recherche dans les domaines de la meteorologie et du climat.",
       "type": "collection",
       "institution": "KMI-IRM",
-      "source": "Donn\u00c3\u00a9es bas\u00c3\u00a9es sur plusieurs r\u00c3\u00a9seaux d'observation en Belgique.",
+      "source": "Donnees basees sur plusieurs reseaux d'observation en Belgique.",
       "linkURL": [
         "https://www.meteo.be/fr/services/donnees"
       ],
@@ -1950,7 +1960,7 @@
       "institution": [
         "IVADO"
       ],
-      "source": "The dataset includes an extensive list of epidemiological variables, several policy measures by Oxford\u00e2\u20ac\u2122s government response tracker, and a set of external keys to match the data with Google and Apple mobility reports, with the Hydromet dataset, and with spatial databases such as Eurostat for Europe or GADM worldwide.",
+      "source": "The dataset includes an extensive list of epidemiological variables, several policy measures by Oxford’s government response tracker, and a set of external keys to match the data with Google and Apple mobility reports, with the Hydromet dataset, and with spatial databases such as Eurostat for Europe or GADM worldwide.",
       "linkURL": [
         "https://covid19datahub.io/"
       ],
@@ -2150,7 +2160,7 @@
     {
       "id": 61,
       "name": "IMA Atlas",
-      "shortDescription": "L\u00e2\u20ac\u2122Atlas AIM vous permet de consulter des indicateurs sur des caract\u00c3\u00a9ristiques socio-d\u00c3\u00a9mographiques et sur la consommation de soins de sant\u00c3\u00a9. Ces indicateurs sont pertinents pour la politique de soins de sant\u00c3\u00a9 et sont cr\u00c3\u00a9\u00c3\u00a9s sur la base des banques de donn\u00c3\u00a9es permanentes de l\u00e2\u20ac\u2122Agence InterMutualiste.",
+      "shortDescription": "L’Atlas AIM vous permet de consulter des indicateurs sur des caracteristiques socio-demographiques et sur la consommation de soins de sante. Ces indicateurs sont pertinents pour la politique de soins de sante et sont crees sur la base des banques de donnees permanentes de l’Agence InterMutualiste.",
       "type": "platform",
       "institution": [
         "IMA-AIM"
@@ -2179,7 +2189,7 @@
     {
       "id": 62,
       "name": "European Genomic Data",
-      "shortDescription": "The European Nucleotide Archive (ENA) provides a comprehensive record of the world\u00e2\u20ac\u2122s nucleotide sequencing information, covering raw sequencing data, sequence assembly information and functional annotation.",
+      "shortDescription": "The European Nucleotide Archive (ENA) provides a comprehensive record of the world’s nucleotide sequencing information, covering raw sequencing data, sequence assembly information and functional annotation.",
       "type": "database",
       "institution": [
         "ENA"
@@ -2207,7 +2217,7 @@
     {
       "id": 63,
       "name": "ECDC ATLAS",
-      "shortDescription": "The Surveillance Atlas of Infectious Diseases is a tool that interacts with the latest available data about a number of infectious diseases. The interface allows users to interact and manipulate the data to produce a variety of tables and maps.\u00e2\u20ac\u2039\u00e2\u20ac\u2039 The information contained in the dataset provided through ATLAS is made available by ECDC collating data from the Member States collected through The European Surveillance System (TESSy). Last data available: 2023.",
+      "shortDescription": "The Surveillance Atlas of Infectious Diseases is a tool that interacts with the latest available data about a number of infectious diseases. The interface allows users to interact and manipulate the data to produce a variety of tables and maps.​​ The information contained in the dataset provided through ATLAS is made available by ECDC collating data from the Member States collected through The European Surveillance System (TESSy). Last data available: 2023.",
       "type": "platform",
       "institution": [
         "ECDC"
@@ -2265,7 +2275,7 @@
     {
       "id": 65,
       "name": "Datawarehouse labour market and social protection (open)",
-      "shortDescription": "Le Datawarehouse march\u00c3\u00a9 du travail et protection sociale (DWH MT&PS) vise l'agr\u00c3\u00a9gation de donn\u00c3\u00a9es socio-\u00c3\u00a9conomiques provenant des institutions belges de s\u00c3\u00a9curit\u00c3\u00a9 sociale et d'autres organismes publics. Le but du Datawarehouse march\u00c3\u00a9 du travail et protection sociale est de pouvoir r\u00c3\u00a9pondre de mani\u00c3\u00a8re plus correcte, plus rapide et moins on\u00c3\u00a9reuse aux demandes de donn\u00c3\u00a9es \u00c3\u00a9manant d\u00e2\u20ac\u2122instituts de recherche et des autorit\u00c3\u00a9s.",
+      "shortDescription": "Le Datawarehouse marche du travail et protection sociale (DWH MT&PS) vise l'agregation de donnees socio-economiques provenant des institutions belges de securite sociale et d'autres organismes publics. Le but du Datawarehouse marche du travail et protection sociale est de pouvoir repondre de maniere plus correcte, plus rapide et moins onereuse aux demandes de donnees emanant d’instituts de recherche et des autorites.",
       "type": "platform",
       "institution": [
         "BCSS"
@@ -2294,7 +2304,7 @@
     {
       "id": 66,
       "name": "Datawarehouse labour market and social protection (access)",
-      "shortDescription": "Le Datawarehouse march\u00c3\u00a9 du travail et protection sociale (DWH MT&PS) vise l'agr\u00c3\u00a9gation de donn\u00c3\u00a9es socio-\u00c3\u00a9conomiques provenant des institutions belges de s\u00c3\u00a9curit\u00c3\u00a9 sociale et d'autres organismes publics. Le but du Datawarehouse march\u00c3\u00a9 du travail et protection sociale est de pouvoir r\u00c3\u00a9pondre de mani\u00c3\u00a8re plus correcte, plus rapide et moins on\u00c3\u00a9reuse aux demandes de donn\u00c3\u00a9es \u00c3\u00a9manant d\u00e2\u20ac\u2122instituts de recherche et des autorit\u00c3\u00a9s.",
+      "shortDescription": "Le Datawarehouse marche du travail et protection sociale (DWH MT&PS) vise l'agregation de donnees socio-economiques provenant des institutions belges de securite sociale et d'autres organismes publics. Le but du Datawarehouse marche du travail et protection sociale est de pouvoir repondre de maniere plus correcte, plus rapide et moins onereuse aux demandes de donnees emanant d’instituts de recherche et des autorites.",
       "type": "database",
       "institution": [
         "BCSS"
@@ -2309,13 +2319,70 @@
         "chris.brijs@ksz-bcss.fgov.be"
       ],
       "detailLevel": "pseudonymized",
-      "accessibility": "database",
+      "accessibility": "requestable",
       "updateFrequency": "continuous",
       "targetPopulation": "General Belgian population",
       "category": "population factor",
       "isCovid": 0,
       "isBelgium": 1,
       "isActive": 1,
+      "relatedScenario": [],
+      "relatedObjective": [],
+      "relatedInfoNeed": []
+    },
+    {
+      "id": 67,
+      "name": "Motivation barometer",
+      "shortDescription": "The Covid-19 crisis underscored more than ever the importance of interdisciplinary collaboration between various academic disciplines. Health, social, and clinical psychologists played a key role in investigating the relationship between adherence to measures and motivation. Secondly, by advising measures that are proportional to the risk level we are facing to limit psychological and motivational burden, and thirdly, by alerting other disciplines to the need for support measures and initiatives to strengthen motivation and mental health.",
+      "type": "database",
+      "institution": [
+        "UGent",
+        "UCL"
+      ],
+      "source": "survey",
+      "linkURL": [
+        "https://en.bfp-fbp.be/psychology-and-society-data-repository"
+      ],
+      "linkDCAT": "",
+      "contactInfo": [
+        "info@bfp-fbp.be"
+      ],
+      "detailLevel": "aggregated",
+      "accessibility": "requestable",
+      "updateFrequency": "irregular",
+      "targetPopulation": "General Belgian population",
+      "category": "population factor",
+      "isCovid": 1,
+      "isBelgium": 1,
+      "isActive": 0,
+      "relatedScenario": [],
+      "relatedObjective": [],
+      "relatedInfoNeed": []
+    },
+    {
+      "id": 68,
+      "name": "Statistical sectors",
+      "shortDescription": "vector file with statistical sectors on 2025",
+      "type": "dataset",
+      "institution": [
+        "Statbel"
+      ],
+      "source": "Statbel",
+      "linkURL": [
+        "https://statbel.fgov.be/en/open-data/statistical-sectors-2025"
+      ],
+      "linkDCAT": "",
+      "contactInfo": [
+        "statbel@economie.fgov.be"
+      ],
+      "detailLevel": "aggregated",
+      "accessibility": "opendata",
+      "updateFrequency": "yearly",
+      "targetPopulation": "General Belgian population",
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 1,
+      "isActive": 0,
       "relatedScenario": [],
       "relatedObjective": [],
       "relatedInfoNeed": []

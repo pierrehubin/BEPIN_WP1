@@ -11,11 +11,12 @@ Author: Pierre Hubin
 
 Versioning:
 v1 Creation Feb 13 2025 Pierre Hubin
+v2 Fix handling special charaters in json files Jun 09 2026 Pierre Hubin
 
 """
 
 ### Short description of the update
-update_descr = "Adding datasets after consolidation with WP-2 litterature review"
+update_descr = "Adding spatial data, fix special characters"
 
 ### Need for an update of the info needs labels (True/False)
 infoneeds_update = False
@@ -40,16 +41,16 @@ sys.path.insert(0, path_to_code)
 import helper_functions as hf
 
 ### Read the JSON file (work version)
-with open(mod_file, 'r') as f:
+with open(mod_file, 'r', encoding="utf-8") as f:
     inventory_data = json.load(f)
 f.close()
 # backup the work version in "raw" file
-with open(raw_file, 'w') as f:
-    json.dump(inventory_data, f, indent=2)
+with open(raw_file, 'w', encoding="utf-8") as f:
+    json.dump(inventory_data, f, indent=2, ensure_ascii=False)
 f.close()
 
 ### Make backup of last consolidated version
-with open(out_file, 'r') as f:
+with open(out_file, 'r', encoding="utf-8") as f:
     inventory_cleaned = json.load(f)
 f.close()
 # Get previous version of the inventory db
@@ -57,8 +58,8 @@ current_version = str(len(inventory_cleaned['updates'])-1)
 # define backup path
 backup_file = path_to_folder + "metadata/backup/data_sources_" + current_version + ".json"
 # make backup
-with open(backup_file, 'w') as f:
-    json.dump(inventory_cleaned, f, indent=2)
+with open(backup_file, 'w', encoding="utf-8") as f:
+    json.dump(inventory_cleaned, f, indent=2, ensure_ascii=False)
 f.close()
 
 ### Incrmeent the updates part of the json
@@ -68,12 +69,12 @@ new_update = {"updateId": len(inventory_data['updates']),
 inventory_data['updates'].append(new_update)
 
 ### Write the updated data back to the JSON file
-with open(out_file, 'w') as f:
-    json.dump(inventory_data, f, indent=2)
+with open(out_file, 'w', encoding="utf-8") as f:
+    json.dump(inventory_data, f, indent=2, ensure_ascii=False)
 f.close()
 # also update the tmp file
-with open(mod_file, 'w') as f:
-    json.dump(inventory_data, f, indent=2)
+with open(mod_file, 'w', encoding="utf-8") as f:
+    json.dump(inventory_data, f, indent=2, ensure_ascii=False)
 f.close()
 
 
