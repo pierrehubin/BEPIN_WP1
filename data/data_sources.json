@@ -49,6 +49,11 @@
       "updateId": 9,
       "updateDatetime": "2026-06-10 10:51:18",
       "updateDescription": "Adding spatial data, fix special characters"
+    },
+    {
+      "updateId": 10,
+      "updateDatetime": "2026-07-09 12:14:17",
+      "updateDescription": "Adding OECD dataset, remove 'relatedTo...' fields"
     }
   ],
   "dictionnary": [
@@ -153,24 +158,6 @@
       "fieldDescription": "Flag indicating whether the data collection is still active or not",
       "expectedContent": "0/1",
       "bepinSpecific": 0
-    },
-    {
-      "fieldName": "relatedScenario",
-      "fieldDescription": "Reference(s) to BE-PIN identified scenario(s) for which the dataset can be relevant",
-      "expectedContent": "Array of references to BE-PIN scenarios",
-      "bepinSpecific": 1
-    },
-    {
-      "fieldName": "relatedObjective",
-      "fieldDescription": "Reference(s) to BE-PIN identified information objectives(s) for which the dataset can be relevant",
-      "expectedContent": "Array of references to BE-PIN information objectives",
-      "bepinSpecific": 1
-    },
-    {
-      "fieldName": "relatedInfoNeed",
-      "fieldDescription": "Reference(s) to BE-PIN identified information need(s) that can be adressed with this dataset",
-      "expectedContent": "Array of references to BE-PIN information needs",
-      "bepinSpecific": 1
     }
   ],
   "datasets": [
@@ -198,40 +185,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [
-        "R1",
-        "V1",
-        "D1",
-        "D2"
-      ],
-      "relatedObjective": [
-        "S1",
-        "S3",
-        "S4",
-        "S6",
-        "S8",
-        "C2",
-        "C4",
-        "C5",
-        "P2",
-        "P3",
-        "P6",
-        "P7",
-        "P8",
-        "P11",
-        "P12"
-      ],
-      "relatedInfoNeed": [
-        "I01",
-        "I07",
-        "I08",
-        "I11",
-        "I16",
-        "I19",
-        "I21",
-        "I23"
-      ]
+      "isActive": 1
     },
     {
       "id": 2,
@@ -256,42 +210,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [
-        "R1",
-        "R2",
-        "R3"
-      ],
-      "relatedObjective": [
-        "S1",
-        "S4",
-        "S6",
-        "S8",
-        "C1",
-        "C2",
-        "C4",
-        "C5",
-        "P1",
-        "P3",
-        "P5",
-        "P6",
-        "P7",
-        "P8",
-        "P11",
-        "P12"
-      ],
-      "relatedInfoNeed": [
-        "I01",
-        "I04",
-        "I08",
-        "I13",
-        "I15",
-        "I16",
-        "I19",
-        "I20",
-        "I21",
-        "I25"
-      ]
+      "isActive": 1
     },
     {
       "id": 3,
@@ -314,37 +233,7 @@
       "category": "traditional",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [
-        "R1"
-      ],
-      "relatedObjective": [
-        "S1",
-        "S3",
-        "S4",
-        "S6",
-        "S8",
-        "C2",
-        "C4",
-        "C5",
-        "P2",
-        "P3",
-        "P6",
-        "P7",
-        "P8",
-        "P11",
-        "P12"
-      ],
-      "relatedInfoNeed": [
-        "I01",
-        "I07",
-        "I08",
-        "I11",
-        "I16",
-        "I19",
-        "I21",
-        "I23"
-      ]
+      "isActive": 0
     },
     {
       "id": 4,
@@ -370,41 +259,7 @@
       "category": "traditional",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [
-        "R1"
-      ],
-      "relatedObjective": [
-        "S1",
-        "S4",
-        "S6",
-        "S8",
-        "C1",
-        "C2",
-        "C4",
-        "C5",
-        "P1",
-        "P3",
-        "P5",
-        "P6",
-        "P7",
-        "P8",
-        "P11",
-        "P12"
-      ],
-      "relatedInfoNeed": [
-        "I01",
-        "I02",
-        "I04",
-        "I08",
-        "I13",
-        "I15",
-        "I16",
-        "I19",
-        "I20",
-        "I21",
-        "I25"
-      ]
+      "isActive": 0
     },
     {
       "id": 5,
@@ -429,16 +284,7 @@
       "category": "other",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I01",
-        "I07",
-        "I16",
-        "I19",
-        "I21"
-      ]
+      "isActive": 1
     },
     {
       "id": 6,
@@ -463,16 +309,7 @@
       "category": "population factor",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I01",
-        "I06",
-        "I15",
-        "I19",
-        "I21"
-      ]
+      "isActive": 1
     },
     {
       "id": 7,
@@ -497,15 +334,7 @@
       "category": "population factor",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I01",
-        "I13",
-        "I21",
-        "I25"
-      ]
+      "isActive": 1
     },
     {
       "id": 8,
@@ -526,14 +355,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I02",
-        "I16",
-        "I20"
-      ]
+      "isActive": 1
     },
     {
       "id": 9,
@@ -556,14 +378,7 @@
       "category": "traditional",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I02",
-        "I16",
-        "I20"
-      ]
+      "isActive": 0
     },
     {
       "id": 10,
@@ -588,14 +403,7 @@
       "category": "traditional",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I03",
-        "I04",
-        "I13"
-      ]
+      "isActive": 0
     },
     {
       "id": 11,
@@ -621,12 +429,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 0,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05"
-      ]
+      "isActive": 1
     },
     {
       "id": 12,
@@ -651,13 +454,7 @@
       "category": "pathogen characteristic",
       "isCovid": 0,
       "isBelgium": 0,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I04",
-        "I05"
-      ]
+      "isActive": 1
     },
     {
       "id": 13,
@@ -682,12 +479,7 @@
       "category": "population factor",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I06"
-      ]
+      "isActive": 0
     },
     {
       "id": 14,
@@ -712,12 +504,7 @@
       "category": "population factor",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I06"
-      ]
+      "isActive": 0
     },
     {
       "id": 15,
@@ -743,14 +530,7 @@
       "category": "programmatic",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I06",
-        "I16",
-        "I19"
-      ]
+      "isActive": 0
     },
     {
       "id": 16,
@@ -775,14 +555,7 @@
       "category": "programmatic",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I06",
-        "I16",
-        "I19"
-      ]
+      "isActive": 1
     },
     {
       "id": 17,
@@ -810,14 +583,7 @@
       "category": "programmatic",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I06",
-        "I16",
-        "I19"
-      ]
+      "isActive": 1
     },
     {
       "id": 18,
@@ -840,16 +606,7 @@
       "category": "traditional",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I07",
-        "I11",
-        "I15",
-        "I16",
-        "I23"
-      ]
+      "isActive": 0
     },
     {
       "id": 19,
@@ -874,14 +631,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I01",
-        "I07",
-        "I16"
-      ]
+      "isActive": 1
     },
     {
       "id": 20,
@@ -906,14 +656,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I01",
-        "I07",
-        "I16"
-      ]
+      "isActive": 1
     },
     {
       "id": 21,
@@ -938,17 +681,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I01",
-        "I04",
-        "I07",
-        "I16",
-        "I19",
-        "I21"
-      ]
+      "isActive": 1
     },
     {
       "id": 22,
@@ -970,14 +703,7 @@
       "category": "behavioral",
       "isCovid": 1,
       "isBelgium": 0,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I08",
-        "I11",
-        "I16"
-      ]
+      "isActive": 0
     },
     {
       "id": 23,
@@ -999,14 +725,7 @@
       "category": "behavioral",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I08",
-        "I11",
-        "I16"
-      ]
+      "isActive": 1
     },
     {
       "id": 24,
@@ -1033,14 +752,7 @@
       "category": "behavioral",
       "isCovid": 1,
       "isBelgium": 0,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I08",
-        "I11",
-        "I16"
-      ]
+      "isActive": 0
     },
     {
       "id": 25,
@@ -1065,13 +777,7 @@
       "category": "behavioral",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I06",
-        "I16"
-      ]
+      "isActive": 0
     },
     {
       "id": 26,
@@ -1097,13 +803,7 @@
       "category": "behavioral",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I11",
-        "I24"
-      ]
+      "isActive": 1
     },
     {
       "id": 27,
@@ -1128,13 +828,7 @@
       "category": "other",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I11",
-        "I14"
-      ]
+      "isActive": 1
     },
     {
       "id": 28,
@@ -1163,15 +857,7 @@
       "category": "population factor",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I04",
-        "I07",
-        "I11",
-        "I16"
-      ]
+      "isActive": 1
     },
     {
       "id": 29,
@@ -1196,15 +882,7 @@
       "category": "traditional",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I07",
-        "I11",
-        "I16",
-        "I23"
-      ]
+      "isActive": 0
     },
     {
       "id": 30,
@@ -1232,14 +910,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I07",
-        "I11",
-        "I16"
-      ]
+      "isActive": 1
     },
     {
       "id": 31,
@@ -1267,14 +938,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I01",
-        "I02",
-        "I14"
-      ]
+      "isActive": 1
     },
     {
       "id": 32,
@@ -1299,13 +963,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I01",
-        "I02"
-      ]
+      "isActive": 1
     },
     {
       "id": 33,
@@ -1332,14 +990,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I01",
-        "I02",
-        "I07"
-      ]
+      "isActive": 1
     },
     {
       "id": 34,
@@ -1364,14 +1015,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I02",
-        "I16",
-        "I20"
-      ]
+      "isActive": 1
     },
     {
       "id": 35,
@@ -1396,14 +1040,7 @@
       "category": "programmatic",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I06",
-        "I16",
-        "I19"
-      ]
+      "isActive": 1
     },
     {
       "id": 36,
@@ -1433,14 +1070,7 @@
       "category": "behavioral",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I08",
-        "I11",
-        "I16"
-      ]
+      "isActive": 1
     },
     {
       "id": 37,
@@ -1464,12 +1094,7 @@
       "category": "other",
       "isCovid": 0,
       "isBelgium": 0,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05"
-      ]
+      "isActive": 1
     },
     {
       "id": 38,
@@ -1494,13 +1119,7 @@
       "category": "other",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I01",
-        "I21"
-      ]
+      "isActive": 1
     },
     {
       "id": 39,
@@ -1525,12 +1144,7 @@
       "category": "other",
       "isCovid": 0,
       "isBelgium": 0,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05"
-      ]
+      "isActive": 1
     },
     {
       "id": 40,
@@ -1553,12 +1167,7 @@
       "category": "Population factor",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I06"
-      ]
+      "isActive": 0
     },
     {
       "id": 41,
@@ -1583,14 +1192,7 @@
       "category": "other",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I08",
-        "I11",
-        "I16"
-      ]
+      "isActive": 0
     },
     {
       "id": 42,
@@ -1615,12 +1217,7 @@
       "category": "other",
       "isCovid": 0,
       "isBelgium": 0,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05"
-      ]
+      "isActive": 1
     },
     {
       "id": 43,
@@ -1645,12 +1242,7 @@
       "category": "other",
       "isCovid": 0,
       "isBelgium": 0,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05"
-      ]
+      "isActive": 1
     },
     {
       "id": 44,
@@ -1671,16 +1263,7 @@
       "category": "other",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I02",
-        "I03",
-        "I11",
-        "I20",
-        "I24"
-      ]
+      "isActive": 0
     },
     {
       "id": 45,
@@ -1705,12 +1288,7 @@
       "category": "other",
       "isCovid": 0,
       "isBelgium": 0,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05"
-      ]
+      "isActive": 1
     },
     {
       "id": 46,
@@ -1736,13 +1314,7 @@
       "category": "programmatic",
       "isCovid": 1,
       "isBelgium": 0,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05",
-        "I24"
-      ]
+      "isActive": 0
     },
     {
       "id": 47,
@@ -1768,12 +1340,7 @@
       "category": "traditional",
       "isCovid": 1,
       "isBelgium": 0,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05"
-      ]
+      "isActive": 0
     },
     {
       "id": 48,
@@ -1797,12 +1364,7 @@
       "category": "other",
       "isCovid": 1,
       "isBelgium": 0,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05"
-      ]
+      "isActive": 0
     },
     {
       "id": 49,
@@ -1828,14 +1390,7 @@
       "category": "Traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I02",
-        "I16",
-        "I20"
-      ]
+      "isActive": 1
     },
     {
       "id": 50,
@@ -1857,10 +1412,7 @@
       "category": "Other",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": []
+      "isActive": 1
     },
     {
       "id": 51,
@@ -1885,12 +1437,7 @@
       "category": "Traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05"
-      ]
+      "isActive": 1
     },
     {
       "id": 52,
@@ -1916,12 +1463,7 @@
       "category": "Population factor",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I11"
-      ]
+      "isActive": 0
     },
     {
       "id": 53,
@@ -1944,13 +1486,7 @@
       "category": "other",
       "isCovid": 1,
       "isBelgium": 0,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05",
-        "I16"
-      ]
+      "isActive": 0
     },
     {
       "id": 54,
@@ -1975,12 +1511,7 @@
       "category": "traditional",
       "isCovid": 1,
       "isBelgium": 0,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05"
-      ]
+      "isActive": 0
     },
     {
       "id": 55,
@@ -2006,13 +1537,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 0,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05",
-        "I16"
-      ]
+      "isActive": 1
     },
     {
       "id": 56,
@@ -2037,12 +1562,7 @@
       "category": "behavioral",
       "isCovid": 0,
       "isBelgium": 0,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": [
-        "I05"
-      ]
+      "isActive": 0
     },
     {
       "id": 57,
@@ -2068,10 +1588,7 @@
       "category": "behavioral",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": []
+      "isActive": 1
     },
     {
       "id": 58,
@@ -2096,10 +1613,7 @@
       "category": "behavioral",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": []
+      "isActive": 1
     },
     {
       "id": 59,
@@ -2123,10 +1637,7 @@
       "category": "behavioral",
       "isCovid": 0,
       "isBelgium": 0,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": []
+      "isActive": 1
     },
     {
       "id": 60,
@@ -2152,10 +1663,7 @@
       "category": "other",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": []
+      "isActive": 1
     },
     {
       "id": 61,
@@ -2181,10 +1689,7 @@
       "category": "population factor",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": []
+      "isActive": 1
     },
     {
       "id": 62,
@@ -2209,10 +1714,7 @@
       "category": "pathogen characteristic",
       "isCovid": 0,
       "isBelgium": 0,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": []
+      "isActive": 1
     },
     {
       "id": 63,
@@ -2237,10 +1739,7 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 0,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": []
+      "isActive": 0
     },
     {
       "id": 64,
@@ -2267,10 +1766,7 @@
       "category": "population factor",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": []
+      "isActive": 1
     },
     {
       "id": 65,
@@ -2296,10 +1792,7 @@
       "category": "population factor",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": []
+      "isActive": 1
     },
     {
       "id": 66,
@@ -2325,10 +1818,7 @@
       "category": "population factor",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 1,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": []
+      "isActive": 1
     },
     {
       "id": 67,
@@ -2354,10 +1844,7 @@
       "category": "population factor",
       "isCovid": 1,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": []
+      "isActive": 0
     },
     {
       "id": 68,
@@ -2382,10 +1869,32 @@
       "category": "traditional",
       "isCovid": 0,
       "isBelgium": 1,
-      "isActive": 0,
-      "relatedScenario": [],
-      "relatedObjective": [],
-      "relatedInfoNeed": []
+      "isActive": 1
+    },
+    {
+      "id": 69,
+      "name": "OECD health statistics",
+      "shortDescription": "OECD Health Statistics offers the most comprehensive source of comparable statistics on health and health systems across OECD countries. It is an essential tool to carry out comparative analyses and draw lessons from international comparisons of diverse health systems.",
+      "type": "dataset",
+      "institution": [
+        "OECD"
+      ],
+      "source": "OECD",
+      "linkURL": [
+        "https://www.oecd.org/en/data/datasets/oecd-health-statistics.html"
+      ],
+      "linkDCAT": "",
+      "contactInfo": [
+        ""
+      ],
+      "detailLevel": "aggregated",
+      "accessibility": "opendata",
+      "updateFrequency": "yearly",
+      "targetPopulation": "General population",
+      "category": "traditional",
+      "isCovid": 0,
+      "isBelgium": 0,
+      "isActive": 1
     }
   ]
 }
