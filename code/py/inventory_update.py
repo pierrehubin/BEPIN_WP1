@@ -16,7 +16,7 @@ v2 Fix handling special charaters in json files Jun 09 2026 Pierre Hubin
 """
 
 ### Short description of the update
-update_descr = "Adding spatial data, fix special characters"
+update_descr = "Adding OECD dataset, remove 'relatedTo...' fields"
 
 ### Need for an update of the info needs labels (True/False)
 infoneeds_update = False
