@@ -9,14 +9,17 @@
 # 
 # Versioning:
 # v1 Creation Jun 11 2026 Pierre Hubin
+# v2 Categorize y-axis Jul 22 2026 Pierre Hubin
+# v3 New version of graph after aggregating by acessibility
 ##############################################################
 
 library(readxl)
 library(jsonlite)
+library(tidyverse)
 library(ggplot2)
 
 ### 1. Read inputs
-path_to_folder <- "//define/path/here/"  # replace with own dir
+path_to_folder <- "../"  # replace with own dir
 path_to_excel <- paste0(path_to_folder,"T13_preMapping.xlsx")
 path_to_output <- paste0(path_to_folder,"R/plot_datasets.png")
 df <- read_excel(path_to_excel,sheet = "DataDatasets")
@@ -45,53 +48,33 @@ counts$accessibility <- factor(counts$accessibility,
                                 levels = c("restricted", "requestable", "opendata"),
                                 labels = c("Restricted", "Requestable", "Open data"))
 
-counts$covid_color <- ifelse(counts$isCovid == 1, "COVID-19 specific", "Not COVID-19 specific")
+### 4. Aggregate by accessibility x number of needs addressed
+###    and by covid flag x number of needs addressed
 
-### 4. Add jitter
-counts$x_jit <- jitter(as.numeric(counts$accessibility),factor=2.5)
-counts$y_jit <- jitter(counts$n_needs,factor=2.5)
+agg_accessibility <- counts %>% group_by(n_needs,accessibility) %>%
+  summarise(n_datasets=n())
 
-### 5. Colours 
-pt_colors <- c("COVID-19 specific"     = "#1565C0",
-               "Not COVID-19 specific" = "#90A4AE")
+agg_covid <- counts %>% group_by(n_needs,isCovid) %>%
+  summarise(n_datasets=n())
 
-### 6. Axis geometry 
-y_max    <- max(counts$n_needs)
-y_breaks <- 1:y_max
-n_x      <- nlevels(counts$accessibility)
-y_lo     <- min(counts$y_jit) - 0.4
-y_hi     <- y_max + 0.5
+### 5. Plot 
+cl_colors <- c("Restricted" = "#e34916", "Requestable" = "#fa9507", "Open data" = "#41ea0e")
+x_ticks <- unique(agg_accessibility$n_needs)
+n_x <- length(x_levels)
 
-### 7. Plot 
-p <- ggplot(counts) +
+p <- ggplot(agg_accessibility, aes(fill=accessibility, y=n_datasets, x=n_needs)) +
 
-  # Alternating column shading
-  geom_rect(data = data.frame(x = seq(1, n_x, 2)),
-            aes(xmin = x - 0.5, xmax = x + 0.5, ymin = -Inf, ymax = Inf),
-            fill = "#F5F7FA", inherit.aes = FALSE) +
-
-  # Grid lines
-  geom_hline(yintercept = y_breaks, color = "#DEDEDE", linewidth = 0.3) +
-  geom_vline(xintercept = seq(0.5, n_x + 0.5, 1), color = "#DEDEDE", linewidth = 0.3) +
-
-  # Dataset id labels
-  geom_text(aes(x = x_jit, y = y_jit, label = ds_id, color = covid_color),
-            size = 2.7, fontface = "bold", family = "mono") +
-
-  # Scales 
-  scale_color_manual(name   = NULL,
-                     values = pt_colors) +
-  scale_x_continuous(breaks = seq_along(levels(counts$accessibility)),
-                     labels = levels(counts$accessibility),
-                     limits = c(0.5, n_x + 0.5), expand = c(0, 0)) +
-  scale_y_continuous(breaks = y_breaks,
-                     limits = c(y_lo, y_hi), expand = c(0, 0)) +
+  geom_bar(position="stack", stat="identity") +
 
   # Labels
   labs(
-    x = "Accessibility",
-    y = "Number of data needs addressed"
+    x = "Number of data needs addressed",
+    y = "Number of datasets"
   ) +
+  
+  scale_fill_manual(values = cl_colors, name= "Accessibility") +
+  scale_x_continuous(breaks = seq_along(x_ticks), labels = x_ticks,
+                     limits = c(0.5, n_x + 0.5), expand = c(0, 0)) +
 
   # Theme 
   theme_minimal(base_size = 9) +
@@ -99,15 +82,15 @@ p <- ggplot(counts) +
     plot.title       = element_text(size = 13, face = "bold", margin = margin(b = 3)),
     plot.subtitle    = element_text(size = 7,  color = "#546E7A",
                                     margin = margin(b = 8), lineheight = 1.45),
-    axis.title       = element_text(size = 9,  face = "bold"),
+    axis.title       = element_text(size = 10,  face = "bold"),
     axis.title.x     = element_text(margin = margin(t = 10)),
     axis.title.y     = element_text(margin = margin(r = 8)),
     axis.text.x      = element_text(size = 10, face = "bold", color = "#37474F"),
-    axis.text.y      = element_text(size = 9,  color = "#37474F"),
+    axis.text.y      = element_text(size = 10,  color = "#37474F"),
     panel.grid       = element_blank(),
     legend.position  = "bottom",
-    legend.title     = element_text(size = 8,  face = "bold"),
-    legend.text      = element_text(size = 8),
+    legend.title     = element_text(size = 10,  face = "bold"),
+    legend.text      = element_text(size = 10),
     legend.key.size  = unit(0.45, "cm"),
     plot.background  = element_rect(fill = "white", color = NA),
     panel.background = element_rect(fill = "white", color = NA),
@@ -115,5 +98,5 @@ p <- ggplot(counts) +
   ) +
   guides(color = guide_legend(override.aes = list(size = 4.5)))
 
-### 8. Save 
+### 6. Save 
 ggsave(path_to_output, plot = p, width = 10, height = 8, dpi = 180, bg = "white")

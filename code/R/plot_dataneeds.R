@@ -9,13 +9,16 @@
 # 
 # Versioning:
 # v1 Creation Jun 10 2026 Pierre Hubin
+# v2 Categorize y-axis Jul 22 2026 Pierre Hubin
+# v3 New version of graph after aggregating over data needs
 ##############################################################
 
 library(readxl)
 library(ggplot2)
+library(tidyverse)
 
 ### 1. Read & clean
-path_to_folder <- "//define/path/here/"  # replace with own dir
+path_to_folder <- "../"  # replace with own dir
 path_to_excel <- paste0(path_to_folder,"T13_preMapping.xlsx")
 path_to_output <- paste0(path_to_folder,"R/plot_dataneeds.png")
 df <- read_excel(path_to_excel,sheet = "DataDatasets")
@@ -26,63 +29,35 @@ df$min_req <- trimws(as.character(df$MinDatasetsReq))
 df$n_id[is.na(df$n_id)] <- 0
 df$Data_Code_plot <- as.character(as.numeric(substr(df$Data_Code,2,4)))
 
-### 2. Remove (not, 0) items — pure gaps with no information 
+### 2. Remove (not, 0) items, gaps with no information 
 df <- df[!(df$min_req == "not" & df$n_id == 0), ]
+x_max <- max(as.integer(df$MinDatasetsReq),na.rm=TRUE)
 
-### 3. X-axis ordered factor
-num_vals <- sort(unique(suppressWarnings(
-  as.integer(df$min_req[!df$min_req %in% c("not", "partially")]))))
-num_vals <- num_vals[!is.na(num_vals)]
-x_levels <- c("not", "partially", as.character(num_vals))
-# Drop "not" if no items remain there
-x_levels <- x_levels[x_levels %in% df$min_req]
-df$x_cat <- factor(df$min_req, levels = x_levels)
+### 3. Aggregate by accessibility x number of datasets required
 
-### 4. jitter dots
-df$x_jit <- jitter(as.numeric(df$x_cat),factor=2.5)
-df$y_jit <- jitter(df$n_id,factor=2.5)
+agg_dataneeds <- df %>% group_by(ClassificationDataNeeds,MinDatasetsReq) %>%
+  summarise(n_dataneeds=n()) %>%
+  mutate(MinDatasetsReq=factor(MinDatasetsReq,
+    levels=c(seq(1,x_max),"partially"),
+    labels=c(seq(1,x_max),"X")))
 
-### 5. Colours 
-cl_colors <- c("G" = "#2E7D32", "O" = "#E65100")
-cl_labels <- c("G" = "Good match (G)",
-                "O" = "Partial match (O)")
+### 4. Plot 
 
-### 6. Axis geometry 
-n_x      <- length(x_levels)
-y_max    <- max(df$n_id)
-y_breaks <- 0:y_max
-y_lo     <- min(df$y_jit) - 0.4
-y_hi     <- y_max + 0.5
+cl_colors <- c("G" = "#41ea0e", "O" = "#fa9507")
+cl_labels <- c("G" = "Total match \n and open",
+                "O" = "Partial match \n and/or not open")
 
-### 7. Plot 
-p <- ggplot(df) +
+p <- ggplot(agg_dataneeds, aes(fill=ClassificationDataNeeds , y=n_dataneeds, x=MinDatasetsReq)) +
 
-  # Alternating column shading
-  geom_rect(data = data.frame(x = seq(1, n_x, 2)),
-            aes(xmin = x - 0.5, xmax = x + 0.5, ymin = -Inf, ymax = Inf),
-            fill = "#F5F7FA", inherit.aes = FALSE) +
-
-  # Grid lines
-  geom_hline(yintercept = y_breaks, color = "#DEDEDE", linewidth = 0.3) +
-  geom_vline(xintercept = seq(0.5, n_x + 0.5, 1), color = "#DEDEDE", linewidth = 0.3) +
-
-  # Data need labels
-  geom_text(aes(x = x_jit, y = y_jit, label = Data_Code_plot, color = cl),
-            family = "mono") +
-
-  # Scales
-  scale_color_manual(name   = "Data need classification",
-                     values = cl_colors, labels = cl_labels) +
-  scale_x_continuous(breaks = seq_along(x_levels), labels = x_levels,
-                     limits = c(0.5, n_x + 0.5), expand = c(0, 0)) +
-  scale_y_continuous(breaks = y_breaks,
-                     limits = c(y_lo, y_hi), expand = c(0, 0)) +
+  geom_bar(position="stack", stat="identity") +
 
   # Labels
   labs(
-    x = "Minimum datasets required",
-    y = "Number of datasets identified"
+    x = "Number of datasets required",
+    y = "Number of data needs"
   ) +
+  
+  scale_fill_manual(values = cl_colors, name= "Accessibility", labels = cl_labels) +
 
   # Theme 
   theme_minimal(base_size = 9) +
@@ -90,15 +65,15 @@ p <- ggplot(df) +
     plot.title       = element_text(size = 13, face = "bold", margin = margin(b = 3)),
     plot.subtitle    = element_text(size = 7,  color = "#546E7A",
                                     margin = margin(b = 8), lineheight = 1.45),
-    axis.title       = element_text(size = 9,  face = "bold"),
+    axis.title       = element_text(size = 10,  face = "bold"),
     axis.title.x     = element_text(margin = margin(t = 10)),
     axis.title.y     = element_text(margin = margin(r = 8)),
-    axis.text.x      = element_text(size = 9,  face = "bold", color = "#37474F"),
-    axis.text.y      = element_text(size = 9,  color = "#37474F"),
+    axis.text.x      = element_text(size = 10, face = "bold", color = "#37474F"),
+    axis.text.y      = element_text(size = 10,  color = "#37474F"),
     panel.grid       = element_blank(),
     legend.position  = "bottom",
-    legend.title     = element_text(size = 8,  face = "bold"),
-    legend.text      = element_text(size = 8),
+    legend.title     = element_text(size = 10,  face = "bold"),
+    legend.text      = element_text(size = 10),
     legend.key.size  = unit(0.45, "cm"),
     plot.background  = element_rect(fill = "white", color = NA),
     panel.background = element_rect(fill = "white", color = NA),
@@ -106,5 +81,5 @@ p <- ggplot(df) +
   ) +
   guides(color = guide_legend(override.aes = list(size = 4.5)))
 
-### 8. Save 
+### 5. Save 
 ggsave(path_to_output, plot = p, width = 12, height = 8.5, dpi = 180, bg = "white")

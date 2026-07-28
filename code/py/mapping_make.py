@@ -24,6 +24,8 @@ v5  Update to fit new excel structure
     March 24 2026 Pierre Hubin
 v6  Simplify code after redefining data needs in the excel
     April 15 2026 Pierre Hubin
+v7  Fix renaming columns when importing excel
+    July 13 2026 Pierre Hubin
 
 """
 
@@ -36,7 +38,7 @@ import json
 ### Define paths and filenames
 path_to_folder = "//define/path/here/"
 path_to_code = path_to_folder + "py"
-xlsx_file = path_to_folder + "T13_preMapping_150426.xlsx"  # New excel modified, should contain all info
+xlsx_file = path_to_folder + "T13_preMapping.xlsx"  # New excel modified, should contain all info
 datasources_file = path_to_folder + "metadata/data_sources.json"
 premapping_file = path_to_folder + "premapping_data.csv" 
 out_file = path_to_folder + "metadata/bepin_WP1_structure.json"
@@ -49,8 +51,11 @@ import helper_functions as hf
 
 ### Import data from excel 
 infoneeds = pd.read_excel(xlsx_file,'InfoNeeds').fillna("")
+infoneeds = infoneeds.rename(columns = {"Info needs code":"ID", "Info needs label":"Label"})
 dataneeds = pd.read_excel(xlsx_file,'DataNeeds').fillna("") 
+dataneeds = dataneeds.rename(columns = {"Data needs code":"ID", "Data Needs Label":"Label"})
 infoneeds_dataneeds = pd.read_excel(xlsx_file,'InfoData').fillna("")
+infoneeds_dataneeds = infoneeds_dataneeds.rename(columns = {"Info need code":"InfoLabel", "Data needs code":"DataLabel"})
 
 ### Import mapping data to datasets
 dataneeds_datasets = pd.read_csv(premapping_file,sep=";")
