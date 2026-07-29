@@ -1,73 +1,73 @@
 BE-PIN Dataset Inventory
 ================
 
-<table class="table table-striped table-condensed" style="font-size: 10.5px; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-condensed" style="font-size: 9px; margin-left: auto; margin-right: auto;">
 
 <thead>
 
 <tr>
 
-<th style="text-align:right;padding: 2px 3px;">
+<th style="text-align:right;padding: 1px 2px;">
 
 ID
 </th>
 
-<th style="text-align:left;padding: 2px 3px;">
+<th style="text-align:left;padding: 1px 2px;">
 
 Name
 </th>
 
-<th style="text-align:left;padding: 2px 3px;">
+<th style="text-align:left;padding: 1px 2px;">
 
 Type
 </th>
 
-<th style="text-align:left;padding: 2px 3px;">
+<th style="text-align:left;padding: 1px 2px;">
 
 Institution
 </th>
 
-<th style="text-align:left;padding: 2px 3px;">
+<th style="text-align:left;padding: 1px 2px;">
 
 Category
 </th>
 
-<th style="text-align:left;padding: 2px 3px;">
+<th style="text-align:left;padding: 1px 2px;">
 
 Detail Level
 </th>
 
-<th style="text-align:left;padding: 2px 3px;">
+<th style="text-align:left;padding: 1px 2px;">
 
 Accessibility
 </th>
 
-<th style="text-align:left;padding: 2px 3px;">
+<th style="text-align:left;padding: 1px 2px;">
 
 Update Frequency
 </th>
 
-<th style="text-align:left;padding: 2px 3px;">
+<th style="text-align:left;padding: 1px 2px;">
 
 COVID specific
 </th>
 
-<th style="text-align:left;padding: 2px 3px;">
+<th style="text-align:left;padding: 1px 2px;">
 
 Belgium specific
 </th>
 
-<th style="text-align:left;padding: 2px 3px;">
+<th style="text-align:left;padding: 1px 2px;">
 
 Active
 </th>
 
-<th style="text-align:left;padding: 2px 3px;">
+<th style="text-align:left;padding: 1px 2px;">
 
 Short Description
 </th>
 
-<th style="text-align:left;padding: 2px 3px;">
+<th style="text-align:left;padding: 1px 2px;">
 
 Link
 </th>
@@ -80,68 +80,68 @@ Link
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 1
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 EPILABO
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 table
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 case-based
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Epilabo is a network of clinical microbiology laboratories coordinated
 by Sciensano contributing to …
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/network-sentinel-laboratories-epilabo)
 </td>
@@ -150,68 +150,68 @@ by Sciensano contributing to …
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 2
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 SARI
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 case-based
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 SARI consists in a network of 10 hospitals to monitor cases of severe
 acute respiratory infections
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/severe-acute-respiratory-infection-surveillance-a-sentinel-network-hospitals)
 </td>
@@ -220,68 +220,68 @@ acute respiratory infections
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 3
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The COVID-19 Test Results data collection
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 case-based
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 real-time
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The COVID-19 test results data collection is a database consisting of
 seven messages aiming at colle…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://docs.healthdata.be/documentation/covid-19-test-results/covid-19-test-results-data-collection)
 </td>
@@ -290,68 +290,68 @@ seven messages aiming at colle…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 4
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Clinical Hospital Survey
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 case-based
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The Clinical Hospital Survey (CHS) is a surveillance that was setup in
 the context of the COVID-19 p…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 </td>
 
@@ -359,68 +359,68 @@ the context of the COVID-19 p…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 5
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 RN Consult
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Federal Public Service
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 nominative
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 real-time
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 RN consult is a tool providing an access to a subset of variables of the
 national register at the in…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.ehealth.fgov.be/ehealthplatform/fr/service-rnconsult)
 </td>
@@ -429,68 +429,68 @@ national register at the in…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 6
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 IMA
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 data product
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 IMA-AIM
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 population factor
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 pseudonymized
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 monthly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Agence InterMutualiste (AIM) gathers patient data from the seven Belgian
 mutual insurance companies …
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.aim-ima.be/-Donnees-de-sante-)
 </td>
@@ -499,68 +499,68 @@ mutual insurance companies …
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 7
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 DEMOBEL
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 data product
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Statbel
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 population factor
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 pseudonymized
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 requestable
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 When the new population figures were published in June 2019, Statbel,
 the Belgian statistical office…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://statbel.fgov.be/en/news/demobel-new-demographic-database)
 </td>
@@ -569,67 +569,67 @@ the Belgian statistical office…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 8
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 INFBARO
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 case-based
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The General Practitioners Infection Barometer, a surveillance of
 consultations with GPs for infectio…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/gp-infection-barometer)
 </td>
@@ -638,67 +638,67 @@ consultations with GPs for infectio…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 9
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 COVID-19 Barometer
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 case based
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 General practitioners in Belgium using electronic patient records are
 invited to participate in the …
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/covid-19-barometer-general-practices)
 </td>
@@ -707,68 +707,68 @@ invited to participate in the …
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 10
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Contact Tracing
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano, healthdata.be
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 pseudonymized
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 real-time
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Contact tracing is a method used worldwide to limit the spread of
 diseases and has already been used…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://fair.healthdata.be/dataset/99dee0e3-d302-4e03-a150-e3d31c820b0a)
 </td>
@@ -777,68 +777,68 @@ diseases and has already been used…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 11
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 ERVISS
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 collection
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 ECDC
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Data underlying the interactive dashboard provides a weekly integrated
 epidemiological summary for i…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.ecdc.europa.eu/en/publications-data/european-respiratory-virus-surveillance-summary-erviss)
 </td>
@@ -847,67 +847,67 @@ epidemiological summary for i…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 12
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 GISAID
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 GISAID
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 pathogen characteristic
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 requestable
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The GISAID Data Science Initiative promotes the rapid sharing of data
 from priority pathogens includ…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://gisaid.org/)
 </td>
@@ -916,68 +916,68 @@ from priority pathogens includ…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 13
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 SalivaHIS
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 population factor
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 longitudinal follow-up
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 irregular
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 During the period March 2021-April 2022, a randomly selected group of
 the adult population in Belgiu…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/study-prevalence-antibodies-against-coronavirus-sars-cov-2-belgian-population)
 </td>
@@ -986,68 +986,68 @@ the adult population in Belgiu…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 14
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 SARS-CoV-2 HCW
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 population factor
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 longitudinal follow-up
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 irregular
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The goal of this study is to determine how many Belgian hospital
 healthcare workers (HCW) got in con…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/sars-cov-2-prevalence-seroprevalence-and-seroconversion-among-healthcare-workers-belgium-during)
 </td>
@@ -1056,67 +1056,67 @@ healthcare workers (HCW) got in con…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 15
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 VACCINNET+
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 dataset
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano-Healthdata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 programmatic
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 nominative
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 COVID-19 vaccine register
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/linking-registers-covid-19-vaccine-surveillance)
 </td>
@@ -1125,68 +1125,68 @@ COVID-19 vaccine register
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 16
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 VACCINNET
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Department Zorg
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 programmatic
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 pseudonymized
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Vaccinnet is the ordering and registration system for vaccines of the
 Flemish health authority
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.vaccinnet.be/Vaccinnet/welkom.do)
 </td>
@@ -1195,68 +1195,68 @@ Flemish health authority
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 17
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 VACCICARD
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 AViQ, Vivalis, ONE
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 programmatic
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 nominative
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Vaccicard is the registration system for vaccines of the Walloon and
 Brussels health authorities
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://brusselshealthnetwork.be/enregistrement-des-vaccinations/)
 </td>
@@ -1265,68 +1265,68 @@ Brussels health authorities
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 18
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Surge Capacity Survey
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 dataset
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 FPS
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The surge capacity survey was put in place during the to monitor the
 number of hospitalizations and …
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 </td>
 
@@ -1334,68 +1334,68 @@ number of hospitalizations and …
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 19
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 ILI-NH
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 dataset
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The World Health Organization has recommended to integrate COVID-19
 surveillance in a sentinel surve…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/influenza-illness-including-covid-19-sentinel-surveillance-belgian-nursing-homes)
 </td>
@@ -1404,68 +1404,68 @@ surveillance in a sentinel surve…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 20
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Be-MOMO NH
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 dataset
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Be-MOMO in nursing homes (NH) concerns the monitoring of all-cause
 mortality among residents of nurs…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/belgian-mortality-monitoring-nursing-homes)
 </td>
@@ -1474,68 +1474,68 @@ mortality among residents of nurs…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 21
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Be-MOMO
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 dataset
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Be-MOMO is the surveillance of all-cause mortality in Belgium, at the
 national and regional levels. …
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/belgian-mortality-monitoring)
 </td>
@@ -1544,68 +1544,68 @@ national and regional levels. …
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 22
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Google mobility
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 data product
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Google
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 behavioral
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 As global communities responded to COVID-19, we heard from public health
 officials that the same typ…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.google.com/covid19/mobility/)
 </td>
@@ -1614,68 +1614,68 @@ officials that the same typ…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 23
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Telephony mobility
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 table
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Proximus, Telenet
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 behavioral
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 requestable
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 A dataset collating the travels in and out of zip codes in Belgium based
 on telephony data
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 </td>
 
@@ -1683,68 +1683,68 @@ on telephony data
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 24
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 CoMix
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 dataset
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 EpiPose
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 behavioral
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 longitudinal follow-up
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 irregular
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 CoMix is a groundbreaking study that follows households across Europe in
 real-time over the course o…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.uhasselt.be/en/aparte-sites-partner-en/epipose/the-comix-study)
 </td>
@@ -1753,68 +1753,68 @@ real-time over the course o…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 25
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 COVID19HIS
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 behavioral
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 longitudinal follow-up
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 irregular
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The COVID-19 health surveys are a series of cross-sectional surveys that
 aim at monitoring the impac…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/covid-19-health-surveys)
 </td>
@@ -1823,68 +1823,68 @@ aim at monitoring the impac…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 26
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 BELHEALTH
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 behavioral
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 longitudinal follow-up
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 irregular
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 BELHEALTH is a longitudinal study in the general adult population in
 Belgium. It aims to monitor the…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/belgian-health-and-well-being-cohort)
 </td>
@@ -1893,68 +1893,68 @@ Belgium. It aims to monitor the…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 27
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 CoBRHA
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 eHealth
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 nominative
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 monthly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 CoBRHA (Common Base Registry for HealthCare Actor) is the database
 shared by the various public inst…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.ehealth.fgov.be/ehealthplatform/fr/service-cobrha-common-base-registry-for-healthcare-actor)
 </td>
@@ -1963,68 +1963,68 @@ shared by the various public inst…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 28
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 CoVWWSurv
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 population factor
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The surveillance measures the evolution of coronavirus (SARS-CoV-2),
 respiratory syncytial virus (RS…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/national-wastewater-based-epidemiological-surveillance)
 </td>
@@ -2033,68 +2033,68 @@ respiratory syncytial virus (RS…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 29
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 COVID-19 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The data collected by Sciensano and its health partners can provide
 insight into the dynamics of the…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://epistat.sciensano.be/covid/)
 </td>
@@ -2103,68 +2103,68 @@ insight into the dynamics of the…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 30
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Infectieradar
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 UHasselt, University of Antwerp, SIMID, Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 longitudinal follow-up
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 requestable
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 People who have registered as participants in Infectieradar report once
 a week to Infectieradar whet…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://survey.infectieradar.be/welcome)
 </td>
@@ -2173,68 +2173,68 @@ a week to Infectieradar whet…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 31
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Minimal hospital data
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 FPS
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 case-based
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The minimal hospital data is a registration with which all
 non-psychiatric hospitals in Belgium must…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.health.belgium.be/fr/sante/organisation-des-soins-de-sante/hopitaux/systemes-denregistrement/rhm)
 </td>
@@ -2243,68 +2243,68 @@ non-psychiatric hospitals in Belgium must…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 32
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 NRC surveillance
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 case-based
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 yearly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Since 2011, the Epidemiology Service of Infectious Diseases of
 Sciensano, responsible for infectious…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/national-reference-centers-human-microbiology#nrc_nrl-block_1-0)
 </td>
@@ -2313,68 +2313,68 @@ Sciensano, responsible for infectious…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 33
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Mandatory notifications
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Doctors and laboratories in Belgium are obliged to report certain
 infectious diseases to the compete…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/notifiable-infectious-diseases)
 </td>
@@ -2383,68 +2383,68 @@ infectious diseases to the compete…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 34
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 SGPs
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The network comprises about 100 general practices all over Belgium who
 weekly report data about diff…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/network-general-practitioners)
 </td>
@@ -2453,68 +2453,68 @@ weekly report data about diff…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 35
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 e-vax
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 ONE
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 programmatic
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 case-based
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 e-vax is the registration system for paediatrics vaccines in the Belgian
 French community for which …
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.e-vax.be/welkom.do)
 </td>
@@ -2523,68 +2523,68 @@ French community for which …
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 36
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Flemish social contact survey
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 dataset
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 UHasselt, University of Antwerp, SIMID
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 behavioral
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 longitudinal follow-up
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 irregular
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The second social contact survey in Flanders endorses the findings of
 its 2006 predecessor and adds …
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://bmcinfectdis.biomedcentral.com/articles/10.1186/s12879-021-05949-4#Sec2)
 </td>
@@ -2593,68 +2593,68 @@ its 2006 predecessor and adds …
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 37
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 ourworldindata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 collection
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Global Change Data Lab
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Poverty, disease, hunger, climate change, war, existential risks, and
 inequality: the world faces ma…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://ourworldindata.org/)
 </td>
@@ -2663,68 +2663,68 @@ inequality: the world faces ma…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 38
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Structure of the population
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 dataset
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Statbel
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 yearly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 When the new population figures were published in June 2019, Statbel,
 the Belgian statistical office…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://statbel.fgov.be/en/themes/population/structure-population)
 </td>
@@ -2733,68 +2733,68 @@ the Belgian statistical office…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 39
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 WorldPop
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 collection
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 University of Southampton
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 WorldPop develops peer-reviewed research and methods for the
 construction of open and high-resolutio…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.worldpop.org/)
 </td>
@@ -2803,68 +2803,68 @@ construction of open and high-resolutio…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 40
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Seroprevalence SARS-CoV-2 residual samples
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 dataset
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 University of Antwerp
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 Population factor
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 case-based
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 static
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Assessment of the evolving SARS-CoV-2 seroprevalence and seroincidence
 related to the first national…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://repository.uantwerpen.be/docman/irua/fafd8f/187284.pdf)
 </td>
@@ -2873,68 +2873,68 @@ related to the first national…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 41
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Synthetic population data for Belgium
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 table
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 University of Antwerp
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 individual
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 static
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 This repository contains population files with 11 million individuals
 for Belgium we used to explore…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://zenodo.org/records/4485995)
 </td>
@@ -2943,68 +2943,68 @@ for Belgium we used to explore…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 42
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Human Mortality Database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 HMD
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 requestable
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 yearly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The Human Mortality Database (HMD) is the world’s leading scientific
 data resource on mortality in d…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.mortality.org/)
 </td>
@@ -3013,68 +3013,68 @@ data resource on mortality in d…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 43
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Eurostat database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 collection
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Eurostat
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Eurostat is the statistical office of the European Union. Its mission is
 to provide high-quality sta…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://ec.europa.eu/eurostat/web/main/data/database)
 </td>
@@ -3083,68 +3083,68 @@ to provide high-quality sta…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 44
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The Great Corona Study
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 dataset
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 University of Antwerp
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 longitudinal survey
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 requestable
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 irregular
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The Great Corona Study provides a massive amount of data every
 fortnight. For instance, since the ou…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.uantwerpen.be/en/projects/great-corona-study/)
 </td>
@@ -3153,68 +3153,68 @@ fortnight. For instance, since the ou…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 45
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 UNdata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 collection
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 United Nations
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 UNdata is a web-based data service for the global user community. It
 brings international statistica…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://data.un.org/)
 </td>
@@ -3223,68 +3223,68 @@ brings international statistica…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 46
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 OxCGRT
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 University of Oxford
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 programmatic
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The Oxford Covid-19 Government Response Tracker (OxCGRT) is a project
 that collected information on …
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.bsg.ox.ac.uk/research/covid-19-government-response-tracker)
 </td>
@@ -3293,68 +3293,68 @@ that collected information on …
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 47
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 COVID-19 Data Repository CSSE
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 collection
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 John Hopkins University
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Data repository for the 2019 Novel Coronavirus Visual Dashboard operated
 by the Johns Hopkins Univer…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://github.com/CSSEGISandData/COVID-19)
 </td>
@@ -3363,68 +3363,68 @@ by the Johns Hopkins Univer…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 48
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Google Health COVID-19 Open Data Repository
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Google
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The Google Health COVID-19 Open Data Repository is one of the most
 comprehensive collections of up-t…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://github.com/GoogleCloudPlatform/covid-19-open-data)
 </td>
@@ -3433,68 +3433,68 @@ comprehensive collections of up-t…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 49
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Intego
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 KULeuven
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 Traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 case-based
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Intego is een Vlaams huisartsenregistratienetwerk. Dankzij Intego kunnen
 ziektetrends in de huisarts…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.intego.be/)
 </td>
@@ -3503,68 +3503,68 @@ ziektetrends in de huisarts…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 50
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 KMI-IRM opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 collection
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 KMI-IRM
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 Other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 L’Institut royal meteorologique (IRM) est un institut scientifique
 federal qui propose des services …
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.meteo.be/fr/services/donnees)
 </td>
@@ -3573,68 +3573,68 @@ federal qui propose des services …
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 51
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 EuroMOMO
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 dataset
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Statens Serum Institut
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 Traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 requestable
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 weekly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 EuroMOMO is a European mortality monitoring activity, aiming to detect
 and measure excess deaths rel…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.euromomo.eu/)
 </td>
@@ -3643,68 +3643,68 @@ and measure excess deaths rel…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 52
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 COVIMPACT
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 Population factor
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 longitudal survey
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 requestable
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 monthly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The purpose of the COVIMPACT project is to set up a cohort of people who
 have been tested positive w…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.sciensano.be/en/projects/long-covid-and-its-physical-mental-and-social-implications)
 </td>
@@ -3713,68 +3713,68 @@ have been tested positive w…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 53
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 CovsirPhy
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 platform
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Community of volunteers
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 CovsirPhy is a Python library for infectious disease (COVID-19:
 Coronavirus disease 2019, Monkeypox …
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://lisphilar.github.io/covid19-sir/index.html)
 </td>
@@ -3783,68 +3783,68 @@ Coronavirus disease 2019, Monkeypox …
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 54
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 COVID-19 Data Hub
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 IVADO
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The goal of COVID-19 Data Hub is to provide the research community with
 a unified dataset by collect…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://covid19datahub.io/)
 </td>
@@ -3853,68 +3853,68 @@ a unified dataset by collect…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 55
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 RespiCAST
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 platform
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 ECDC
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 RespiCast is a platform dedicated to hosting and sharing forecasts for
 respiratory disease surveilla…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://respicast.ecdc.europa.eu/)
 </td>
@@ -3923,69 +3923,69 @@ respiratory disease surveilla…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 56
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 POLYMOD
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 National University of Singapore, London School of Hygiene & Tropical
 Medicine
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 behavioral
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 requestable
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 daily
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Projecting social contact matrices in 152 countries using contact
 surveys and demographic data
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://doi.org/10.1371/journal.pcbi.1005697)
 </td>
@@ -3994,65 +3994,65 @@ surveys and demographic data
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 57
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Medex
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 FPS
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 behavioral
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Medex notably collects data on absenteism among civil servants.
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.health.belgium.be/fr/medex)
 </td>
@@ -4061,66 +4061,66 @@ Medex notably collects data on absenteism among civil servants.
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 58
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Saniport
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 FPS
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 behavioral
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 restricted
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Saniport’s mission is to evaluate potential health threats from
 international traffic by controlling…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.health.belgium.be/fr/sante/organisation-des-soins-de-sante/aide-medicale-urgente/gestion-des-risques/saniport)
 </td>
@@ -4129,68 +4129,68 @@ international traffic by controlling…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 59
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Google trends
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 platform
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Google
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 behavioral
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 real-time
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Google Trends provides access to a largely unfiltered sample of actual
 search requests made to Googl…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://trends.google.com/trends/)
 </td>
@@ -4199,68 +4199,68 @@ search requests made to Googl…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 60
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 HDA Data Catalogue
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 platform
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Belgian Health Data Agency
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 other
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 metadata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 irregular
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 HDA’s data catalog is a way to centralize information on datasets from
 partner institutions, adherin…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.hda.belgium.be/en/data_catalog)
 </td>
@@ -4269,68 +4269,68 @@ partner institutions, adherin…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 61
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 IMA Atlas
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 platform
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 IMA-AIM
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 population factor
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 yearly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 L’Atlas AIM vous permet de consulter des indicateurs sur des
 caracteristiques socio-demographiques e…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://ima-aim.be/Atlas-AIM?lang=fr)
 </td>
@@ -4339,68 +4339,68 @@ caracteristiques socio-demographiques e…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 62
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 European Genomic Data
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 ENA
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 pathogen characteristic
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 real-time
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The European Nucleotide Archive (ENA) provides a comprehensive record of
 the world’s nucleotide sequ…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.ebi.ac.uk/ena/browser/home)
 </td>
@@ -4409,68 +4409,68 @@ the world’s nucleotide sequ…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 63
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 ECDC ATLAS
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 platform
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 ECDC
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 yearly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The Surveillance Atlas of Infectious Diseases is a tool that interacts
 with the latest available dat…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.ecdc.europa.eu/en/surveillance-atlas-infectious-diseases)
 </td>
@@ -4479,68 +4479,68 @@ with the latest available dat…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 64
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Belgian Index of Multiple Deprivation
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 platform
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Sciensano
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 population factor
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 irregular
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The Belgian Index of Multiple Deprivation provides a multidimensional
 view on social deprivation in …
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://bimd.sciensano.be/tool)
 </td>
@@ -4549,68 +4549,68 @@ view on social deprivation in …
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 65
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Datawarehouse labour market and social protection (open)
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 platform
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 BCSS
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 population factor
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 continuous
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Le Datawarehouse marche du travail et protection sociale (DWH MT&PS)
 vise l’agregation de donnees so…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://dwh.ksz-bcss.fgov.be/fr/dwh_page/content/websites/datawarehouse/about/mission.html)
 </td>
@@ -4619,68 +4619,68 @@ vise l’agregation de donnees so…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 66
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Datawarehouse labour market and social protection (access)
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 BCSS
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 population factor
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 pseudonymized
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 requestable
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 continuous
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Le Datawarehouse marche du travail et protection sociale (DWH MT&PS)
 vise l’agregation de donnees so…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://dwh.ksz-bcss.fgov.be/fr/dwh_page/content/websites/datawarehouse/about/mission.html)
 </td>
@@ -4689,68 +4689,68 @@ vise l’agregation de donnees so…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 67
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Motivation barometer
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 database
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 UGent, UCL
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 population factor
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 requestable
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 irregular
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 The Covid-19 crisis underscored more than ever the importance of
 interdisciplinary collaboration bet…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://en.bfp-fbp.be/psychology-and-society-data-repository)
 </td>
@@ -4759,67 +4759,67 @@ interdisciplinary collaboration bet…
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 68
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Statistical sectors
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 dataset
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 Statbel
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 yearly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 vector file with statistical sectors on 2025
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://statbel.fgov.be/en/open-data/statistical-sectors-2025)
 </td>
@@ -4828,68 +4828,68 @@ vector file with statistical sectors on 2025
 
 <tr>
 
-<td style="text-align:right;padding: 2px 3px;">
+<td style="text-align:right;padding: 1px 2px;">
 
 69
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 OECD health statistics
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 dataset
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 20%; ">
+<td style="text-align:left;padding: 1px 2px;width: 20%; ">
 
 OECD
 </td>
 
-<td style="text-align:left;padding: 2px 3px;width: 10%; ">
+<td style="text-align:left;padding: 1px 2px;width: 10%; ">
 
 traditional
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 aggregated
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 opendata
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 yearly
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 No
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 Yes
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 OECD Health Statistics offers the most comprehensive source of
 comparable statistics on health and h…
 </td>
 
-<td style="text-align:left;padding: 2px 3px;">
+<td style="text-align:left;padding: 1px 2px;">
 
 [View](https://www.oecd.org/en/data/datasets/oecd-health-statistics.html)
 </td>
