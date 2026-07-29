@@ -1,36 +1,41 @@
 name: Update data inventory table
 
-# Runs automatically whenever data.json changes on the default branch,
+# Runs automatically whenever the JSON data changes on the default branch,
 # and can also be triggered manually from the Actions tab.
 on:
   push:
     branches: [main]
     paths:
-      - "data.json"
+      - "data/data_sources.json"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-table:
+  knit-table:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
         with:
-          python-version: "3.x"
+          use-public-rspm: true
 
-      - name: Regenerate table
-        run: python generate_table.py
+      - name: Install required R packages
+        run: |
+          Rscript -e 'install.packages(c("rmarkdown", "knitr", "dplyr", "jsonlite", "here", "kableExtra"))'
+
+      - name: Knit the .Rmd
+        run: |
+          Rscript -e 'rmarkdown::render("visualizations/dataset_table.Rmd")'
 
       - name: Commit updated table
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data_inventory_table.md
+          git add visualizations/dataset_table.md
           git diff --staged --quiet || git commit -m "Auto-update data inventory table"
           git push
