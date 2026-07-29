@@ -1,0 +1,27 @@
+{
+    "id": "CDA25073",
+    "path": "~/GitHub/BEPIN_WP1/BEPIN_WP1/visualizations/dataset_table.Rmd",
+    "project_path": "visualizations/dataset_table.Rmd",
+    "type": "r_markdown",
+    "hash": "2064341914",
+    "contents": "",
+    "dirty": false,
+    "created": 1785311997912.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "72,13",
+        "scrollLine": "55",
+        "last_setup_crc32": "cac2cdf16f6fe3e"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1785313626,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1785313626672,
+    "read_only": false,
+    "read_only_alternatives": []
+}
