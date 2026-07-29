@@ -1,0 +1,5 @@
+"0","# Adjust the path below if your .Rmd lives somewhere other than"
+"0","# the same folder as data.json"
+"0",""
+"0","data <- fromJSON(here(""data"", ""data_sources.json""), flatten = TRUE)"
+"0","datasets <- data$datasets"

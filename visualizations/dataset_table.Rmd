@@ -1,0 +1,85 @@
+---
+title: "BE-PIN Dataset Inventory"
+output: github_document
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(jsonlite)
+library(dplyr)
+library(knitr)
+library(here)
+library(kableExtra)
+```
+
+```{r load-data}
+# Adjust the path below if your .Rmd lives somewhere other than
+# the same folder as data.json
+
+data <- fromJSON(here("data", "data_sources.json"), flatten = TRUE)
+datasets <- data$datasets
+```
+
+```{r clean-data}
+# Some fields (institution, source, linkURL, contactInfo) can be
+# Collapse any list-columns into single comma-separated strings.
+datasets <- datasets %>%
+  mutate(across(where(is.list), ~ sapply(., function(x) {
+    if (length(x) == 0 || all(x == "")) return("")
+    paste(x, collapse = ", ")
+  })))
+
+# Recode the 0/1 flags as Yes/No for readability
+datasets <- datasets %>%
+  mutate(
+    isCovid    = ifelse(isCovid == 1, "Yes", "No"),
+    isBelgium  = ifelse(isBelgium == 1, "Yes", "No"),
+    isActive   = ifelse(isActive == 1, "Yes", "No")
+  )
+
+# Truncate long free-text fields so the table stays narrow.
+# Full descriptions remain in data_sources.json if needed.
+truncate_text <- function(x, n = 100) {
+  ifelse(nchar(x) > n, paste0(substr(x, 1, n), "..."), x)
+}
+
+datasets <- datasets %>%
+  mutate(
+    shortDescription = truncate_text(shortDescription, 100),
+    # Turn the first link into a short "View" hyperlink instead of
+    # printing the full URL
+    linkURL = ifelse(
+      linkURL == "" | is.na(linkURL),
+      "",
+      paste0("[View](", sub(",.*", "", linkURL), ")")
+    )
+  )
+```
+
+
+```{r full-table}
+datasets %>%
+  select(
+    ID = id,
+    Name = name,
+    Type = type,
+    Institution = institution,
+    Category = category,
+    `Detail Level` = detailLevel,
+    Accessibility = accessibility,
+    `Update Frequency` = updateFrequency,
+    `COVID specific` = isCovid,
+    `Belgium specific` = isBelgium,
+    Active = isActive,
+     `Short Description` = shortDescription,
+        Link = linkURL
+  ) %>%
+  kable(format = "html", escape = FALSE) %>%
+  kable_styling(full_width = TRUE, bootstrap_options = c("striped", "condensed"),
+                font_size = 4) %>%
+    row_spec(0:nrow(datasets), extra_css = "padding: 1px 2px;") %>%
+  column_spec(4, width = "20%") %>%   # Short Description gets more room
+  column_spec(5, width = "10%")       # Institution
+
+```
