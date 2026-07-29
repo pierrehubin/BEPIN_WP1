@@ -1,7 +1,7 @@
 BE-PIN Dataset Inventory
 ================
 
-<table class="table table-striped table-condensed" style="font-size: 9px; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-condensed" style="font-size: 4px; margin-left: auto; margin-right: auto;">
 
 <thead>
 
